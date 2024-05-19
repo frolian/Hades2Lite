@@ -2957,7 +2957,7 @@
             // 
             // groupBox10
             // 
-            this.groupBox10.Location = new System.Drawing.Point(927, 6);
+            this.groupBox10.Location = new System.Drawing.Point(418, 100);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(200, 100);
             this.groupBox10.TabIndex = 1;
