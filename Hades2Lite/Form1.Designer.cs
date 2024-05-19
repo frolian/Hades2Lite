@@ -256,6 +256,7 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button11 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -284,7 +285,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox_Separator = new System.Windows.Forms.PictureBox();
             this.btn_ActiveDirectory = new System.Windows.Forms.Button();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.materialTabControl1.SuspendLayout();
             this.Narzedziownik.SuspendLayout();
             this.pl_NarzedziownikMain.SuspendLayout();
@@ -2955,6 +2955,15 @@
             this.tabPage3.Text = "Ogólne";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // groupBox10
+            // 
+            this.groupBox10.Location = new System.Drawing.Point(927, 6);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(200, 100);
+            this.groupBox10.TabIndex = 1;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "groupBox10";
+            // 
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(8, 8);
@@ -3281,15 +3290,6 @@
             this.btn_ActiveDirectory.Text = "Active Directory";
             this.btn_ActiveDirectory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ActiveDirectory.UseVisualStyleBackColor = true;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Location = new System.Drawing.Point(8, 38);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(200, 100);
-            this.groupBox10.TabIndex = 1;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "groupBox10";
             // 
             // frm_Hades2Lite
             // 
