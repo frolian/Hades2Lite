@@ -256,6 +256,7 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.Pomoc = new System.Windows.Forms.TabPage();
@@ -283,7 +284,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox_Separator = new System.Windows.Forms.PictureBox();
             this.btn_ActiveDirectory = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.materialTabControl1.SuspendLayout();
             this.Narzedziownik.SuspendLayout();
             this.pl_NarzedziownikMain.SuspendLayout();
@@ -2944,6 +2945,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox10);
             this.tabPage3.Controls.Add(this.button11);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -2952,6 +2954,15 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Ogólne";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(8, 8);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 0;
+            this.button11.Text = "button11";
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
@@ -3271,14 +3282,14 @@
             this.btn_ActiveDirectory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ActiveDirectory.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // groupBox10
             // 
-            this.button11.Location = new System.Drawing.Point(8, 8);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
+            this.groupBox10.Location = new System.Drawing.Point(8, 38);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(200, 100);
+            this.groupBox10.TabIndex = 1;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "groupBox10";
             // 
             // frm_Hades2Lite
             // 
@@ -3622,6 +3633,7 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.GroupBox groupBox10;
     }
 }
 
