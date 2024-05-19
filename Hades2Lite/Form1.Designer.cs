@@ -193,7 +193,7 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.pl_NiezbednikPadding = new System.Windows.Forms.Panel();
+            this.pl_NiezbednikMain = new System.Windows.Forms.Panel();
             this.pl_MainHADES = new System.Windows.Forms.Panel();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
@@ -274,6 +274,15 @@
             this.button10 = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
+            this.pl_KonfiguracjaPADDING = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.pl_PomocPADDING = new System.Windows.Forms.Panel();
+            this.pl_PomocMain = new System.Windows.Forms.Panel();
+            this.pl_NiezbednikPadding = new System.Windows.Forms.Panel();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.materialTabControl1.SuspendLayout();
             this.Narzedziownik.SuspendLayout();
             this.pl_NarzedziownikMain.SuspendLayout();
@@ -289,6 +298,8 @@
             this.toolStrip_singlePC_fastFichers.SuspendLayout();
             this.toolStrip6.SuspendLayout();
             this.Niezbednik.SuspendLayout();
+            this.Konfiguracja.SuspendLayout();
+            this.Pomoc.SuspendLayout();
             this.pl_MainForm.SuspendLayout();
             this.pl_MainFormMiddle.SuspendLayout();
             this.pl_MainFormTOP.SuspendLayout();
@@ -308,13 +319,18 @@
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel60.SuspendLayout();
-            this.pl_NiezbednikPadding.SuspendLayout();
+            this.pl_NiezbednikMain.SuspendLayout();
             this.pl_MainHADES.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Separator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pl_KonfiguracjaPADDING.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.pl_PomocPADDING.SuspendLayout();
+            this.pl_NiezbednikPadding.SuspendLayout();
+            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -645,7 +661,7 @@
             this.Niezbednik.ImageKey = "icons8-web-32.png";
             this.Niezbednik.Location = new System.Drawing.Point(4, 39);
             this.Niezbednik.Name = "Niezbednik";
-            this.Niezbednik.Padding = new System.Windows.Forms.Padding(3);
+            this.Niezbednik.Padding = new System.Windows.Forms.Padding(8, 8, 5, 8);
             this.Niezbednik.Size = new System.Drawing.Size(1156, 565);
             this.Niezbednik.TabIndex = 1;
             this.Niezbednik.Text = "Niezbędnik";
@@ -653,6 +669,7 @@
             // 
             // Konfiguracja
             // 
+            this.Konfiguracja.Controls.Add(this.pl_KonfiguracjaPADDING);
             this.Konfiguracja.ImageKey = "icons8-config-32.png";
             this.Konfiguracja.Location = new System.Drawing.Point(4, 39);
             this.Konfiguracja.Name = "Konfiguracja";
@@ -663,6 +680,7 @@
             // 
             // Pomoc
             // 
+            this.Pomoc.Controls.Add(this.pl_PomocPADDING);
             this.Pomoc.ImageKey = "icons8-help-32 (1).png";
             this.Pomoc.Location = new System.Drawing.Point(4, 39);
             this.Pomoc.Name = "Pomoc";
@@ -1851,10 +1869,10 @@
             // 
             this.panel59.Controls.Add(this.panel10);
             this.panel59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel59.Location = new System.Drawing.Point(30, 30);
+            this.panel59.Location = new System.Drawing.Point(15, 20);
             this.panel59.Name = "panel59";
             this.panel59.Padding = new System.Windows.Forms.Padding(0, 5, 5, 5);
-            this.panel59.Size = new System.Drawing.Size(1090, 499);
+            this.panel59.Size = new System.Drawing.Size(1096, 497);
             this.panel59.TabIndex = 2;
             // 
             // panel10
@@ -2345,15 +2363,16 @@
             this.button6.Text = "IT Teren";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // pl_NiezbednikPadding
+            // pl_NiezbednikMain
             // 
-            this.pl_NiezbednikPadding.Controls.Add(this.panel59);
-            this.pl_NiezbednikPadding.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_NiezbednikPadding.Location = new System.Drawing.Point(3, 3);
-            this.pl_NiezbednikPadding.Name = "pl_NiezbednikPadding";
-            this.pl_NiezbednikPadding.Padding = new System.Windows.Forms.Padding(30);
-            this.pl_NiezbednikPadding.Size = new System.Drawing.Size(1150, 559);
-            this.pl_NiezbednikPadding.TabIndex = 3;
+            this.pl_NiezbednikMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pl_NiezbednikMain.Controls.Add(this.panel59);
+            this.pl_NiezbednikMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_NiezbednikMain.Location = new System.Drawing.Point(0, 0);
+            this.pl_NiezbednikMain.Name = "pl_NiezbednikMain";
+            this.pl_NiezbednikMain.Padding = new System.Windows.Forms.Padding(15, 20, 30, 30);
+            this.pl_NiezbednikMain.Size = new System.Drawing.Size(1143, 549);
+            this.pl_NiezbednikMain.TabIndex = 3;
             // 
             // pl_MainHADES
             // 
@@ -3160,6 +3179,95 @@
             this.label46.TabIndex = 23;
             this.label46.Text = "System:";
             // 
+            // pl_KonfiguracjaPADDING
+            // 
+            this.pl_KonfiguracjaPADDING.Controls.Add(this.panel12);
+            this.pl_KonfiguracjaPADDING.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_KonfiguracjaPADDING.Location = new System.Drawing.Point(0, 0);
+            this.pl_KonfiguracjaPADDING.Name = "pl_KonfiguracjaPADDING";
+            this.pl_KonfiguracjaPADDING.Padding = new System.Windows.Forms.Padding(8, 8, 5, 8);
+            this.pl_KonfiguracjaPADDING.Size = new System.Drawing.Size(1156, 565);
+            this.pl_KonfiguracjaPADDING.TabIndex = 0;
+            // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.tabControl2);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(8, 8);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1143, 549);
+            this.panel12.TabIndex = 0;
+            // 
+            // pl_PomocPADDING
+            // 
+            this.pl_PomocPADDING.Controls.Add(this.pl_PomocMain);
+            this.pl_PomocPADDING.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_PomocPADDING.Location = new System.Drawing.Point(0, 0);
+            this.pl_PomocPADDING.Name = "pl_PomocPADDING";
+            this.pl_PomocPADDING.Padding = new System.Windows.Forms.Padding(8, 8, 5, 8);
+            this.pl_PomocPADDING.Size = new System.Drawing.Size(1156, 565);
+            this.pl_PomocPADDING.TabIndex = 1;
+            // 
+            // pl_PomocMain
+            // 
+            this.pl_PomocMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pl_PomocMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_PomocMain.Location = new System.Drawing.Point(8, 8);
+            this.pl_PomocMain.Name = "pl_PomocMain";
+            this.pl_PomocMain.Size = new System.Drawing.Size(1143, 549);
+            this.pl_PomocMain.TabIndex = 0;
+            // 
+            // pl_NiezbednikPadding
+            // 
+            this.pl_NiezbednikPadding.Controls.Add(this.pl_NiezbednikMain);
+            this.pl_NiezbednikPadding.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_NiezbednikPadding.Location = new System.Drawing.Point(8, 8);
+            this.pl_NiezbednikPadding.Name = "pl_NiezbednikPadding";
+            this.pl_NiezbednikPadding.Size = new System.Drawing.Size(1143, 549);
+            this.pl_NiezbednikPadding.TabIndex = 4;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Controls.Add(this.tabPage4);
+            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Location = new System.Drawing.Point(0, 0);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1141, 547);
+            this.tabControl2.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1133, 521);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Ogólne";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(192, 74);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "Ścieżki do programów";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(192, 74);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "Szablon weryfikacji";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
             // frm_Hades2Lite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3195,6 +3303,8 @@
             this.toolStrip6.ResumeLayout(false);
             this.toolStrip6.PerformLayout();
             this.Niezbednik.ResumeLayout(false);
+            this.Konfiguracja.ResumeLayout(false);
+            this.Pomoc.ResumeLayout(false);
             this.pl_MainForm.ResumeLayout(false);
             this.pl_MainFormMiddle.ResumeLayout(false);
             this.pl_MainFormTOP.ResumeLayout(false);
@@ -3226,13 +3336,18 @@
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel60.ResumeLayout(false);
-            this.pl_NiezbednikPadding.ResumeLayout(false);
+            this.pl_NiezbednikMain.ResumeLayout(false);
             this.pl_MainHADES.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Separator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.pl_KonfiguracjaPADDING.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.pl_PomocPADDING.ResumeLayout(false);
+            this.pl_NiezbednikPadding.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3466,7 +3581,7 @@
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel pl_NiezbednikPadding;
+        private System.Windows.Forms.Panel pl_NiezbednikMain;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel pl_MainHADES;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -3484,6 +3599,15 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Panel pl_KonfiguracjaPADDING;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel pl_NiezbednikPadding;
+        private System.Windows.Forms.Panel pl_PomocPADDING;
+        private System.Windows.Forms.Panel pl_PomocMain;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }
 
