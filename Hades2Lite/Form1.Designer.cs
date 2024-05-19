@@ -286,6 +286,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox_Separator = new System.Windows.Forms.PictureBox();
             this.btn_ActiveDirectory = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.materialTabControl1.SuspendLayout();
             this.Narzedziownik.SuspendLayout();
             this.pl_NarzedziownikMain.SuspendLayout();
@@ -2946,6 +2947,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button12);
             this.tabPage3.Controls.Add(this.groupBox11);
             this.tabPage3.Controls.Add(this.groupBox10);
             this.tabPage3.Controls.Add(this.button11);
@@ -3302,6 +3304,15 @@
             this.btn_ActiveDirectory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ActiveDirectory.UseVisualStyleBackColor = true;
             // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(1052, 8);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 3;
+            this.button12.Text = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
             // frm_Hades2Lite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3646,6 +3657,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Button button12;
     }
 }
 
