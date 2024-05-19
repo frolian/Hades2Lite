@@ -3313,6 +3313,15 @@
             this.btn_ActiveDirectory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ActiveDirectory.UseVisualStyleBackColor = true;
             // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(730, 114);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 3;
+            this.button12.Text = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
             // frm_Hades2Lite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
