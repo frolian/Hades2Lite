@@ -285,6 +285,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox_Separator = new System.Windows.Forms.PictureBox();
             this.btn_ActiveDirectory = new System.Windows.Forms.Button();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.materialTabControl1.SuspendLayout();
             this.Narzedziownik.SuspendLayout();
             this.pl_NarzedziownikMain.SuspendLayout();
@@ -2945,6 +2946,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox11);
             this.tabPage3.Controls.Add(this.groupBox10);
             this.tabPage3.Controls.Add(this.button11);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -3291,6 +3293,15 @@
             this.btn_ActiveDirectory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ActiveDirectory.UseVisualStyleBackColor = true;
             // 
+            // groupBox11
+            // 
+            this.groupBox11.Location = new System.Drawing.Point(466, 210);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(200, 100);
+            this.groupBox11.TabIndex = 2;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "groupBox11";
+            // 
             // frm_Hades2Lite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3634,6 +3645,7 @@
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox groupBox11;
     }
 }
 
