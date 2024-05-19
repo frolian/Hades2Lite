@@ -35,37 +35,24 @@
             this.pl_NarzedziownikMain = new System.Windows.Forms.Panel();
             this.pl_NarzedziownikMiddlePadding = new System.Windows.Forms.Panel();
             this.pl_NarzedziownikMiddle = new System.Windows.Forms.Panel();
-            this.panel_singlePC_top = new System.Windows.Forms.Panel();
-            this.panel61 = new System.Windows.Forms.Panel();
-            this.panel_bottom_border = new System.Windows.Forms.Panel();
-            this.pcName = new System.Windows.Forms.TextBox();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.textBox_singlePc_messageText = new System.Windows.Forms.TextBox();
-            this.panel_singlePC_top2 = new System.Windows.Forms.Panel();
-            this.button_singlePC_kto_jest_zalogowany = new System.Windows.Forms.Button();
-            this.pl_NarzedziownikMain_TOP = new System.Windows.Forms.Panel();
-            this.panel58 = new System.Windows.Forms.Panel();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.toolStrip7 = new System.Windows.Forms.ToolStrip();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.toolStrip_singlePC_fastFichers = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStrip6 = new System.Windows.Forms.ToolStrip();
-            this.label29 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Niezbednik = new System.Windows.Forms.TabPage();
-            this.Konfiguracja = new System.Windows.Forms.TabPage();
-            this.Pomoc = new System.Windows.Forms.TabPage();
-            this.img_MaterialTab = new System.Windows.Forms.ImageList(this.components);
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.pl_MainForm = new System.Windows.Forms.Panel();
-            this.pl_MainFormMiddle = new System.Windows.Forms.Panel();
-            this.pl_MainFormTOP = new System.Windows.Forms.Panel();
-            this.img_MainIcons = new System.Windows.Forms.ImageList(this.components);
-            this.label4 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pcName_textBox = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.wersja_label = new System.Windows.Forms.Label();
+            this.model_label = new System.Windows.Forms.Label();
+            this.producent_label = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.KSIcode_label = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -76,26 +63,10 @@
             this.tjo_label = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.status_label = new System.Windows.Forms.Label();
-            this.name_textBox = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.loginAD_textBox = new System.Windows.Forms.TextBox();
-            this.sid_textBox = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.state_label = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.adres_textBox = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.biuro_label = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.email_label = new System.Windows.Forms.Label();
@@ -104,20 +75,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.restartTime_label = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.freeC_label = new System.Windows.Forms.Label();
-            this.freeD_label = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.pcName_textBox = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.name_textBox = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.sn_textBox = new System.Windows.Forms.TextBox();
             this.mac_textBox = new System.Windows.Forms.TextBox();
@@ -127,15 +86,18 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
-            this.wersja_label = new System.Windows.Forms.Label();
-            this.model_label = new System.Windows.Forms.Label();
-            this.producent_label = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.restartTime_label = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.freeC_label = new System.Windows.Forms.Label();
+            this.freeD_label = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.graphicsCard_textBox = new System.Windows.Forms.TextBox();
             this.procesor_textBox = new System.Windows.Forms.TextBox();
@@ -147,6 +109,23 @@
             this.label36 = new System.Windows.Forms.Label();
             this.bios_label = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.state_label = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.adres_textBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.biuro_label = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.loginAD_textBox = new System.Windows.Forms.TextBox();
+            this.sid_textBox = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.osarchitecture_label = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -156,11 +135,90 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.panel_singlePC_top = new System.Windows.Forms.Panel();
+            this.panel61 = new System.Windows.Forms.Panel();
+            this.panel_bottom_border = new System.Windows.Forms.Panel();
+            this.pcName = new System.Windows.Forms.TextBox();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.textBox_singlePc_messageText = new System.Windows.Forms.TextBox();
+            this.button_singlePC_isOnline = new System.Windows.Forms.Button();
+            this.img_MainIcons = new System.Windows.Forms.ImageList(this.components);
+            this.button_singlePC_sendMSG = new System.Windows.Forms.Button();
+            this.button_singlePC_erase = new System.Windows.Forms.Button();
+            this.panel_singlePC_top2 = new System.Windows.Forms.Panel();
+            this.button_singlePC_remoteCMD = new System.Windows.Forms.Button();
+            this.button_singlePC_kto_jest_zalogowany = new System.Windows.Forms.Button();
+            this.button_singlePC_Zarzadzaj = new System.Windows.Forms.Button();
+            this.button_singlePC_Shutdown = new System.Windows.Forms.Button();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button_singlePC_pingLong = new System.Windows.Forms.Button();
+            this.button_singlePC_Restart = new System.Windows.Forms.Button();
+            this.button57 = new System.Windows.Forms.Button();
+            this.pl_NarzedziownikMain_TOP = new System.Windows.Forms.Panel();
+            this.panel58 = new System.Windows.Forms.Panel();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.toolStrip7 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton_menage_messages = new System.Windows.Forms.ToolStripButton();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.toolStrip_singlePC_fastFichers = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton_singlePC_remoteSCCM = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_singlePC_remoteDesktop = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripDropDownButton7 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wOLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usługiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informacjeOSystemieOperacyjnymToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripDropDownButton8 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.ProfilToolStripMenuItem_Refresh_Profile = new System.Windows.Forms.ToolStripMenuItem();
+            this.UżytkownikaToolStripMenuItem_User_Printers = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_User_Info = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_User_Uprawnienia = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripDropDownButton5 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem_run_Ajaks32 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_run_Ajaks64 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripDropDownButton6 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_singlePC_audyt_Office = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton_singlePC_instalator = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem_C = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_Autostart = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_APPKSI = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_APPKSI_APPKSI = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_APPKSI_InstallLogs = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_CCMCACHE = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_CSI = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_CWI_PC = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemPROKOM = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_PROKOM_PROKOM = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_PROKOM_COMMON = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_SKRYPTY = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_USERS = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripDropDownButton4 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem87 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem88 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem89 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem90 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripDropDownButton_Desktops = new System.Windows.Forms.ToolStripDropDownButton();
+            this.ToolStripMenuItem_userDesktop = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_publicDesktop = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripDropDownButton_Dystrybucja = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem_Dystrybucja_AI = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_Dystrybucja_CI_OHD = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_Dystrybucja_CWI_PC = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip6 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton_manage_computers_lists = new System.Windows.Forms.ToolStripButton();
+            this.label29 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Niezbednik = new System.Windows.Forms.TabPage();
+            this.pl_NiezbednikPadding = new System.Windows.Forms.Panel();
+            this.pl_NiezbednikMain = new System.Windows.Forms.Panel();
             this.panel59 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -193,101 +251,56 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.pl_NiezbednikMain = new System.Windows.Forms.Panel();
-            this.pl_MainHADES = new System.Windows.Forms.Panel();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button_singlePC_isOnline = new System.Windows.Forms.Button();
-            this.button_singlePC_sendMSG = new System.Windows.Forms.Button();
-            this.button_singlePC_erase = new System.Windows.Forms.Button();
-            this.button_singlePC_remoteCMD = new System.Windows.Forms.Button();
-            this.button_singlePC_Zarzadzaj = new System.Windows.Forms.Button();
-            this.button_singlePC_Shutdown = new System.Windows.Forms.Button();
-            this.button61 = new System.Windows.Forms.Button();
-            this.button_singlePC_pingLong = new System.Windows.Forms.Button();
-            this.button_singlePC_Restart = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
-            this.toolStripButton_menage_messages = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_singlePC_remoteSCCM = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_singlePC_remoteDesktop = new System.Windows.Forms.ToolStripButton();
-            this.toolStripDropDownButton7 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wOLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usługiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informacjeOSystemieOperacyjnymToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton8 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.ProfilToolStripMenuItem_Refresh_Profile = new System.Windows.Forms.ToolStripMenuItem();
-            this.UżytkownikaToolStripMenuItem_User_Printers = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_User_Info = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_User_Uprawnienia = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton5 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem_run_Ajaks32 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_run_Ajaks64 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton6 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_singlePC_audyt_Office = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton_singlePC_instalator = new System.Windows.Forms.ToolStripButton();
-            this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem_C = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Autostart = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_APPKSI = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_APPKSI_APPKSI = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_APPKSI_InstallLogs = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_CCMCACHE = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_CSI = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_CWI_PC = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemPROKOM = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_PROKOM_PROKOM = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_PROKOM_COMMON = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_SKRYPTY = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_USERS = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton4 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem87 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem88 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem89 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem90 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton_Desktops = new System.Windows.Forms.ToolStripDropDownButton();
-            this.ToolStripMenuItem_userDesktop = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_publicDesktop = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton_Dystrybucja = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem_Dystrybucja_AI = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Dystrybucja_CI_OHD = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Dystrybucja_CWI_PC = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton_manage_computers_lists = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn_LAPS = new System.Windows.Forms.Button();
-            this.pictureBox_Separator = new System.Windows.Forms.PictureBox();
-            this.btn_ActiveDirectory = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label44 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
+            this.Konfiguracja = new System.Windows.Forms.TabPage();
             this.pl_KonfiguracjaPADDING = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.pl_PomocPADDING = new System.Windows.Forms.Panel();
-            this.pl_PomocMain = new System.Windows.Forms.Panel();
-            this.pl_NiezbednikPadding = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.Pomoc = new System.Windows.Forms.TabPage();
+            this.pl_PomocPADDING = new System.Windows.Forms.Panel();
+            this.pl_PomocMain = new System.Windows.Forms.Panel();
+            this.img_MaterialTab = new System.Windows.Forms.ImageList(this.components);
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.pl_MainForm = new System.Windows.Forms.Panel();
+            this.pl_MainFormMiddle = new System.Windows.Forms.Panel();
+            this.pl_MainFormTOP = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label44 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pl_MainHADES = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_LAPS = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox_Separator = new System.Windows.Forms.PictureBox();
+            this.btn_ActiveDirectory = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.materialTabControl1.SuspendLayout();
             this.Narzedziownik.SuspendLayout();
             this.pl_NarzedziownikMain.SuspendLayout();
             this.pl_NarzedziownikMiddlePadding.SuspendLayout();
             this.pl_NarzedziownikMiddle.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.panel_singlePC_top.SuspendLayout();
             this.panel61.SuspendLayout();
             this.panel21.SuspendLayout();
@@ -298,39 +311,28 @@
             this.toolStrip_singlePC_fastFichers.SuspendLayout();
             this.toolStrip6.SuspendLayout();
             this.Niezbednik.SuspendLayout();
-            this.Konfiguracja.SuspendLayout();
-            this.Pomoc.SuspendLayout();
-            this.pl_MainForm.SuspendLayout();
-            this.pl_MainFormMiddle.SuspendLayout();
-            this.pl_MainFormTOP.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.pl_NiezbednikPadding.SuspendLayout();
+            this.pl_NiezbednikMain.SuspendLayout();
             this.panel59.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel60.SuspendLayout();
-            this.pl_NiezbednikMain.SuspendLayout();
+            this.Konfiguracja.SuspendLayout();
+            this.pl_KonfiguracjaPADDING.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.Pomoc.SuspendLayout();
+            this.pl_PomocPADDING.SuspendLayout();
+            this.pl_MainForm.SuspendLayout();
+            this.pl_MainFormMiddle.SuspendLayout();
+            this.pl_MainFormTOP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pl_MainHADES.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Separator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.pl_KonfiguracjaPADDING.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.pl_PomocPADDING.SuspendLayout();
-            this.pl_NiezbednikPadding.SuspendLayout();
-            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -396,387 +398,225 @@
             this.pl_NarzedziownikMiddle.Size = new System.Drawing.Size(1143, 458);
             this.pl_NarzedziownikMiddle.TabIndex = 2;
             // 
-            // panel_singlePC_top
+            // tabControl1
             // 
-            this.panel_singlePC_top.AutoSize = true;
-            this.panel_singlePC_top.BackColor = System.Drawing.Color.Transparent;
-            this.panel_singlePC_top.Controls.Add(this.panel61);
-            this.panel_singlePC_top.Controls.Add(this.panel21);
-            this.panel_singlePC_top.Controls.Add(this.button_singlePC_isOnline);
-            this.panel_singlePC_top.Controls.Add(this.button_singlePC_sendMSG);
-            this.panel_singlePC_top.Controls.Add(this.button_singlePC_erase);
-            this.panel_singlePC_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_singlePC_top.Location = new System.Drawing.Point(170, 0);
-            this.panel_singlePC_top.Name = "panel_singlePC_top";
-            this.panel_singlePC_top.Size = new System.Drawing.Size(971, 99);
-            this.panel_singlePC_top.TabIndex = 33;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(176, 97);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(916, 525);
+            this.tabControl1.TabIndex = 48;
             // 
-            // panel61
+            // tabPage1
             // 
-            this.panel61.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel61.Controls.Add(this.panel_bottom_border);
-            this.panel61.Controls.Add(this.pcName);
-            this.panel61.Location = new System.Drawing.Point(14, 24);
-            this.panel61.Name = "panel61";
-            this.panel61.Padding = new System.Windows.Forms.Padding(10);
-            this.panel61.Size = new System.Drawing.Size(247, 48);
-            this.panel61.TabIndex = 22;
+            this.tabPage1.Controls.Add(this.label43);
+            this.tabPage1.Controls.Add(this.label42);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.pcName_textBox);
+            this.tabPage1.Controls.Add(this.groupBox7);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.status_label);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.name_textBox);
+            this.tabPage1.Controls.Add(this.groupBox6);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(908, 499);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Informacje podstawowe";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // panel_bottom_border
+            // label43
             // 
-            this.panel_bottom_border.BackColor = System.Drawing.Color.DarkGray;
-            this.panel_bottom_border.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_bottom_border.Location = new System.Drawing.Point(0, 46);
-            this.panel_bottom_border.Name = "panel_bottom_border";
-            this.panel_bottom_border.Size = new System.Drawing.Size(247, 2);
-            this.panel_bottom_border.TabIndex = 23;
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label43.ForeColor = System.Drawing.Color.Green;
+            this.label43.Location = new System.Drawing.Point(101, 44);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(85, 16);
+            this.label43.TabIndex = 48;
+            this.label43.Text = "Host online";
             // 
-            // pcName
+            // label42
             // 
-            this.pcName.AcceptsReturn = true;
-            this.pcName.BackColor = System.Drawing.Color.Gainsboro;
-            this.pcName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.pcName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pcName.ForeColor = System.Drawing.Color.Gray;
-            this.pcName.Location = new System.Drawing.Point(13, 15);
-            this.pcName.MaxLength = 30;
-            this.pcName.Name = "pcName";
-            this.pcName.Size = new System.Drawing.Size(221, 19);
-            this.pcName.TabIndex = 22;
-            this.pcName.Text = "Podaj Nazwę lub IP komputera";
-            this.pcName.WordWrap = false;
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label42.Location = new System.Drawing.Point(14, 44);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(81, 16);
+            this.label42.TabIndex = 47;
+            this.label42.Text = "Status stacji:";
             // 
-            // panel21
+            // button2
             // 
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Controls.Add(this.textBox_singlePc_messageText);
-            this.panel21.Location = new System.Drawing.Point(496, 5);
-            this.panel21.Name = "panel21";
-            this.panel21.Padding = new System.Windows.Forms.Padding(4);
-            this.panel21.Size = new System.Drawing.Size(235, 90);
-            this.panel21.TabIndex = 21;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::Hades2Lite.Properties.Resources.icons8_refresh_32__1_;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(801, 26);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 38);
+            this.button2.TabIndex = 46;
+            this.button2.Text = "Odśwież\r\nstatus\r\n";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox_singlePc_messageText
+            // pcName_textBox
             // 
-            this.textBox_singlePc_messageText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox_singlePc_messageText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_singlePc_messageText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_singlePc_messageText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox_singlePc_messageText.ForeColor = System.Drawing.Color.Gray;
-            this.textBox_singlePc_messageText.Location = new System.Drawing.Point(4, 4);
-            this.textBox_singlePc_messageText.MaxLength = 200;
-            this.textBox_singlePc_messageText.Multiline = true;
-            this.textBox_singlePc_messageText.Name = "textBox_singlePc_messageText";
-            this.textBox_singlePc_messageText.Size = new System.Drawing.Size(225, 80);
-            this.textBox_singlePc_messageText.TabIndex = 0;
-            this.textBox_singlePc_messageText.Text = "Tu wpisz treść komunikatu który chcesz wysłać do użytkownika";
+            this.pcName_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.pcName_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.pcName_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pcName_textBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pcName_textBox.Location = new System.Drawing.Point(14, 2);
+            this.pcName_textBox.Multiline = true;
+            this.pcName_textBox.Name = "pcName_textBox";
+            this.pcName_textBox.ReadOnly = true;
+            this.pcName_textBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pcName_textBox.Size = new System.Drawing.Size(431, 26);
+            this.pcName_textBox.TabIndex = 41;
+            this.pcName_textBox.TabStop = false;
+            this.pcName_textBox.Text = "Komputer";
+            this.pcName_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel_singlePC_top2
+            // groupBox7
             // 
-            this.panel_singlePC_top2.AutoSize = true;
-            this.panel_singlePC_top2.BackColor = System.Drawing.Color.Transparent;
-            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_remoteCMD);
-            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_kto_jest_zalogowany);
-            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_Zarzadzaj);
-            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_Shutdown);
-            this.panel_singlePC_top2.Controls.Add(this.button61);
-            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_pingLong);
-            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_Restart);
-            this.panel_singlePC_top2.Controls.Add(this.button57);
-            this.panel_singlePC_top2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_singlePC_top2.Location = new System.Drawing.Point(0, 0);
-            this.panel_singlePC_top2.Name = "panel_singlePC_top2";
-            this.panel_singlePC_top2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_singlePC_top2.Size = new System.Drawing.Size(170, 456);
-            this.panel_singlePC_top2.TabIndex = 32;
+            this.groupBox7.Controls.Add(this.label45);
+            this.groupBox7.Controls.Add(this.label46);
+            this.groupBox7.Controls.Add(this.panel7);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Controls.Add(this.wersja_label);
+            this.groupBox7.Controls.Add(this.model_label);
+            this.groupBox7.Controls.Add(this.producent_label);
+            this.groupBox7.Controls.Add(this.label28);
+            this.groupBox7.Controls.Add(this.label31);
+            this.groupBox7.Controls.Add(this.label32);
+            this.groupBox7.Location = new System.Drawing.Point(14, 183);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(431, 178);
+            this.groupBox7.TabIndex = 45;
+            this.groupBox7.TabStop = false;
             // 
-            // button_singlePC_kto_jest_zalogowany
+            // label45
             // 
-            this.button_singlePC_kto_jest_zalogowany.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button_singlePC_kto_jest_zalogowany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_singlePC_kto_jest_zalogowany.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_singlePC_kto_jest_zalogowany.Location = new System.Drawing.Point(11, 294);
-            this.button_singlePC_kto_jest_zalogowany.Name = "button_singlePC_kto_jest_zalogowany";
-            this.button_singlePC_kto_jest_zalogowany.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_singlePC_kto_jest_zalogowany.Size = new System.Drawing.Size(146, 48);
-            this.button_singlePC_kto_jest_zalogowany.TabIndex = 17;
-            this.button_singlePC_kto_jest_zalogowany.Text = "Kto jest zalogowany?";
-            this.button_singlePC_kto_jest_zalogowany.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_singlePC_kto_jest_zalogowany.UseVisualStyleBackColor = true;
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label45.Location = new System.Drawing.Point(131, 126);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(184, 16);
+            this.label45.TabIndex = 24;
+            this.label45.Text = "Microsoft Windows 11 Pro";
             // 
-            // pl_NarzedziownikMain_TOP
+            // label46
             // 
-            this.pl_NarzedziownikMain_TOP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pl_NarzedziownikMain_TOP.Controls.Add(this.panel58);
-            this.pl_NarzedziownikMain_TOP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pl_NarzedziownikMain_TOP.Location = new System.Drawing.Point(5, 5);
-            this.pl_NarzedziownikMain_TOP.Name = "pl_NarzedziownikMain_TOP";
-            this.pl_NarzedziownikMain_TOP.Size = new System.Drawing.Size(1143, 86);
-            this.pl_NarzedziownikMain_TOP.TabIndex = 0;
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label46.Location = new System.Drawing.Point(28, 126);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(55, 16);
+            this.label46.TabIndex = 23;
+            this.label46.Text = "System:";
             // 
-            // panel58
+            // panel7
             // 
-            this.panel58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel58.Controls.Add(this.comboBox4);
-            this.panel58.Controls.Add(this.toolStrip7);
-            this.panel58.Controls.Add(this.comboBox3);
-            this.panel58.Controls.Add(this.label30);
-            this.panel58.Controls.Add(this.toolStrip_singlePC_fastFichers);
-            this.panel58.Controls.Add(this.toolStrip6);
-            this.panel58.Controls.Add(this.label29);
-            this.panel58.Controls.Add(this.comboBox1);
-            this.panel58.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel58.Location = new System.Drawing.Point(0, 0);
-            this.panel58.Name = "panel58";
-            this.panel58.Size = new System.Drawing.Size(1141, 82);
-            this.panel58.TabIndex = 10;
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Location = new System.Drawing.Point(23, 35);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(390, 2);
+            this.panel7.TabIndex = 22;
             // 
-            // comboBox4
+            // label27
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(112, 5);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(163, 23);
-            this.comboBox4.TabIndex = 8;
-            this.comboBox4.Text = "Wybierz komputer z listy";
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label27.Location = new System.Drawing.Point(23, 16);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(220, 16);
+            this.label27.TabIndex = 21;
+            this.label27.Text = "Producent / system operacyjny";
             // 
-            // toolStrip7
+            // wersja_label
             // 
-            this.toolStrip7.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip7.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton_menage_messages});
-            this.toolStrip7.Location = new System.Drawing.Point(878, 4);
-            this.toolStrip7.Name = "toolStrip7";
-            this.toolStrip7.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip7.Size = new System.Drawing.Size(159, 25);
-            this.toolStrip7.TabIndex = 7;
-            this.toolStrip7.Text = "toolStrip7";
+            this.wersja_label.AutoSize = true;
+            this.wersja_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.wersja_label.Location = new System.Drawing.Point(131, 88);
+            this.wersja_label.Name = "wersja_label";
+            this.wersja_label.Size = new System.Drawing.Size(31, 16);
+            this.wersja_label.TabIndex = 18;
+            this.wersja_label.Text = "345";
             // 
-            // comboBox3
+            // model_label
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(747, 5);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(128, 23);
-            this.comboBox3.TabIndex = 6;
-            this.comboBox3.Text = "Wybierz komunikat";
+            this.model_label.AutoSize = true;
+            this.model_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.model_label.Location = new System.Drawing.Point(131, 68);
+            this.model_label.Name = "model_label";
+            this.model_label.Size = new System.Drawing.Size(33, 16);
+            this.model_label.TabIndex = 19;
+            this.model_label.Text = "T14";
             // 
-            // label30
+            // producent_label
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label30.Location = new System.Drawing.Point(638, 6);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(103, 21);
-            this.label30.TabIndex = 5;
-            this.label30.Text = "Komunikaty";
+            this.producent_label.AutoSize = true;
+            this.producent_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.producent_label.Location = new System.Drawing.Point(131, 48);
+            this.producent_label.Name = "producent_label";
+            this.producent_label.Size = new System.Drawing.Size(58, 16);
+            this.producent_label.TabIndex = 20;
+            this.producent_label.Text = "Lenovo";
             // 
-            // toolStrip_singlePC_fastFichers
+            // label28
             // 
-            this.toolStrip_singlePC_fastFichers.AutoSize = false;
-            this.toolStrip_singlePC_fastFichers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.toolStrip_singlePC_fastFichers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.toolStrip_singlePC_fastFichers.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip_singlePC_fastFichers.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip_singlePC_fastFichers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton_singlePC_remoteSCCM,
-            this.toolStripButton_singlePC_remoteDesktop,
-            this.toolStripSeparator11,
-            this.toolStripDropDownButton7,
-            this.toolStripDropDownButton8,
-            this.toolStripSeparator10,
-            this.toolStripDropDownButton5,
-            this.toolStripDropDownButton6,
-            this.toolStripButton_singlePC_instalator,
-            this.toolStripSeparator12,
-            this.toolStripDropDownButton3,
-            this.toolStripDropDownButton4,
-            this.toolStripDropDownButton_Desktops,
-            this.toolStripDropDownButton_Dystrybucja});
-            this.toolStrip_singlePC_fastFichers.Location = new System.Drawing.Point(14, 32);
-            this.toolStrip_singlePC_fastFichers.Name = "toolStrip_singlePC_fastFichers";
-            this.toolStrip_singlePC_fastFichers.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStrip_singlePC_fastFichers.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip_singlePC_fastFichers.Size = new System.Drawing.Size(1067, 41);
-            this.toolStrip_singlePC_fastFichers.TabIndex = 4;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label28.Location = new System.Drawing.Point(26, 88);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(50, 16);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "Wersja";
             // 
-            // toolStripSeparator11
+            // label31
             // 
-            this.toolStripSeparator11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 41);
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label31.Location = new System.Drawing.Point(26, 68);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(45, 16);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "Model";
             // 
-            // toolStripSeparator10
+            // label32
             // 
-            this.toolStripSeparator10.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 41);
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label32.Location = new System.Drawing.Point(26, 48);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(68, 16);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "Producent";
             // 
-            // toolStripSeparator12
+            // groupBox3
             // 
-            this.toolStripSeparator12.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 41);
-            // 
-            // toolStrip6
-            // 
-            this.toolStrip6.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip6.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton_manage_computers_lists});
-            this.toolStrip6.Location = new System.Drawing.Point(447, 4);
-            this.toolStrip6.Name = "toolStrip6";
-            this.toolStrip6.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip6.Size = new System.Drawing.Size(188, 25);
-            this.toolStrip6.TabIndex = 1;
-            this.toolStrip6.Text = "toolStrip6";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label29.Location = new System.Drawing.Point(10, 6);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(96, 21);
-            this.label29.TabIndex = 0;
-            this.label29.Text = "Komputery";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(281, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(163, 23);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "Wybierz listę komputerów";
-            // 
-            // Niezbednik
-            // 
-            this.Niezbednik.Controls.Add(this.pl_NiezbednikPadding);
-            this.Niezbednik.ImageKey = "icons8-web-32.png";
-            this.Niezbednik.Location = new System.Drawing.Point(4, 39);
-            this.Niezbednik.Name = "Niezbednik";
-            this.Niezbednik.Padding = new System.Windows.Forms.Padding(8, 8, 5, 8);
-            this.Niezbednik.Size = new System.Drawing.Size(1156, 565);
-            this.Niezbednik.TabIndex = 1;
-            this.Niezbednik.Text = "Niezbędnik";
-            this.Niezbednik.UseVisualStyleBackColor = true;
-            // 
-            // Konfiguracja
-            // 
-            this.Konfiguracja.Controls.Add(this.pl_KonfiguracjaPADDING);
-            this.Konfiguracja.ImageKey = "icons8-config-32.png";
-            this.Konfiguracja.Location = new System.Drawing.Point(4, 39);
-            this.Konfiguracja.Name = "Konfiguracja";
-            this.Konfiguracja.Size = new System.Drawing.Size(1156, 565);
-            this.Konfiguracja.TabIndex = 2;
-            this.Konfiguracja.Text = "Konfiguracja";
-            this.Konfiguracja.UseVisualStyleBackColor = true;
-            // 
-            // Pomoc
-            // 
-            this.Pomoc.Controls.Add(this.pl_PomocPADDING);
-            this.Pomoc.ImageKey = "icons8-help-32 (1).png";
-            this.Pomoc.Location = new System.Drawing.Point(4, 39);
-            this.Pomoc.Name = "Pomoc";
-            this.Pomoc.Size = new System.Drawing.Size(1156, 565);
-            this.Pomoc.TabIndex = 3;
-            this.Pomoc.Text = "Pomoc";
-            this.Pomoc.UseVisualStyleBackColor = true;
-            // 
-            // img_MaterialTab
-            // 
-            this.img_MaterialTab.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("img_MaterialTab.ImageStream")));
-            this.img_MaterialTab.TransparentColor = System.Drawing.Color.Transparent;
-            this.img_MaterialTab.Images.SetKeyName(0, "icons8-help-desk-32.png");
-            this.img_MaterialTab.Images.SetKeyName(1, "icons8-web-32.png");
-            this.img_MaterialTab.Images.SetKeyName(2, "icons8-config-32.png");
-            this.img_MaterialTab.Images.SetKeyName(3, "icons8-help-32 (1).png");
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(3, 775);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1164, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // pl_MainForm
-            // 
-            this.pl_MainForm.Controls.Add(this.pl_MainFormMiddle);
-            this.pl_MainForm.Controls.Add(this.pl_MainFormTOP);
-            this.pl_MainForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_MainForm.Location = new System.Drawing.Point(3, 64);
-            this.pl_MainForm.Name = "pl_MainForm";
-            this.pl_MainForm.Size = new System.Drawing.Size(1164, 711);
-            this.pl_MainForm.TabIndex = 2;
-            // 
-            // pl_MainFormMiddle
-            // 
-            this.pl_MainFormMiddle.Controls.Add(this.materialTabControl1);
-            this.pl_MainFormMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_MainFormMiddle.Location = new System.Drawing.Point(0, 103);
-            this.pl_MainFormMiddle.Name = "pl_MainFormMiddle";
-            this.pl_MainFormMiddle.Size = new System.Drawing.Size(1164, 608);
-            this.pl_MainFormMiddle.TabIndex = 1;
-            // 
-            // pl_MainFormTOP
-            // 
-            this.pl_MainFormTOP.Controls.Add(this.button10);
-            this.pl_MainFormTOP.Controls.Add(this.pictureBox4);
-            this.pl_MainFormTOP.Controls.Add(this.pictureBox3);
-            this.pl_MainFormTOP.Controls.Add(this.button9);
-            this.pl_MainFormTOP.Controls.Add(this.button7);
-            this.pl_MainFormTOP.Controls.Add(this.pictureBox2);
-            this.pl_MainFormTOP.Controls.Add(this.button5);
-            this.pl_MainFormTOP.Controls.Add(this.label44);
-            this.pl_MainFormTOP.Controls.Add(this.button4);
-            this.pl_MainFormTOP.Controls.Add(this.button3);
-            this.pl_MainFormTOP.Controls.Add(this.pl_MainHADES);
-            this.pl_MainFormTOP.Controls.Add(this.button1);
-            this.pl_MainFormTOP.Controls.Add(this.btn_LAPS);
-            this.pl_MainFormTOP.Controls.Add(this.label4);
-            this.pl_MainFormTOP.Controls.Add(this.pictureBox_Separator);
-            this.pl_MainFormTOP.Controls.Add(this.btn_ActiveDirectory);
-            this.pl_MainFormTOP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pl_MainFormTOP.Location = new System.Drawing.Point(0, 0);
-            this.pl_MainFormTOP.Name = "pl_MainFormTOP";
-            this.pl_MainFormTOP.Size = new System.Drawing.Size(1164, 103);
-            this.pl_MainFormTOP.TabIndex = 0;
-            // 
-            // img_MainIcons
-            // 
-            this.img_MainIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("img_MainIcons.ImageStream")));
-            this.img_MainIcons.TransparentColor = System.Drawing.Color.Transparent;
-            this.img_MainIcons.Images.SetKeyName(0, "ajaks.PNG");
-            this.img_MainIcons.Images.SetKeyName(1, "dsa.ico");
-            this.img_MainIcons.Images.SetKeyName(2, "prnscr.ico");
-            this.img_MainIcons.Images.SetKeyName(3, "regedit.ico");
-            this.img_MainIcons.Images.SetKeyName(4, "webex.ico");
-            this.img_MainIcons.Images.SetKeyName(5, "LAPSUI.png");
-            this.img_MainIcons.Images.SetKeyName(6, "sccm.png");
-            this.img_MainIcons.Images.SetKeyName(7, "icons8-download-32.png");
-            this.img_MainIcons.Images.SetKeyName(8, "send.ico");
-            this.img_MainIcons.Images.SetKeyName(9, "prnscr.ico");
-            this.img_MainIcons.Images.SetKeyName(10, "mapa.png");
-            this.img_MainIcons.Images.SetKeyName(11, "ps.png");
-            this.img_MainIcons.Images.SetKeyName(12, "regedit.ico");
-            this.img_MainIcons.Images.SetKeyName(13, "favicon.ico");
-            this.img_MainIcons.Images.SetKeyName(14, "webex.ico");
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(65, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 13);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "narzędzia domenowe";
+            this.groupBox3.Controls.Add(this.KSIcode_label);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.panel3);
+            this.groupBox3.Controls.Add(this.oddzial_label);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.stanowisko_label);
+            this.groupBox3.Controls.Add(this.wydzial_label);
+            this.groupBox3.Controls.Add(this.tjo_label);
+            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Location = new System.Drawing.Point(456, 183);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(441, 178);
+            this.groupBox3.TabIndex = 36;
+            this.groupBox3.TabStop = false;
             // 
             // KSIcode_label
             // 
@@ -881,6 +721,16 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "Stanowisko";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Location = new System.Drawing.Point(23, 136);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 16);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Wydział";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -902,219 +752,21 @@
             this.status_label.TabIndex = 39;
             this.status_label.Text = "Użytkownik aktywny";
             // 
-            // name_textBox
+            // groupBox1
             // 
-            this.name_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.name_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.name_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.name_textBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.name_textBox.Location = new System.Drawing.Point(455, 3);
-            this.name_textBox.Multiline = true;
-            this.name_textBox.Name = "name_textBox";
-            this.name_textBox.ReadOnly = true;
-            this.name_textBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.name_textBox.Size = new System.Drawing.Size(442, 23);
-            this.name_textBox.TabIndex = 38;
-            this.name_textBox.TabStop = false;
-            this.name_textBox.Text = "Użytkownik";
-            this.name_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(452, 39);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(145, 16);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "Status przy komputerze";
-            // 
-            // loginAD_textBox
-            // 
-            this.loginAD_textBox.BackColor = System.Drawing.SystemColors.Control;
-            this.loginAD_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.loginAD_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.loginAD_textBox.Location = new System.Drawing.Point(96, 51);
-            this.loginAD_textBox.Name = "loginAD_textBox";
-            this.loginAD_textBox.ReadOnly = true;
-            this.loginAD_textBox.Size = new System.Drawing.Size(328, 15);
-            this.loginAD_textBox.TabIndex = 28;
-            this.loginAD_textBox.TabStop = false;
-            this.loginAD_textBox.Text = "loginAD";
-            // 
-            // sid_textBox
-            // 
-            this.sid_textBox.BackColor = System.Drawing.SystemColors.Control;
-            this.sid_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.sid_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.sid_textBox.Location = new System.Drawing.Point(96, 72);
-            this.sid_textBox.Name = "sid_textBox";
-            this.sid_textBox.ReadOnly = true;
-            this.sid_textBox.Size = new System.Drawing.Size(328, 15);
-            this.sid_textBox.TabIndex = 27;
-            this.sid_textBox.TabStop = false;
-            this.sid_textBox.Text = "S-I-D";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(28, 38);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(380, 2);
-            this.panel4.TabIndex = 26;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label16.Location = new System.Drawing.Point(28, 19);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(80, 16);
-            this.label16.TabIndex = 25;
-            this.label16.Text = "Dane z AD";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(23, 136);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 16);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Wydział";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.KSIcode_label);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.panel3);
-            this.groupBox3.Controls.Add(this.oddzial_label);
-            this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.stanowisko_label);
-            this.groupBox3.Controls.Add(this.wydzial_label);
-            this.groupBox3.Controls.Add(this.tjo_label);
-            this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Location = new System.Drawing.Point(456, 183);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(441, 178);
-            this.groupBox3.TabIndex = 36;
-            this.groupBox3.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.state_label);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.panel2);
-            this.groupBox2.Controls.Add(this.adres_textBox);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.biuro_label);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(470, 177);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(441, 129);
-            this.groupBox2.TabIndex = 35;
-            this.groupBox2.TabStop = false;
-            // 
-            // state_label
-            // 
-            this.state_label.AutoSize = true;
-            this.state_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.state_label.Location = new System.Drawing.Point(148, 101);
-            this.state_label.Name = "state_label";
-            this.state_label.Size = new System.Drawing.Size(90, 16);
-            this.state_label.TabIndex = 26;
-            this.state_label.Text = "Województwo";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.Location = new System.Drawing.Point(26, 100);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(90, 16);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "Województwo";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(26, 37);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(380, 2);
-            this.panel2.TabIndex = 24;
-            // 
-            // adres_textBox
-            // 
-            this.adres_textBox.BackColor = System.Drawing.SystemColors.Control;
-            this.adres_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.adres_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.adres_textBox.Location = new System.Drawing.Point(151, 48);
-            this.adres_textBox.Multiline = true;
-            this.adres_textBox.Name = "adres_textBox";
-            this.adres_textBox.ReadOnly = true;
-            this.adres_textBox.Size = new System.Drawing.Size(238, 34);
-            this.adres_textBox.TabIndex = 15;
-            this.adres_textBox.TabStop = false;
-            this.adres_textBox.Text = "Adres świadczenia pracy";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(26, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(116, 16);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Dane adresowe";
-            // 
-            // biuro_label
-            // 
-            this.biuro_label.AutoSize = true;
-            this.biuro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.biuro_label.Location = new System.Drawing.Point(148, 83);
-            this.biuro_label.Name = "biuro_label";
-            this.biuro_label.Size = new System.Drawing.Size(62, 16);
-            this.biuro_label.TabIndex = 14;
-            this.biuro_label.Text = "nr pokoju";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(29, 48);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(127, 34);
-            this.textBox3.TabIndex = 10;
-            this.textBox3.TabStop = false;
-            this.textBox3.Text = "Adres świadczenia pracy";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(26, 83);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 16);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Nr pokoju";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 3;
+            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.email_label);
+            this.groupBox1.Controls.Add(this.telkom_label);
+            this.groupBox1.Controls.Add(this.telIP_label);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Location = new System.Drawing.Point(455, 63);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(442, 120);
+            this.groupBox1.TabIndex = 34;
+            this.groupBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -1195,167 +847,32 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "tel. IP";
             // 
-            // label8
+            // label12
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(26, 72);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 16);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "SID";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Location = new System.Drawing.Point(452, 39);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(145, 16);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Status przy komputerze";
             // 
-            // groupBox1
+            // name_textBox
             // 
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.email_label);
-            this.groupBox1.Controls.Add(this.telkom_label);
-            this.groupBox1.Controls.Add(this.telIP_label);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(455, 63);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(442, 120);
-            this.groupBox1.TabIndex = 34;
-            this.groupBox1.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.loginAD_textBox);
-            this.groupBox4.Controls.Add(this.sid_textBox);
-            this.groupBox4.Controls.Add(this.panel4);
-            this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.label17);
-            this.groupBox4.Location = new System.Drawing.Point(469, 52);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(442, 116);
-            this.groupBox4.TabIndex = 40;
-            this.groupBox4.TabStop = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label17.Location = new System.Drawing.Point(26, 50);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(58, 16);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "login AD";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.panel5);
-            this.groupBox5.Controls.Add(this.restartTime_label);
-            this.groupBox5.Controls.Add(this.label22);
-            this.groupBox5.Controls.Add(this.label19);
-            this.groupBox5.Controls.Add(this.label20);
-            this.groupBox5.Controls.Add(this.freeC_label);
-            this.groupBox5.Controls.Add(this.freeD_label);
-            this.groupBox5.Controls.Add(this.label21);
-            this.groupBox5.Location = new System.Drawing.Point(6, 44);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(311, 124);
-            this.groupBox5.TabIndex = 43;
-            this.groupBox5.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(28, 38);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(280, 2);
-            this.panel5.TabIndex = 26;
-            // 
-            // restartTime_label
-            // 
-            this.restartTime_label.AutoSize = true;
-            this.restartTime_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.restartTime_label.Location = new System.Drawing.Point(187, 94);
-            this.restartTime_label.Name = "restartTime_label";
-            this.restartTime_label.Size = new System.Drawing.Size(51, 16);
-            this.restartTime_label.TabIndex = 32;
-            this.restartTime_label.Text = "label19";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label22.Location = new System.Drawing.Point(28, 19);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(59, 16);
-            this.label22.TabIndex = 25;
-            this.label22.Text = "Zasoby";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label19.Location = new System.Drawing.Point(27, 95);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(154, 16);
-            this.label19.TabIndex = 31;
-            this.label19.Text = "Start / Restart komputera";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label20.Location = new System.Drawing.Point(28, 56);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(111, 16);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Wolne miejsce C:";
-            // 
-            // freeC_label
-            // 
-            this.freeC_label.AutoSize = true;
-            this.freeC_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.freeC_label.Location = new System.Drawing.Point(187, 56);
-            this.freeC_label.Name = "freeC_label";
-            this.freeC_label.Size = new System.Drawing.Size(51, 16);
-            this.freeC_label.TabIndex = 15;
-            this.freeC_label.Text = "label17";
-            // 
-            // freeD_label
-            // 
-            this.freeD_label.AutoSize = true;
-            this.freeD_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.freeD_label.Location = new System.Drawing.Point(187, 76);
-            this.freeD_label.Name = "freeD_label";
-            this.freeD_label.Size = new System.Drawing.Size(51, 16);
-            this.freeD_label.TabIndex = 28;
-            this.freeD_label.Text = "label17";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label21.Location = new System.Drawing.Point(28, 76);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(112, 16);
-            this.label21.TabIndex = 27;
-            this.label21.Text = "Wolne miejsce D:";
-            // 
-            // pcName_textBox
-            // 
-            this.pcName_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.pcName_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.pcName_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pcName_textBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.pcName_textBox.Location = new System.Drawing.Point(14, 2);
-            this.pcName_textBox.Multiline = true;
-            this.pcName_textBox.Name = "pcName_textBox";
-            this.pcName_textBox.ReadOnly = true;
-            this.pcName_textBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pcName_textBox.Size = new System.Drawing.Size(431, 26);
-            this.pcName_textBox.TabIndex = 41;
-            this.pcName_textBox.TabStop = false;
-            this.pcName_textBox.Text = "Komputer";
-            this.pcName_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.name_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.name_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.name_textBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.name_textBox.Location = new System.Drawing.Point(455, 3);
+            this.name_textBox.Multiline = true;
+            this.name_textBox.Name = "name_textBox";
+            this.name_textBox.ReadOnly = true;
+            this.name_textBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.name_textBox.Size = new System.Drawing.Size(442, 23);
+            this.name_textBox.TabIndex = 38;
+            this.name_textBox.TabStop = false;
+            this.name_textBox.Text = "Użytkownik";
+            this.name_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox6
             // 
@@ -1461,102 +978,150 @@
             this.label26.TabIndex = 0;
             this.label26.Text = "S/N";
             // 
-            // groupBox7
+            // tabPage2
             // 
-            this.groupBox7.Controls.Add(this.label45);
-            this.groupBox7.Controls.Add(this.label46);
-            this.groupBox7.Controls.Add(this.panel7);
-            this.groupBox7.Controls.Add(this.label27);
-            this.groupBox7.Controls.Add(this.wersja_label);
-            this.groupBox7.Controls.Add(this.model_label);
-            this.groupBox7.Controls.Add(this.producent_label);
-            this.groupBox7.Controls.Add(this.label28);
-            this.groupBox7.Controls.Add(this.label31);
-            this.groupBox7.Controls.Add(this.label32);
-            this.groupBox7.Location = new System.Drawing.Point(14, 183);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(431, 178);
-            this.groupBox7.TabIndex = 45;
-            this.groupBox7.TabStop = false;
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.groupBox5);
+            this.tabPage2.Controls.Add(this.groupBox8);
+            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Controls.Add(this.groupBox4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(908, 499);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Informacje rozszerzone";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // panel7
+            // textBox1
             // 
-            this.panel7.BackColor = System.Drawing.Color.Black;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Location = new System.Drawing.Point(23, 35);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(390, 2);
-            this.panel7.TabIndex = 22;
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox1.Location = new System.Drawing.Point(14, 16);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox1.Size = new System.Drawing.Size(347, 26);
+            this.textBox1.TabIndex = 48;
+            this.textBox1.TabStop = false;
+            this.textBox1.Text = "Komputer";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label27
+            // textBox4
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label27.Location = new System.Drawing.Point(23, 16);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(220, 16);
-            this.label27.TabIndex = 21;
-            this.label27.Text = "Producent / system operacyjny";
+            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox4.Location = new System.Drawing.Point(448, 18);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox4.Size = new System.Drawing.Size(340, 23);
+            this.textBox4.TabIndex = 47;
+            this.textBox4.TabStop = false;
+            this.textBox4.Text = "Użytkownik";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // wersja_label
+            // groupBox5
             // 
-            this.wersja_label.AutoSize = true;
-            this.wersja_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.wersja_label.Location = new System.Drawing.Point(131, 88);
-            this.wersja_label.Name = "wersja_label";
-            this.wersja_label.Size = new System.Drawing.Size(31, 16);
-            this.wersja_label.TabIndex = 18;
-            this.wersja_label.Text = "345";
+            this.groupBox5.Controls.Add(this.panel5);
+            this.groupBox5.Controls.Add(this.restartTime_label);
+            this.groupBox5.Controls.Add(this.label22);
+            this.groupBox5.Controls.Add(this.label19);
+            this.groupBox5.Controls.Add(this.label20);
+            this.groupBox5.Controls.Add(this.freeC_label);
+            this.groupBox5.Controls.Add(this.freeD_label);
+            this.groupBox5.Controls.Add(this.label21);
+            this.groupBox5.Location = new System.Drawing.Point(6, 44);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(311, 124);
+            this.groupBox5.TabIndex = 43;
+            this.groupBox5.TabStop = false;
             // 
-            // model_label
+            // panel5
             // 
-            this.model_label.AutoSize = true;
-            this.model_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.model_label.Location = new System.Drawing.Point(131, 68);
-            this.model_label.Name = "model_label";
-            this.model_label.Size = new System.Drawing.Size(33, 16);
-            this.model_label.TabIndex = 19;
-            this.model_label.Text = "T14";
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Location = new System.Drawing.Point(28, 38);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(280, 2);
+            this.panel5.TabIndex = 26;
             // 
-            // producent_label
+            // restartTime_label
             // 
-            this.producent_label.AutoSize = true;
-            this.producent_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.producent_label.Location = new System.Drawing.Point(131, 48);
-            this.producent_label.Name = "producent_label";
-            this.producent_label.Size = new System.Drawing.Size(58, 16);
-            this.producent_label.TabIndex = 20;
-            this.producent_label.Text = "Lenovo";
+            this.restartTime_label.AutoSize = true;
+            this.restartTime_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.restartTime_label.Location = new System.Drawing.Point(187, 94);
+            this.restartTime_label.Name = "restartTime_label";
+            this.restartTime_label.Size = new System.Drawing.Size(51, 16);
+            this.restartTime_label.TabIndex = 32;
+            this.restartTime_label.Text = "label19";
             // 
-            // label28
+            // label22
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label28.Location = new System.Drawing.Point(26, 88);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(50, 16);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "Wersja";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label22.Location = new System.Drawing.Point(28, 19);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(59, 16);
+            this.label22.TabIndex = 25;
+            this.label22.Text = "Zasoby";
             // 
-            // label31
+            // label19
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label31.Location = new System.Drawing.Point(26, 68);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(45, 16);
-            this.label31.TabIndex = 1;
-            this.label31.Text = "Model";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label19.Location = new System.Drawing.Point(27, 95);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(154, 16);
+            this.label19.TabIndex = 31;
+            this.label19.Text = "Start / Restart komputera";
             // 
-            // label32
+            // label20
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label32.Location = new System.Drawing.Point(26, 48);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(68, 16);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "Producent";
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label20.Location = new System.Drawing.Point(28, 56);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(111, 16);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Wolne miejsce C:";
+            // 
+            // freeC_label
+            // 
+            this.freeC_label.AutoSize = true;
+            this.freeC_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.freeC_label.Location = new System.Drawing.Point(187, 56);
+            this.freeC_label.Name = "freeC_label";
+            this.freeC_label.Size = new System.Drawing.Size(51, 16);
+            this.freeC_label.TabIndex = 15;
+            this.freeC_label.Text = "label17";
+            // 
+            // freeD_label
+            // 
+            this.freeD_label.AutoSize = true;
+            this.freeD_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.freeD_label.Location = new System.Drawing.Point(187, 76);
+            this.freeD_label.Name = "freeD_label";
+            this.freeD_label.Size = new System.Drawing.Size(51, 16);
+            this.freeD_label.TabIndex = 28;
+            this.freeD_label.Text = "label17";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label21.Location = new System.Drawing.Point(28, 76);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(112, 16);
+            this.label21.TabIndex = 27;
+            this.label21.Text = "Wolne miejsce D:";
             // 
             // groupBox8
             // 
@@ -1683,6 +1248,197 @@
             this.label37.TabIndex = 1;
             this.label37.Text = "SMBIOS";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.state_label);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.panel2);
+            this.groupBox2.Controls.Add(this.adres_textBox);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.biuro_label);
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(470, 177);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(441, 129);
+            this.groupBox2.TabIndex = 35;
+            this.groupBox2.TabStop = false;
+            // 
+            // state_label
+            // 
+            this.state_label.AutoSize = true;
+            this.state_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.state_label.Location = new System.Drawing.Point(148, 101);
+            this.state_label.Name = "state_label";
+            this.state_label.Size = new System.Drawing.Size(90, 16);
+            this.state_label.TabIndex = 26;
+            this.state_label.Text = "Województwo";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label15.Location = new System.Drawing.Point(26, 100);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(90, 16);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "Województwo";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(26, 37);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(380, 2);
+            this.panel2.TabIndex = 24;
+            // 
+            // adres_textBox
+            // 
+            this.adres_textBox.BackColor = System.Drawing.SystemColors.Control;
+            this.adres_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.adres_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.adres_textBox.Location = new System.Drawing.Point(151, 48);
+            this.adres_textBox.Multiline = true;
+            this.adres_textBox.Name = "adres_textBox";
+            this.adres_textBox.ReadOnly = true;
+            this.adres_textBox.Size = new System.Drawing.Size(238, 34);
+            this.adres_textBox.TabIndex = 15;
+            this.adres_textBox.TabStop = false;
+            this.adres_textBox.Text = "Adres świadczenia pracy";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Location = new System.Drawing.Point(26, 18);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(116, 16);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Dane adresowe";
+            // 
+            // biuro_label
+            // 
+            this.biuro_label.AutoSize = true;
+            this.biuro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.biuro_label.Location = new System.Drawing.Point(148, 83);
+            this.biuro_label.Name = "biuro_label";
+            this.biuro_label.Size = new System.Drawing.Size(62, 16);
+            this.biuro_label.TabIndex = 14;
+            this.biuro_label.Text = "nr pokoju";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox3.Location = new System.Drawing.Point(29, 48);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(127, 34);
+            this.textBox3.TabIndex = 10;
+            this.textBox3.TabStop = false;
+            this.textBox3.Text = "Adres świadczenia pracy";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(26, 83);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 16);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Nr pokoju";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(29, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 3;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.loginAD_textBox);
+            this.groupBox4.Controls.Add(this.sid_textBox);
+            this.groupBox4.Controls.Add(this.panel4);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.label17);
+            this.groupBox4.Location = new System.Drawing.Point(469, 52);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(442, 116);
+            this.groupBox4.TabIndex = 40;
+            this.groupBox4.TabStop = false;
+            // 
+            // loginAD_textBox
+            // 
+            this.loginAD_textBox.BackColor = System.Drawing.SystemColors.Control;
+            this.loginAD_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.loginAD_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.loginAD_textBox.Location = new System.Drawing.Point(96, 51);
+            this.loginAD_textBox.Name = "loginAD_textBox";
+            this.loginAD_textBox.ReadOnly = true;
+            this.loginAD_textBox.Size = new System.Drawing.Size(328, 15);
+            this.loginAD_textBox.TabIndex = 28;
+            this.loginAD_textBox.TabStop = false;
+            this.loginAD_textBox.Text = "loginAD";
+            // 
+            // sid_textBox
+            // 
+            this.sid_textBox.BackColor = System.Drawing.SystemColors.Control;
+            this.sid_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.sid_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sid_textBox.Location = new System.Drawing.Point(96, 72);
+            this.sid_textBox.Name = "sid_textBox";
+            this.sid_textBox.ReadOnly = true;
+            this.sid_textBox.Size = new System.Drawing.Size(328, 15);
+            this.sid_textBox.TabIndex = 27;
+            this.sid_textBox.TabStop = false;
+            this.sid_textBox.Text = "S-I-D";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Location = new System.Drawing.Point(28, 38);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(380, 2);
+            this.panel4.TabIndex = 26;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label16.Location = new System.Drawing.Point(28, 19);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(80, 16);
+            this.label16.TabIndex = 25;
+            this.label16.Text = "Dane z AD";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Location = new System.Drawing.Point(26, 72);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(29, 16);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "SID";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label17.Location = new System.Drawing.Point(26, 50);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(58, 16);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "login AD";
+            // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.osarchitecture_label);
@@ -1784,86 +1540,866 @@
             this.label41.TabIndex = 3;
             this.label41.Text = "Nazwa";
             // 
-            // tabControl1
+            // panel_singlePC_top
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(176, 97);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(916, 525);
-            this.tabControl1.TabIndex = 48;
+            this.panel_singlePC_top.AutoSize = true;
+            this.panel_singlePC_top.BackColor = System.Drawing.Color.Transparent;
+            this.panel_singlePC_top.Controls.Add(this.panel61);
+            this.panel_singlePC_top.Controls.Add(this.panel21);
+            this.panel_singlePC_top.Controls.Add(this.button_singlePC_isOnline);
+            this.panel_singlePC_top.Controls.Add(this.button_singlePC_sendMSG);
+            this.panel_singlePC_top.Controls.Add(this.button_singlePC_erase);
+            this.panel_singlePC_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_singlePC_top.Location = new System.Drawing.Point(170, 0);
+            this.panel_singlePC_top.Name = "panel_singlePC_top";
+            this.panel_singlePC_top.Size = new System.Drawing.Size(971, 99);
+            this.panel_singlePC_top.TabIndex = 33;
             // 
-            // tabPage1
+            // panel61
             // 
-            this.tabPage1.Controls.Add(this.label43);
-            this.tabPage1.Controls.Add(this.label42);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.pcName_textBox);
-            this.tabPage1.Controls.Add(this.groupBox7);
-            this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Controls.Add(this.status_label);
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.name_textBox);
-            this.tabPage1.Controls.Add(this.groupBox6);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(908, 499);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Informacje podstawowe";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.panel61.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel61.Controls.Add(this.panel_bottom_border);
+            this.panel61.Controls.Add(this.pcName);
+            this.panel61.Location = new System.Drawing.Point(14, 24);
+            this.panel61.Name = "panel61";
+            this.panel61.Padding = new System.Windows.Forms.Padding(10);
+            this.panel61.Size = new System.Drawing.Size(247, 48);
+            this.panel61.TabIndex = 22;
             // 
-            // tabPage2
+            // panel_bottom_border
             // 
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.groupBox5);
-            this.tabPage2.Controls.Add(this.groupBox8);
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(908, 499);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Informacje rozszerzone";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.panel_bottom_border.BackColor = System.Drawing.Color.DarkGray;
+            this.panel_bottom_border.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_bottom_border.Location = new System.Drawing.Point(0, 46);
+            this.panel_bottom_border.Name = "panel_bottom_border";
+            this.panel_bottom_border.Size = new System.Drawing.Size(247, 2);
+            this.panel_bottom_border.TabIndex = 23;
             // 
-            // textBox1
+            // pcName
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox1.Location = new System.Drawing.Point(14, 16);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(347, 26);
-            this.textBox1.TabIndex = 48;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = "Komputer";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pcName.AcceptsReturn = true;
+            this.pcName.BackColor = System.Drawing.Color.Gainsboro;
+            this.pcName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.pcName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pcName.ForeColor = System.Drawing.Color.Gray;
+            this.pcName.Location = new System.Drawing.Point(13, 15);
+            this.pcName.MaxLength = 30;
+            this.pcName.Name = "pcName";
+            this.pcName.Size = new System.Drawing.Size(221, 19);
+            this.pcName.TabIndex = 22;
+            this.pcName.Text = "Podaj Nazwę lub IP komputera";
+            this.pcName.WordWrap = false;
             // 
-            // textBox4
+            // panel21
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox4.Location = new System.Drawing.Point(448, 18);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox4.Size = new System.Drawing.Size(340, 23);
-            this.textBox4.TabIndex = 47;
-            this.textBox4.TabStop = false;
-            this.textBox4.Text = "Użytkownik";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel21.Controls.Add(this.textBox_singlePc_messageText);
+            this.panel21.Location = new System.Drawing.Point(496, 5);
+            this.panel21.Name = "panel21";
+            this.panel21.Padding = new System.Windows.Forms.Padding(4);
+            this.panel21.Size = new System.Drawing.Size(235, 90);
+            this.panel21.TabIndex = 21;
+            // 
+            // textBox_singlePc_messageText
+            // 
+            this.textBox_singlePc_messageText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.textBox_singlePc_messageText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_singlePc_messageText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_singlePc_messageText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox_singlePc_messageText.ForeColor = System.Drawing.Color.Gray;
+            this.textBox_singlePc_messageText.Location = new System.Drawing.Point(4, 4);
+            this.textBox_singlePc_messageText.MaxLength = 200;
+            this.textBox_singlePc_messageText.Multiline = true;
+            this.textBox_singlePc_messageText.Name = "textBox_singlePc_messageText";
+            this.textBox_singlePc_messageText.Size = new System.Drawing.Size(225, 80);
+            this.textBox_singlePc_messageText.TabIndex = 0;
+            this.textBox_singlePc_messageText.Text = "Tu wpisz treść komunikatu który chcesz wysłać do użytkownika";
+            // 
+            // button_singlePC_isOnline
+            // 
+            this.button_singlePC_isOnline.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button_singlePC_isOnline.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_singlePC_isOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_singlePC_isOnline.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_singlePC_isOnline.ImageIndex = 7;
+            this.button_singlePC_isOnline.ImageList = this.img_MainIcons;
+            this.button_singlePC_isOnline.Location = new System.Drawing.Point(333, 24);
+            this.button_singlePC_isOnline.Name = "button_singlePC_isOnline";
+            this.button_singlePC_isOnline.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_singlePC_isOnline.Size = new System.Drawing.Size(118, 48);
+            this.button_singlePC_isOnline.TabIndex = 14;
+            this.button_singlePC_isOnline.Text = "Pobierz dane";
+            this.button_singlePC_isOnline.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button_singlePC_isOnline.UseVisualStyleBackColor = false;
+            // 
+            // img_MainIcons
+            // 
+            this.img_MainIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("img_MainIcons.ImageStream")));
+            this.img_MainIcons.TransparentColor = System.Drawing.Color.Transparent;
+            this.img_MainIcons.Images.SetKeyName(0, "ajaks.PNG");
+            this.img_MainIcons.Images.SetKeyName(1, "dsa.ico");
+            this.img_MainIcons.Images.SetKeyName(2, "prnscr.ico");
+            this.img_MainIcons.Images.SetKeyName(3, "regedit.ico");
+            this.img_MainIcons.Images.SetKeyName(4, "webex.ico");
+            this.img_MainIcons.Images.SetKeyName(5, "LAPSUI.png");
+            this.img_MainIcons.Images.SetKeyName(6, "sccm.png");
+            this.img_MainIcons.Images.SetKeyName(7, "icons8-download-32.png");
+            this.img_MainIcons.Images.SetKeyName(8, "send.ico");
+            this.img_MainIcons.Images.SetKeyName(9, "prnscr.ico");
+            this.img_MainIcons.Images.SetKeyName(10, "mapa.png");
+            this.img_MainIcons.Images.SetKeyName(11, "ps.png");
+            this.img_MainIcons.Images.SetKeyName(12, "regedit.ico");
+            this.img_MainIcons.Images.SetKeyName(13, "favicon.ico");
+            this.img_MainIcons.Images.SetKeyName(14, "webex.ico");
+            // 
+            // button_singlePC_sendMSG
+            // 
+            this.button_singlePC_sendMSG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.button_singlePC_sendMSG.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_singlePC_sendMSG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_singlePC_sendMSG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_singlePC_sendMSG.ImageIndex = 8;
+            this.button_singlePC_sendMSG.ImageList = this.img_MainIcons;
+            this.button_singlePC_sendMSG.Location = new System.Drawing.Point(737, 4);
+            this.button_singlePC_sendMSG.Name = "button_singlePC_sendMSG";
+            this.button_singlePC_sendMSG.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_singlePC_sendMSG.Size = new System.Drawing.Size(175, 92);
+            this.button_singlePC_sendMSG.TabIndex = 20;
+            this.button_singlePC_sendMSG.Text = "Wyślij wiadomość systemową Msg";
+            this.button_singlePC_sendMSG.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button_singlePC_sendMSG.UseCompatibleTextRendering = true;
+            this.button_singlePC_sendMSG.UseVisualStyleBackColor = false;
+            // 
+            // button_singlePC_erase
+            // 
+            this.button_singlePC_erase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_singlePC_erase.FlatAppearance.BorderSize = 0;
+            this.button_singlePC_erase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_singlePC_erase.Image = global::Hades2Lite.Properties.Resources.erase;
+            this.button_singlePC_erase.Location = new System.Drawing.Point(263, 24);
+            this.button_singlePC_erase.Name = "button_singlePC_erase";
+            this.button_singlePC_erase.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_singlePC_erase.Size = new System.Drawing.Size(61, 48);
+            this.button_singlePC_erase.TabIndex = 12;
+            this.button_singlePC_erase.UseVisualStyleBackColor = true;
+            // 
+            // panel_singlePC_top2
+            // 
+            this.panel_singlePC_top2.AutoSize = true;
+            this.panel_singlePC_top2.BackColor = System.Drawing.Color.Transparent;
+            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_remoteCMD);
+            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_kto_jest_zalogowany);
+            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_Zarzadzaj);
+            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_Shutdown);
+            this.panel_singlePC_top2.Controls.Add(this.button61);
+            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_pingLong);
+            this.panel_singlePC_top2.Controls.Add(this.button_singlePC_Restart);
+            this.panel_singlePC_top2.Controls.Add(this.button57);
+            this.panel_singlePC_top2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_singlePC_top2.Location = new System.Drawing.Point(0, 0);
+            this.panel_singlePC_top2.Name = "panel_singlePC_top2";
+            this.panel_singlePC_top2.Padding = new System.Windows.Forms.Padding(10);
+            this.panel_singlePC_top2.Size = new System.Drawing.Size(170, 456);
+            this.panel_singlePC_top2.TabIndex = 32;
+            // 
+            // button_singlePC_remoteCMD
+            // 
+            this.button_singlePC_remoteCMD.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_singlePC_remoteCMD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_singlePC_remoteCMD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_singlePC_remoteCMD.Image = global::Hades2Lite.Properties.Resources.cmd;
+            this.button_singlePC_remoteCMD.Location = new System.Drawing.Point(11, 132);
+            this.button_singlePC_remoteCMD.Name = "button_singlePC_remoteCMD";
+            this.button_singlePC_remoteCMD.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_singlePC_remoteCMD.Size = new System.Drawing.Size(146, 48);
+            this.button_singlePC_remoteCMD.TabIndex = 14;
+            this.button_singlePC_remoteCMD.Text = "Remote CMD";
+            this.button_singlePC_remoteCMD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button_singlePC_remoteCMD.UseVisualStyleBackColor = true;
+            // 
+            // button_singlePC_kto_jest_zalogowany
+            // 
+            this.button_singlePC_kto_jest_zalogowany.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_singlePC_kto_jest_zalogowany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_singlePC_kto_jest_zalogowany.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_singlePC_kto_jest_zalogowany.Location = new System.Drawing.Point(11, 294);
+            this.button_singlePC_kto_jest_zalogowany.Name = "button_singlePC_kto_jest_zalogowany";
+            this.button_singlePC_kto_jest_zalogowany.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_singlePC_kto_jest_zalogowany.Size = new System.Drawing.Size(146, 48);
+            this.button_singlePC_kto_jest_zalogowany.TabIndex = 17;
+            this.button_singlePC_kto_jest_zalogowany.Text = "Kto jest zalogowany?";
+            this.button_singlePC_kto_jest_zalogowany.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button_singlePC_kto_jest_zalogowany.UseVisualStyleBackColor = true;
+            // 
+            // button_singlePC_Zarzadzaj
+            // 
+            this.button_singlePC_Zarzadzaj.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_singlePC_Zarzadzaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_singlePC_Zarzadzaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_singlePC_Zarzadzaj.Image = global::Hades2Lite.Properties.Resources.management;
+            this.button_singlePC_Zarzadzaj.Location = new System.Drawing.Point(11, 78);
+            this.button_singlePC_Zarzadzaj.Name = "button_singlePC_Zarzadzaj";
+            this.button_singlePC_Zarzadzaj.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_singlePC_Zarzadzaj.Size = new System.Drawing.Size(146, 48);
+            this.button_singlePC_Zarzadzaj.TabIndex = 13;
+            this.button_singlePC_Zarzadzaj.Text = "Zarządzaj";
+            this.button_singlePC_Zarzadzaj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button_singlePC_Zarzadzaj.UseVisualStyleBackColor = true;
+            // 
+            // button_singlePC_Shutdown
+            // 
+            this.button_singlePC_Shutdown.BackColor = System.Drawing.Color.Tomato;
+            this.button_singlePC_Shutdown.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_singlePC_Shutdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_singlePC_Shutdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_singlePC_Shutdown.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button_singlePC_Shutdown.Image = global::Hades2Lite.Properties.Resources.off;
+            this.button_singlePC_Shutdown.Location = new System.Drawing.Point(11, 186);
+            this.button_singlePC_Shutdown.Name = "button_singlePC_Shutdown";
+            this.button_singlePC_Shutdown.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_singlePC_Shutdown.Size = new System.Drawing.Size(146, 48);
+            this.button_singlePC_Shutdown.TabIndex = 10;
+            this.button_singlePC_Shutdown.Text = "Wyłącz komputer";
+            this.button_singlePC_Shutdown.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button_singlePC_Shutdown.UseVisualStyleBackColor = false;
+            // 
+            // button61
+            // 
+            this.button61.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button61.Image = global::Hades2Lite.Properties.Resources.dns;
+            this.button61.Location = new System.Drawing.Point(11, 348);
+            this.button61.Name = "button61";
+            this.button61.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button61.Size = new System.Drawing.Size(146, 48);
+            this.button61.TabIndex = 12;
+            this.button61.Text = "Odśwież u siebie DNS";
+            this.button61.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button61.UseVisualStyleBackColor = true;
+            // 
+            // button_singlePC_pingLong
+            // 
+            this.button_singlePC_pingLong.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_singlePC_pingLong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_singlePC_pingLong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_singlePC_pingLong.Image = global::Hades2Lite.Properties.Resources.ping;
+            this.button_singlePC_pingLong.Location = new System.Drawing.Point(11, 24);
+            this.button_singlePC_pingLong.Name = "button_singlePC_pingLong";
+            this.button_singlePC_pingLong.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_singlePC_pingLong.Size = new System.Drawing.Size(146, 48);
+            this.button_singlePC_pingLong.TabIndex = 7;
+            this.button_singlePC_pingLong.Text = "Ping long";
+            this.button_singlePC_pingLong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button_singlePC_pingLong.UseVisualStyleBackColor = true;
+            // 
+            // button_singlePC_Restart
+            // 
+            this.button_singlePC_Restart.BackColor = System.Drawing.Color.Tomato;
+            this.button_singlePC_Restart.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_singlePC_Restart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_singlePC_Restart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_singlePC_Restart.ForeColor = System.Drawing.Color.White;
+            this.button_singlePC_Restart.Image = global::Hades2Lite.Properties.Resources.restart;
+            this.button_singlePC_Restart.Location = new System.Drawing.Point(11, 240);
+            this.button_singlePC_Restart.Name = "button_singlePC_Restart";
+            this.button_singlePC_Restart.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_singlePC_Restart.Size = new System.Drawing.Size(146, 48);
+            this.button_singlePC_Restart.TabIndex = 11;
+            this.button_singlePC_Restart.Text = "Zrestartuj komputer";
+            this.button_singlePC_Restart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button_singlePC_Restart.UseVisualStyleBackColor = false;
+            // 
+            // button57
+            // 
+            this.button57.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button57.Image = global::Hades2Lite.Properties.Resources.release;
+            this.button57.Location = new System.Drawing.Point(10, 402);
+            this.button57.Name = "button57";
+            this.button57.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button57.Size = new System.Drawing.Size(146, 48);
+            this.button57.TabIndex = 8;
+            this.button57.Text = "Release IP";
+            this.button57.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button57.UseVisualStyleBackColor = true;
+            // 
+            // pl_NarzedziownikMain_TOP
+            // 
+            this.pl_NarzedziownikMain_TOP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pl_NarzedziownikMain_TOP.Controls.Add(this.panel58);
+            this.pl_NarzedziownikMain_TOP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pl_NarzedziownikMain_TOP.Location = new System.Drawing.Point(5, 5);
+            this.pl_NarzedziownikMain_TOP.Name = "pl_NarzedziownikMain_TOP";
+            this.pl_NarzedziownikMain_TOP.Size = new System.Drawing.Size(1143, 86);
+            this.pl_NarzedziownikMain_TOP.TabIndex = 0;
+            // 
+            // panel58
+            // 
+            this.panel58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel58.Controls.Add(this.comboBox4);
+            this.panel58.Controls.Add(this.toolStrip7);
+            this.panel58.Controls.Add(this.comboBox3);
+            this.panel58.Controls.Add(this.label30);
+            this.panel58.Controls.Add(this.toolStrip_singlePC_fastFichers);
+            this.panel58.Controls.Add(this.toolStrip6);
+            this.panel58.Controls.Add(this.label29);
+            this.panel58.Controls.Add(this.comboBox1);
+            this.panel58.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel58.Location = new System.Drawing.Point(0, 0);
+            this.panel58.Name = "panel58";
+            this.panel58.Size = new System.Drawing.Size(1141, 82);
+            this.panel58.TabIndex = 10;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(112, 5);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(163, 23);
+            this.comboBox4.TabIndex = 8;
+            this.comboBox4.Text = "Wybierz komputer z listy";
+            // 
+            // toolStrip7
+            // 
+            this.toolStrip7.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip7.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton_menage_messages});
+            this.toolStrip7.Location = new System.Drawing.Point(878, 4);
+            this.toolStrip7.Name = "toolStrip7";
+            this.toolStrip7.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStrip7.Size = new System.Drawing.Size(159, 25);
+            this.toolStrip7.TabIndex = 7;
+            this.toolStrip7.Text = "toolStrip7";
+            // 
+            // toolStripButton_menage_messages
+            // 
+            this.toolStripButton_menage_messages.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_menage_messages.Image")));
+            this.toolStripButton_menage_messages.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_menage_messages.Name = "toolStripButton_menage_messages";
+            this.toolStripButton_menage_messages.Size = new System.Drawing.Size(156, 22);
+            this.toolStripButton_menage_messages.Text = "Zarzadzaj komunikatami";
+            this.toolStripButton_menage_messages.ToolTipText = "Zarządzaj komunikatami";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(747, 5);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(128, 23);
+            this.comboBox3.TabIndex = 6;
+            this.comboBox3.Text = "Wybierz komunikat";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label30.Location = new System.Drawing.Point(638, 6);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(103, 21);
+            this.label30.TabIndex = 5;
+            this.label30.Text = "Komunikaty";
+            // 
+            // toolStrip_singlePC_fastFichers
+            // 
+            this.toolStrip_singlePC_fastFichers.AutoSize = false;
+            this.toolStrip_singlePC_fastFichers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.toolStrip_singlePC_fastFichers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.toolStrip_singlePC_fastFichers.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip_singlePC_fastFichers.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip_singlePC_fastFichers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton_singlePC_remoteSCCM,
+            this.toolStripButton_singlePC_remoteDesktop,
+            this.toolStripSeparator11,
+            this.toolStripDropDownButton7,
+            this.toolStripDropDownButton8,
+            this.toolStripSeparator10,
+            this.toolStripDropDownButton5,
+            this.toolStripDropDownButton6,
+            this.toolStripButton_singlePC_instalator,
+            this.toolStripSeparator12,
+            this.toolStripDropDownButton3,
+            this.toolStripDropDownButton4,
+            this.toolStripDropDownButton_Desktops,
+            this.toolStripDropDownButton_Dystrybucja});
+            this.toolStrip_singlePC_fastFichers.Location = new System.Drawing.Point(14, 32);
+            this.toolStrip_singlePC_fastFichers.Name = "toolStrip_singlePC_fastFichers";
+            this.toolStrip_singlePC_fastFichers.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStrip_singlePC_fastFichers.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStrip_singlePC_fastFichers.Size = new System.Drawing.Size(1067, 41);
+            this.toolStrip_singlePC_fastFichers.TabIndex = 4;
+            // 
+            // toolStripButton_singlePC_remoteSCCM
+            // 
+            this.toolStripButton_singlePC_remoteSCCM.AutoToolTip = false;
+            this.toolStripButton_singlePC_remoteSCCM.Image = global::Hades2Lite.Properties.Resources.sccm;
+            this.toolStripButton_singlePC_remoteSCCM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_singlePC_remoteSCCM.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_singlePC_remoteSCCM.Name = "toolStripButton_singlePC_remoteSCCM";
+            this.toolStripButton_singlePC_remoteSCCM.Size = new System.Drawing.Size(120, 38);
+            this.toolStripButton_singlePC_remoteSCCM.Text = "Remote SCCM";
+            // 
+            // toolStripButton_singlePC_remoteDesktop
+            // 
+            this.toolStripButton_singlePC_remoteDesktop.AutoToolTip = false;
+            this.toolStripButton_singlePC_remoteDesktop.Image = global::Hades2Lite.Properties.Resources.remote;
+            this.toolStripButton_singlePC_remoteDesktop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_singlePC_remoteDesktop.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_singlePC_remoteDesktop.Name = "toolStripButton_singlePC_remoteDesktop";
+            this.toolStripButton_singlePC_remoteDesktop.Size = new System.Drawing.Size(65, 38);
+            this.toolStripButton_singlePC_remoteDesktop.Text = "RDP";
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 41);
+            // 
+            // toolStripDropDownButton7
+            // 
+            this.toolStripDropDownButton7.AutoToolTip = false;
+            this.toolStripDropDownButton7.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem,
+            this.wOLToolStripMenuItem,
+            this.usługiToolStripMenuItem,
+            this.informacjeOSystemieOperacyjnymToolStripMenuItem,
+            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem});
+            this.toolStripDropDownButton7.Image = global::Hades2Lite.Properties.Resources.os;
+            this.toolStripDropDownButton7.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton7.Name = "toolStripDropDownButton7";
+            this.toolStripDropDownButton7.Size = new System.Drawing.Size(105, 38);
+            this.toolStripDropDownButton7.Text = "Komputer";
+            // 
+            // bitlockerKluczOdzyskiwaniaToolStripMenuItem
+            // 
+            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem.Name = "bitlockerKluczOdzyskiwaniaToolStripMenuItem";
+            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
+            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem.Text = "Bitlocker - klucz odzyskiwania";
+            // 
+            // wOLToolStripMenuItem
+            // 
+            this.wOLToolStripMenuItem.Name = "wOLToolStripMenuItem";
+            this.wOLToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
+            this.wOLToolStripMenuItem.Text = "WOL";
+            // 
+            // usługiToolStripMenuItem
+            // 
+            this.usługiToolStripMenuItem.Name = "usługiToolStripMenuItem";
+            this.usługiToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
+            this.usługiToolStripMenuItem.Text = "Usługi";
+            // 
+            // informacjeOSystemieOperacyjnymToolStripMenuItem
+            // 
+            this.informacjeOSystemieOperacyjnymToolStripMenuItem.Name = "informacjeOSystemieOperacyjnymToolStripMenuItem";
+            this.informacjeOSystemieOperacyjnymToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
+            this.informacjeOSystemieOperacyjnymToolStripMenuItem.Text = "Informacje o systemie operacyjnym";
+            // 
+            // informacjeSzczegółoweOKomputerzeToolStripMenuItem
+            // 
+            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem.Name = "informacjeSzczegółoweOKomputerzeToolStripMenuItem";
+            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
+            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem.Text = "Informacje szczegółowe o komputerze";
+            // 
+            // toolStripDropDownButton8
+            // 
+            this.toolStripDropDownButton8.AutoToolTip = false;
+            this.toolStripDropDownButton8.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ProfilToolStripMenuItem_Refresh_Profile,
+            this.UżytkownikaToolStripMenuItem_User_Printers,
+            this.ToolStripMenuItem_User_Info,
+            this.toolStripMenuItem_User_Uprawnienia});
+            this.toolStripDropDownButton8.Image = global::Hades2Lite.Properties.Resources.lookfor;
+            this.toolStripDropDownButton8.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton8.Name = "toolStripDropDownButton8";
+            this.toolStripDropDownButton8.Size = new System.Drawing.Size(113, 38);
+            this.toolStripDropDownButton8.Text = "Użytkownik";
+            // 
+            // ProfilToolStripMenuItem_Refresh_Profile
+            // 
+            this.ProfilToolStripMenuItem_Refresh_Profile.Name = "ProfilToolStripMenuItem_Refresh_Profile";
+            this.ProfilToolStripMenuItem_Refresh_Profile.Size = new System.Drawing.Size(240, 22);
+            this.ProfilToolStripMenuItem_Refresh_Profile.Text = "Odśwież profil";
+            // 
+            // UżytkownikaToolStripMenuItem_User_Printers
+            // 
+            this.UżytkownikaToolStripMenuItem_User_Printers.Name = "UżytkownikaToolStripMenuItem_User_Printers";
+            this.UżytkownikaToolStripMenuItem_User_Printers.Size = new System.Drawing.Size(240, 22);
+            this.UżytkownikaToolStripMenuItem_User_Printers.Text = "Drukarki użytkownika";
+            // 
+            // ToolStripMenuItem_User_Info
+            // 
+            this.ToolStripMenuItem_User_Info.Name = "ToolStripMenuItem_User_Info";
+            this.ToolStripMenuItem_User_Info.Size = new System.Drawing.Size(240, 22);
+            this.ToolStripMenuItem_User_Info.Text = "Informacje szczegółowe";
+            // 
+            // toolStripMenuItem_User_Uprawnienia
+            // 
+            this.toolStripMenuItem_User_Uprawnienia.Name = "toolStripMenuItem_User_Uprawnienia";
+            this.toolStripMenuItem_User_Uprawnienia.Size = new System.Drawing.Size(240, 22);
+            this.toolStripMenuItem_User_Uprawnienia.Text = "Uprawnienia użytkownika w AD";
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 41);
+            // 
+            // toolStripDropDownButton5
+            // 
+            this.toolStripDropDownButton5.AutoToolTip = false;
+            this.toolStripDropDownButton5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_run_Ajaks32,
+            this.toolStripMenuItem_run_Ajaks64});
+            this.toolStripDropDownButton5.Image = global::Hades2Lite.Properties.Resources.ajaks;
+            this.toolStripDropDownButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton5.Name = "toolStripDropDownButton5";
+            this.toolStripDropDownButton5.Size = new System.Drawing.Size(86, 38);
+            this.toolStripDropDownButton5.Text = "AJAKS";
+            // 
+            // toolStripMenuItem_run_Ajaks32
+            // 
+            this.toolStripMenuItem_run_Ajaks32.Name = "toolStripMenuItem_run_Ajaks32";
+            this.toolStripMenuItem_run_Ajaks32.Size = new System.Drawing.Size(123, 22);
+            this.toolStripMenuItem_run_Ajaks32.Text = "Ajaks x32";
+            // 
+            // toolStripMenuItem_run_Ajaks64
+            // 
+            this.toolStripMenuItem_run_Ajaks64.Name = "toolStripMenuItem_run_Ajaks64";
+            this.toolStripMenuItem_run_Ajaks64.Size = new System.Drawing.Size(123, 22);
+            this.toolStripMenuItem_run_Ajaks64.Text = "Ajaks x64";
+            // 
+            // toolStripDropDownButton6
+            // 
+            this.toolStripDropDownButton6.AutoToolTip = false;
+            this.toolStripDropDownButton6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI,
+            this.toolStripMenuItem_singlePC_audyt_Office,
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations});
+            this.toolStripDropDownButton6.Image = global::Hades2Lite.Properties.Resources.audit__1_;
+            this.toolStripDropDownButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton6.Name = "toolStripDropDownButton6";
+            this.toolStripDropDownButton6.Size = new System.Drawing.Size(90, 38);
+            this.toolStripDropDownButton6.Text = "Audyty";
+            this.toolStripDropDownButton6.ToolTipText = "Audyty";
+            // 
+            // toolStripMenuItem_singlePC_audyt_aplikacji_KSI
+            // 
+            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI.Name = "toolStripMenuItem_singlePC_audyt_aplikacji_KSI";
+            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI.Size = new System.Drawing.Size(211, 22);
+            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI.Text = "Audyt aplikacji KSI";
+            // 
+            // toolStripMenuItem_singlePC_audyt_Office
+            // 
+            this.toolStripMenuItem_singlePC_audyt_Office.Name = "toolStripMenuItem_singlePC_audyt_Office";
+            this.toolStripMenuItem_singlePC_audyt_Office.Size = new System.Drawing.Size(211, 22);
+            this.toolStripMenuItem_singlePC_audyt_Office.Text = "Audyt Office";
+            // 
+            // toolStripMenuItem_singlePC_audyt_all_aplikations
+            // 
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Name = "toolStripMenuItem_singlePC_audyt_all_aplikations";
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Size = new System.Drawing.Size(211, 22);
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Text = "Audyt wszystkich aplikacji";
+            // 
+            // toolStripButton_singlePC_instalator
+            // 
+            this.toolStripButton_singlePC_instalator.AutoToolTip = false;
+            this.toolStripButton_singlePC_instalator.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_singlePC_instalator.Image")));
+            this.toolStripButton_singlePC_instalator.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_singlePC_instalator.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_singlePC_instalator.Name = "toolStripButton_singlePC_instalator";
+            this.toolStripButton_singlePC_instalator.Size = new System.Drawing.Size(92, 38);
+            this.toolStripButton_singlePC_instalator.Text = "Instalator";
+            this.toolStripButton_singlePC_instalator.ToolTipText = "Audyty";
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 41);
+            // 
+            // toolStripDropDownButton3
+            // 
+            this.toolStripDropDownButton3.AutoToolTip = false;
+            this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_C,
+            this.toolStripMenuItem_Autostart,
+            this.toolStripMenuItem_APPKSI,
+            this.toolStripMenuItem_CCMCACHE,
+            this.toolStripMenuItem_CSI,
+            this.toolStripMenuItem_CWI_PC,
+            this.toolStripMenuItemPROKOM,
+            this.toolStripMenuItem_SKRYPTY,
+            this.toolStripMenuItem_USERS});
+            this.toolStripDropDownButton3.Image = global::Hades2Lite.Properties.Resources.dir;
+            this.toolStripDropDownButton3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.toolStripDropDownButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
+            this.toolStripDropDownButton3.Size = new System.Drawing.Size(68, 38);
+            this.toolStripDropDownButton3.Text = "C:\\";
+            // 
+            // toolStripMenuItem_C
+            // 
+            this.toolStripMenuItem_C.Name = "toolStripMenuItem_C";
+            this.toolStripMenuItem_C.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_C.Text = "C:\\";
+            // 
+            // toolStripMenuItem_Autostart
+            // 
+            this.toolStripMenuItem_Autostart.Name = "toolStripMenuItem_Autostart";
+            this.toolStripMenuItem_Autostart.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_Autostart.Text = "AUTOSTART";
+            // 
+            // toolStripMenuItem_APPKSI
+            // 
+            this.toolStripMenuItem_APPKSI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_APPKSI_APPKSI,
+            this.toolStripMenuItem_APPKSI_InstallLogs});
+            this.toolStripMenuItem_APPKSI.Name = "toolStripMenuItem_APPKSI";
+            this.toolStripMenuItem_APPKSI.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_APPKSI.Text = "APPKSI";
+            // 
+            // toolStripMenuItem_APPKSI_APPKSI
+            // 
+            this.toolStripMenuItem_APPKSI_APPKSI.Name = "toolStripMenuItem_APPKSI_APPKSI";
+            this.toolStripMenuItem_APPKSI_APPKSI.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem_APPKSI_APPKSI.Text = "APPKSI";
+            // 
+            // toolStripMenuItem_APPKSI_InstallLogs
+            // 
+            this.toolStripMenuItem_APPKSI_InstallLogs.Name = "toolStripMenuItem_APPKSI_InstallLogs";
+            this.toolStripMenuItem_APPKSI_InstallLogs.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem_APPKSI_InstallLogs.Text = "InstallLogs";
+            // 
+            // toolStripMenuItem_CCMCACHE
+            // 
+            this.toolStripMenuItem_CCMCACHE.Name = "toolStripMenuItem_CCMCACHE";
+            this.toolStripMenuItem_CCMCACHE.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_CCMCACHE.Text = "CCMCACHE";
+            // 
+            // toolStripMenuItem_CSI
+            // 
+            this.toolStripMenuItem_CSI.Name = "toolStripMenuItem_CSI";
+            this.toolStripMenuItem_CSI.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_CSI.Text = "CSI";
+            // 
+            // toolStripMenuItem_CWI_PC
+            // 
+            this.toolStripMenuItem_CWI_PC.Name = "toolStripMenuItem_CWI_PC";
+            this.toolStripMenuItem_CWI_PC.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_CWI_PC.Text = "CWI-PC";
+            // 
+            // toolStripMenuItemPROKOM
+            // 
+            this.toolStripMenuItemPROKOM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_PROKOM_PROKOM,
+            this.toolStripMenuItem_PROKOM_COMMON});
+            this.toolStripMenuItemPROKOM.Name = "toolStripMenuItemPROKOM";
+            this.toolStripMenuItemPROKOM.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItemPROKOM.Text = "PROKOM";
+            // 
+            // toolStripMenuItem_PROKOM_PROKOM
+            // 
+            this.toolStripMenuItem_PROKOM_PROKOM.Name = "toolStripMenuItem_PROKOM_PROKOM";
+            this.toolStripMenuItem_PROKOM_PROKOM.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem_PROKOM_PROKOM.Text = "PROKOM";
+            // 
+            // toolStripMenuItem_PROKOM_COMMON
+            // 
+            this.toolStripMenuItem_PROKOM_COMMON.Name = "toolStripMenuItem_PROKOM_COMMON";
+            this.toolStripMenuItem_PROKOM_COMMON.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem_PROKOM_COMMON.Text = "COMMON";
+            // 
+            // toolStripMenuItem_SKRYPTY
+            // 
+            this.toolStripMenuItem_SKRYPTY.Name = "toolStripMenuItem_SKRYPTY";
+            this.toolStripMenuItem_SKRYPTY.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_SKRYPTY.Text = "SKRYPTY";
+            // 
+            // toolStripMenuItem_USERS
+            // 
+            this.toolStripMenuItem_USERS.Name = "toolStripMenuItem_USERS";
+            this.toolStripMenuItem_USERS.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem_USERS.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_USERS.Text = "UŻYTKOWNICY";
+            // 
+            // toolStripDropDownButton4
+            // 
+            this.toolStripDropDownButton4.AutoToolTip = false;
+            this.toolStripDropDownButton4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem87,
+            this.toolStripMenuItem88,
+            this.toolStripMenuItem89,
+            this.toolStripMenuItem90});
+            this.toolStripDropDownButton4.Image = global::Hades2Lite.Properties.Resources.dir;
+            this.toolStripDropDownButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton4.Name = "toolStripDropDownButton4";
+            this.toolStripDropDownButton4.Size = new System.Drawing.Size(68, 38);
+            this.toolStripDropDownButton4.Text = "D:\\";
+            // 
+            // toolStripMenuItem87
+            // 
+            this.toolStripMenuItem87.Name = "toolStripMenuItem87";
+            this.toolStripMenuItem87.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem87.Text = "D:\\";
+            // 
+            // toolStripMenuItem88
+            // 
+            this.toolStripMenuItem88.Name = "toolStripMenuItem88";
+            this.toolStripMenuItem88.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem88.Text = "APPKSI";
+            // 
+            // toolStripMenuItem89
+            // 
+            this.toolStripMenuItem89.Name = "toolStripMenuItem89";
+            this.toolStripMenuItem89.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem89.Text = "CSI";
+            // 
+            // toolStripMenuItem90
+            // 
+            this.toolStripMenuItem90.Name = "toolStripMenuItem90";
+            this.toolStripMenuItem90.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem90.Text = "CI-OHD";
+            // 
+            // toolStripDropDownButton_Desktops
+            // 
+            this.toolStripDropDownButton_Desktops.AutoToolTip = false;
+            this.toolStripDropDownButton_Desktops.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem_userDesktop,
+            this.ToolStripMenuItem_publicDesktop});
+            this.toolStripDropDownButton_Desktops.Image = global::Hades2Lite.Properties.Resources.desktop;
+            this.toolStripDropDownButton_Desktops.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton_Desktops.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton_Desktops.Name = "toolStripDropDownButton_Desktops";
+            this.toolStripDropDownButton_Desktops.Size = new System.Drawing.Size(95, 38);
+            this.toolStripDropDownButton_Desktops.Text = "Desktop";
+            // 
+            // ToolStripMenuItem_userDesktop
+            // 
+            this.ToolStripMenuItem_userDesktop.Name = "ToolStripMenuItem_userDesktop";
+            this.ToolStripMenuItem_userDesktop.Size = new System.Drawing.Size(153, 22);
+            this.ToolStripMenuItem_userDesktop.Text = "User Desktop";
+            // 
+            // ToolStripMenuItem_publicDesktop
+            // 
+            this.ToolStripMenuItem_publicDesktop.Name = "ToolStripMenuItem_publicDesktop";
+            this.ToolStripMenuItem_publicDesktop.Size = new System.Drawing.Size(153, 22);
+            this.ToolStripMenuItem_publicDesktop.Text = "Public Desktop";
+            // 
+            // toolStripDropDownButton_Dystrybucja
+            // 
+            this.toolStripDropDownButton_Dystrybucja.AutoToolTip = false;
+            this.toolStripDropDownButton_Dystrybucja.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_Dystrybucja_AI,
+            this.toolStripMenuItem_Dystrybucja_CI_OHD,
+            this.toolStripMenuItem_Dystrybucja_CWI_PC});
+            this.toolStripDropDownButton_Dystrybucja.Image = global::Hades2Lite.Properties.Resources.dir;
+            this.toolStripDropDownButton_Dystrybucja.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton_Dystrybucja.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton_Dystrybucja.Name = "toolStripDropDownButton_Dystrybucja";
+            this.toolStripDropDownButton_Dystrybucja.Size = new System.Drawing.Size(114, 38);
+            this.toolStripDropDownButton_Dystrybucja.Text = "Dystrybucja";
+            // 
+            // toolStripMenuItem_Dystrybucja_AI
+            // 
+            this.toolStripMenuItem_Dystrybucja_AI.Name = "toolStripMenuItem_Dystrybucja_AI";
+            this.toolStripMenuItem_Dystrybucja_AI.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem_Dystrybucja_AI.Text = "AI";
+            // 
+            // toolStripMenuItem_Dystrybucja_CI_OHD
+            // 
+            this.toolStripMenuItem_Dystrybucja_CI_OHD.Name = "toolStripMenuItem_Dystrybucja_CI_OHD";
+            this.toolStripMenuItem_Dystrybucja_CI_OHD.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem_Dystrybucja_CI_OHD.Text = "CI-OHD";
+            // 
+            // toolStripMenuItem_Dystrybucja_CWI_PC
+            // 
+            this.toolStripMenuItem_Dystrybucja_CWI_PC.Name = "toolStripMenuItem_Dystrybucja_CWI_PC";
+            this.toolStripMenuItem_Dystrybucja_CWI_PC.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem_Dystrybucja_CWI_PC.Text = "CWI-PC";
+            // 
+            // toolStrip6
+            // 
+            this.toolStrip6.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip6.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton_manage_computers_lists});
+            this.toolStrip6.Location = new System.Drawing.Point(447, 4);
+            this.toolStrip6.Name = "toolStrip6";
+            this.toolStrip6.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStrip6.Size = new System.Drawing.Size(188, 25);
+            this.toolStrip6.TabIndex = 1;
+            this.toolStrip6.Text = "toolStrip6";
+            // 
+            // toolStripButton_manage_computers_lists
+            // 
+            this.toolStripButton_manage_computers_lists.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_manage_computers_lists.Image")));
+            this.toolStripButton_manage_computers_lists.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_manage_computers_lists.Name = "toolStripButton_manage_computers_lists";
+            this.toolStripButton_manage_computers_lists.Size = new System.Drawing.Size(185, 22);
+            this.toolStripButton_manage_computers_lists.Text = "Zarządzaj listami komputerów";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label29.Location = new System.Drawing.Point(10, 6);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(96, 21);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Komputery";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(281, 5);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(163, 23);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.Text = "Wybierz listę komputerów";
+            // 
+            // Niezbednik
+            // 
+            this.Niezbednik.Controls.Add(this.pl_NiezbednikPadding);
+            this.Niezbednik.ImageKey = "icons8-web-32.png";
+            this.Niezbednik.Location = new System.Drawing.Point(4, 39);
+            this.Niezbednik.Name = "Niezbednik";
+            this.Niezbednik.Padding = new System.Windows.Forms.Padding(8, 8, 5, 8);
+            this.Niezbednik.Size = new System.Drawing.Size(1156, 565);
+            this.Niezbednik.TabIndex = 1;
+            this.Niezbednik.Text = "Niezbędnik";
+            this.Niezbednik.UseVisualStyleBackColor = true;
+            // 
+            // pl_NiezbednikPadding
+            // 
+            this.pl_NiezbednikPadding.Controls.Add(this.pl_NiezbednikMain);
+            this.pl_NiezbednikPadding.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_NiezbednikPadding.Location = new System.Drawing.Point(8, 8);
+            this.pl_NiezbednikPadding.Name = "pl_NiezbednikPadding";
+            this.pl_NiezbednikPadding.Size = new System.Drawing.Size(1143, 549);
+            this.pl_NiezbednikPadding.TabIndex = 4;
+            // 
+            // pl_NiezbednikMain
+            // 
+            this.pl_NiezbednikMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pl_NiezbednikMain.Controls.Add(this.panel59);
+            this.pl_NiezbednikMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_NiezbednikMain.Location = new System.Drawing.Point(0, 0);
+            this.pl_NiezbednikMain.Name = "pl_NiezbednikMain";
+            this.pl_NiezbednikMain.Padding = new System.Windows.Forms.Padding(15, 20, 30, 30);
+            this.pl_NiezbednikMain.Size = new System.Drawing.Size(1143, 549);
+            this.pl_NiezbednikMain.TabIndex = 3;
             // 
             // panel59
             // 
@@ -2363,16 +2899,294 @@
             this.button6.Text = "IT Teren";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // pl_NiezbednikMain
+            // Konfiguracja
             // 
-            this.pl_NiezbednikMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pl_NiezbednikMain.Controls.Add(this.panel59);
-            this.pl_NiezbednikMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_NiezbednikMain.Location = new System.Drawing.Point(0, 0);
-            this.pl_NiezbednikMain.Name = "pl_NiezbednikMain";
-            this.pl_NiezbednikMain.Padding = new System.Windows.Forms.Padding(15, 20, 30, 30);
-            this.pl_NiezbednikMain.Size = new System.Drawing.Size(1143, 549);
-            this.pl_NiezbednikMain.TabIndex = 3;
+            this.Konfiguracja.Controls.Add(this.pl_KonfiguracjaPADDING);
+            this.Konfiguracja.ImageKey = "icons8-config-32.png";
+            this.Konfiguracja.Location = new System.Drawing.Point(4, 39);
+            this.Konfiguracja.Name = "Konfiguracja";
+            this.Konfiguracja.Size = new System.Drawing.Size(1156, 565);
+            this.Konfiguracja.TabIndex = 2;
+            this.Konfiguracja.Text = "Konfiguracja";
+            this.Konfiguracja.UseVisualStyleBackColor = true;
+            // 
+            // pl_KonfiguracjaPADDING
+            // 
+            this.pl_KonfiguracjaPADDING.Controls.Add(this.panel12);
+            this.pl_KonfiguracjaPADDING.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_KonfiguracjaPADDING.Location = new System.Drawing.Point(0, 0);
+            this.pl_KonfiguracjaPADDING.Name = "pl_KonfiguracjaPADDING";
+            this.pl_KonfiguracjaPADDING.Padding = new System.Windows.Forms.Padding(8, 8, 5, 8);
+            this.pl_KonfiguracjaPADDING.Size = new System.Drawing.Size(1156, 565);
+            this.pl_KonfiguracjaPADDING.TabIndex = 0;
+            // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.tabControl2);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(8, 8);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1143, 549);
+            this.panel12.TabIndex = 0;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Controls.Add(this.tabPage4);
+            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Location = new System.Drawing.Point(0, 0);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1141, 547);
+            this.tabControl2.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.button11);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1133, 521);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Ogólne";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1133, 521);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "Ścieżki do programów";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1133, 521);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "Szablon weryfikacji";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // Pomoc
+            // 
+            this.Pomoc.Controls.Add(this.pl_PomocPADDING);
+            this.Pomoc.ImageKey = "icons8-help-32 (1).png";
+            this.Pomoc.Location = new System.Drawing.Point(4, 39);
+            this.Pomoc.Name = "Pomoc";
+            this.Pomoc.Size = new System.Drawing.Size(1156, 565);
+            this.Pomoc.TabIndex = 3;
+            this.Pomoc.Text = "Pomoc";
+            this.Pomoc.UseVisualStyleBackColor = true;
+            // 
+            // pl_PomocPADDING
+            // 
+            this.pl_PomocPADDING.Controls.Add(this.pl_PomocMain);
+            this.pl_PomocPADDING.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_PomocPADDING.Location = new System.Drawing.Point(0, 0);
+            this.pl_PomocPADDING.Name = "pl_PomocPADDING";
+            this.pl_PomocPADDING.Padding = new System.Windows.Forms.Padding(8, 8, 5, 8);
+            this.pl_PomocPADDING.Size = new System.Drawing.Size(1156, 565);
+            this.pl_PomocPADDING.TabIndex = 1;
+            // 
+            // pl_PomocMain
+            // 
+            this.pl_PomocMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pl_PomocMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_PomocMain.Location = new System.Drawing.Point(8, 8);
+            this.pl_PomocMain.Name = "pl_PomocMain";
+            this.pl_PomocMain.Size = new System.Drawing.Size(1143, 549);
+            this.pl_PomocMain.TabIndex = 0;
+            // 
+            // img_MaterialTab
+            // 
+            this.img_MaterialTab.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("img_MaterialTab.ImageStream")));
+            this.img_MaterialTab.TransparentColor = System.Drawing.Color.Transparent;
+            this.img_MaterialTab.Images.SetKeyName(0, "icons8-help-desk-32.png");
+            this.img_MaterialTab.Images.SetKeyName(1, "icons8-web-32.png");
+            this.img_MaterialTab.Images.SetKeyName(2, "icons8-config-32.png");
+            this.img_MaterialTab.Images.SetKeyName(3, "icons8-help-32 (1).png");
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(3, 775);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1164, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // pl_MainForm
+            // 
+            this.pl_MainForm.Controls.Add(this.pl_MainFormMiddle);
+            this.pl_MainForm.Controls.Add(this.pl_MainFormTOP);
+            this.pl_MainForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_MainForm.Location = new System.Drawing.Point(3, 64);
+            this.pl_MainForm.Name = "pl_MainForm";
+            this.pl_MainForm.Size = new System.Drawing.Size(1164, 711);
+            this.pl_MainForm.TabIndex = 2;
+            // 
+            // pl_MainFormMiddle
+            // 
+            this.pl_MainFormMiddle.Controls.Add(this.materialTabControl1);
+            this.pl_MainFormMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_MainFormMiddle.Location = new System.Drawing.Point(0, 103);
+            this.pl_MainFormMiddle.Name = "pl_MainFormMiddle";
+            this.pl_MainFormMiddle.Size = new System.Drawing.Size(1164, 608);
+            this.pl_MainFormMiddle.TabIndex = 1;
+            // 
+            // pl_MainFormTOP
+            // 
+            this.pl_MainFormTOP.Controls.Add(this.button10);
+            this.pl_MainFormTOP.Controls.Add(this.pictureBox4);
+            this.pl_MainFormTOP.Controls.Add(this.pictureBox3);
+            this.pl_MainFormTOP.Controls.Add(this.button9);
+            this.pl_MainFormTOP.Controls.Add(this.button7);
+            this.pl_MainFormTOP.Controls.Add(this.pictureBox2);
+            this.pl_MainFormTOP.Controls.Add(this.button5);
+            this.pl_MainFormTOP.Controls.Add(this.label44);
+            this.pl_MainFormTOP.Controls.Add(this.button4);
+            this.pl_MainFormTOP.Controls.Add(this.button3);
+            this.pl_MainFormTOP.Controls.Add(this.pl_MainHADES);
+            this.pl_MainFormTOP.Controls.Add(this.button1);
+            this.pl_MainFormTOP.Controls.Add(this.btn_LAPS);
+            this.pl_MainFormTOP.Controls.Add(this.label4);
+            this.pl_MainFormTOP.Controls.Add(this.pictureBox_Separator);
+            this.pl_MainFormTOP.Controls.Add(this.btn_ActiveDirectory);
+            this.pl_MainFormTOP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pl_MainFormTOP.Location = new System.Drawing.Point(0, 0);
+            this.pl_MainFormTOP.Name = "pl_MainFormTOP";
+            this.pl_MainFormTOP.Size = new System.Drawing.Size(1164, 103);
+            this.pl_MainFormTOP.TabIndex = 0;
+            // 
+            // button10
+            // 
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button10.ImageIndex = 14;
+            this.button10.ImageList = this.img_MainIcons;
+            this.button10.Location = new System.Drawing.Point(640, 5);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(67, 72);
+            this.button10.TabIndex = 44;
+            this.button10.Text = "Webex\r\nCI-OHD";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Hades2Lite.Properties.Resources.separator_main;
+            this.pictureBox4.Location = new System.Drawing.Point(625, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(10, 73);
+            this.pictureBox4.TabIndex = 43;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Hades2Lite.Properties.Resources.separator_main;
+            this.pictureBox3.Location = new System.Drawing.Point(538, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(10, 73);
+            this.pictureBox3.TabIndex = 42;
+            this.pictureBox3.TabStop = false;
+            // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button9.ImageIndex = 13;
+            this.button9.ImageList = this.img_MainIcons;
+            this.button9.Location = new System.Drawing.Point(554, 5);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(67, 72);
+            this.button9.TabIndex = 41;
+            this.button9.Text = "Sap\r\nlogon\r\n";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button7.ImageIndex = 10;
+            this.button7.ImageList = this.img_MainIcons;
+            this.button7.Location = new System.Drawing.Point(464, 5);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(67, 72);
+            this.button7.TabIndex = 40;
+            this.button7.Text = "Mapa krosów";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Hades2Lite.Properties.Resources.separator_main;
+            this.pictureBox2.Location = new System.Drawing.Point(450, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(10, 73);
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button5.ImageIndex = 12;
+            this.button5.ImageList = this.img_MainIcons;
+            this.button5.Location = new System.Drawing.Point(377, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(67, 72);
+            this.button5.TabIndex = 38;
+            this.button5.Text = "Regedit";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(289, 86);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(99, 13);
+            this.label44.TabIndex = 37;
+            this.label44.Text = "narzędzia Windows";
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.ImageIndex = 9;
+            this.button4.ImageList = this.img_MainIcons;
+            this.button4.Location = new System.Drawing.Point(312, 5);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(67, 72);
+            this.button4.TabIndex = 36;
+            this.button4.Text = "Wycinanie";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.ImageIndex = 11;
+            this.button3.ImageList = this.img_MainIcons;
+            this.button3.Location = new System.Drawing.Point(248, 5);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(67, 72);
+            this.button3.TabIndex = 35;
+            this.button3.Text = "Powershell";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // pl_MainHADES
             // 
@@ -2383,591 +3197,6 @@
             this.pl_MainHADES.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
             this.pl_MainHADES.Size = new System.Drawing.Size(182, 103);
             this.pl_MainHADES.TabIndex = 34;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label42.Location = new System.Drawing.Point(14, 44);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(81, 16);
-            this.label42.TabIndex = 47;
-            this.label42.Text = "Status stacji:";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label43.ForeColor = System.Drawing.Color.Green;
-            this.label43.Location = new System.Drawing.Point(101, 44);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(85, 16);
-            this.label43.TabIndex = 48;
-            this.label43.Text = "Host online";
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::Hades2Lite.Properties.Resources.icons8_refresh_32__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(801, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 38);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "Odśwież\r\nstatus\r\n";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button_singlePC_isOnline
-            // 
-            this.button_singlePC_isOnline.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button_singlePC_isOnline.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button_singlePC_isOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_singlePC_isOnline.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_singlePC_isOnline.ImageIndex = 7;
-            this.button_singlePC_isOnline.ImageList = this.img_MainIcons;
-            this.button_singlePC_isOnline.Location = new System.Drawing.Point(333, 24);
-            this.button_singlePC_isOnline.Name = "button_singlePC_isOnline";
-            this.button_singlePC_isOnline.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_singlePC_isOnline.Size = new System.Drawing.Size(118, 48);
-            this.button_singlePC_isOnline.TabIndex = 14;
-            this.button_singlePC_isOnline.Text = "Pobierz dane";
-            this.button_singlePC_isOnline.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_singlePC_isOnline.UseVisualStyleBackColor = false;
-            // 
-            // button_singlePC_sendMSG
-            // 
-            this.button_singlePC_sendMSG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.button_singlePC_sendMSG.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button_singlePC_sendMSG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_singlePC_sendMSG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_singlePC_sendMSG.ImageIndex = 8;
-            this.button_singlePC_sendMSG.ImageList = this.img_MainIcons;
-            this.button_singlePC_sendMSG.Location = new System.Drawing.Point(737, 4);
-            this.button_singlePC_sendMSG.Name = "button_singlePC_sendMSG";
-            this.button_singlePC_sendMSG.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_singlePC_sendMSG.Size = new System.Drawing.Size(175, 92);
-            this.button_singlePC_sendMSG.TabIndex = 20;
-            this.button_singlePC_sendMSG.Text = "Wyślij wiadomość systemową Msg";
-            this.button_singlePC_sendMSG.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_singlePC_sendMSG.UseCompatibleTextRendering = true;
-            this.button_singlePC_sendMSG.UseVisualStyleBackColor = false;
-            // 
-            // button_singlePC_erase
-            // 
-            this.button_singlePC_erase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_singlePC_erase.FlatAppearance.BorderSize = 0;
-            this.button_singlePC_erase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_singlePC_erase.Image = global::Hades2Lite.Properties.Resources.erase;
-            this.button_singlePC_erase.Location = new System.Drawing.Point(263, 24);
-            this.button_singlePC_erase.Name = "button_singlePC_erase";
-            this.button_singlePC_erase.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_singlePC_erase.Size = new System.Drawing.Size(61, 48);
-            this.button_singlePC_erase.TabIndex = 12;
-            this.button_singlePC_erase.UseVisualStyleBackColor = true;
-            // 
-            // button_singlePC_remoteCMD
-            // 
-            this.button_singlePC_remoteCMD.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button_singlePC_remoteCMD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_singlePC_remoteCMD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_singlePC_remoteCMD.Image = global::Hades2Lite.Properties.Resources.cmd;
-            this.button_singlePC_remoteCMD.Location = new System.Drawing.Point(11, 132);
-            this.button_singlePC_remoteCMD.Name = "button_singlePC_remoteCMD";
-            this.button_singlePC_remoteCMD.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_singlePC_remoteCMD.Size = new System.Drawing.Size(146, 48);
-            this.button_singlePC_remoteCMD.TabIndex = 14;
-            this.button_singlePC_remoteCMD.Text = "Remote CMD";
-            this.button_singlePC_remoteCMD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_singlePC_remoteCMD.UseVisualStyleBackColor = true;
-            // 
-            // button_singlePC_Zarzadzaj
-            // 
-            this.button_singlePC_Zarzadzaj.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button_singlePC_Zarzadzaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_singlePC_Zarzadzaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_singlePC_Zarzadzaj.Image = global::Hades2Lite.Properties.Resources.management;
-            this.button_singlePC_Zarzadzaj.Location = new System.Drawing.Point(11, 78);
-            this.button_singlePC_Zarzadzaj.Name = "button_singlePC_Zarzadzaj";
-            this.button_singlePC_Zarzadzaj.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_singlePC_Zarzadzaj.Size = new System.Drawing.Size(146, 48);
-            this.button_singlePC_Zarzadzaj.TabIndex = 13;
-            this.button_singlePC_Zarzadzaj.Text = "Zarządzaj";
-            this.button_singlePC_Zarzadzaj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_singlePC_Zarzadzaj.UseVisualStyleBackColor = true;
-            // 
-            // button_singlePC_Shutdown
-            // 
-            this.button_singlePC_Shutdown.BackColor = System.Drawing.Color.Tomato;
-            this.button_singlePC_Shutdown.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button_singlePC_Shutdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_singlePC_Shutdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_singlePC_Shutdown.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_singlePC_Shutdown.Image = global::Hades2Lite.Properties.Resources.off;
-            this.button_singlePC_Shutdown.Location = new System.Drawing.Point(11, 186);
-            this.button_singlePC_Shutdown.Name = "button_singlePC_Shutdown";
-            this.button_singlePC_Shutdown.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_singlePC_Shutdown.Size = new System.Drawing.Size(146, 48);
-            this.button_singlePC_Shutdown.TabIndex = 10;
-            this.button_singlePC_Shutdown.Text = "Wyłącz komputer";
-            this.button_singlePC_Shutdown.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_singlePC_Shutdown.UseVisualStyleBackColor = false;
-            // 
-            // button61
-            // 
-            this.button61.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button61.Image = global::Hades2Lite.Properties.Resources.dns;
-            this.button61.Location = new System.Drawing.Point(11, 348);
-            this.button61.Name = "button61";
-            this.button61.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button61.Size = new System.Drawing.Size(146, 48);
-            this.button61.TabIndex = 12;
-            this.button61.Text = "Odśwież u siebie DNS";
-            this.button61.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button61.UseVisualStyleBackColor = true;
-            // 
-            // button_singlePC_pingLong
-            // 
-            this.button_singlePC_pingLong.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button_singlePC_pingLong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_singlePC_pingLong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_singlePC_pingLong.Image = global::Hades2Lite.Properties.Resources.ping;
-            this.button_singlePC_pingLong.Location = new System.Drawing.Point(11, 24);
-            this.button_singlePC_pingLong.Name = "button_singlePC_pingLong";
-            this.button_singlePC_pingLong.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_singlePC_pingLong.Size = new System.Drawing.Size(146, 48);
-            this.button_singlePC_pingLong.TabIndex = 7;
-            this.button_singlePC_pingLong.Text = "Ping long";
-            this.button_singlePC_pingLong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_singlePC_pingLong.UseVisualStyleBackColor = true;
-            // 
-            // button_singlePC_Restart
-            // 
-            this.button_singlePC_Restart.BackColor = System.Drawing.Color.Tomato;
-            this.button_singlePC_Restart.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button_singlePC_Restart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_singlePC_Restart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_singlePC_Restart.ForeColor = System.Drawing.Color.White;
-            this.button_singlePC_Restart.Image = global::Hades2Lite.Properties.Resources.restart;
-            this.button_singlePC_Restart.Location = new System.Drawing.Point(11, 240);
-            this.button_singlePC_Restart.Name = "button_singlePC_Restart";
-            this.button_singlePC_Restart.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_singlePC_Restart.Size = new System.Drawing.Size(146, 48);
-            this.button_singlePC_Restart.TabIndex = 11;
-            this.button_singlePC_Restart.Text = "Zrestartuj komputer";
-            this.button_singlePC_Restart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_singlePC_Restart.UseVisualStyleBackColor = false;
-            // 
-            // button57
-            // 
-            this.button57.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button57.Image = global::Hades2Lite.Properties.Resources.release;
-            this.button57.Location = new System.Drawing.Point(10, 402);
-            this.button57.Name = "button57";
-            this.button57.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button57.Size = new System.Drawing.Size(146, 48);
-            this.button57.TabIndex = 8;
-            this.button57.Text = "Release IP";
-            this.button57.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button57.UseVisualStyleBackColor = true;
-            // 
-            // toolStripButton_menage_messages
-            // 
-            this.toolStripButton_menage_messages.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_menage_messages.Image")));
-            this.toolStripButton_menage_messages.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_menage_messages.Name = "toolStripButton_menage_messages";
-            this.toolStripButton_menage_messages.Size = new System.Drawing.Size(156, 22);
-            this.toolStripButton_menage_messages.Text = "Zarzadzaj komunikatami";
-            this.toolStripButton_menage_messages.ToolTipText = "Zarządzaj komunikatami";
-            // 
-            // toolStripButton_singlePC_remoteSCCM
-            // 
-            this.toolStripButton_singlePC_remoteSCCM.AutoToolTip = false;
-            this.toolStripButton_singlePC_remoteSCCM.Image = global::Hades2Lite.Properties.Resources.sccm;
-            this.toolStripButton_singlePC_remoteSCCM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_singlePC_remoteSCCM.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_singlePC_remoteSCCM.Name = "toolStripButton_singlePC_remoteSCCM";
-            this.toolStripButton_singlePC_remoteSCCM.Size = new System.Drawing.Size(120, 38);
-            this.toolStripButton_singlePC_remoteSCCM.Text = "Remote SCCM";
-            // 
-            // toolStripButton_singlePC_remoteDesktop
-            // 
-            this.toolStripButton_singlePC_remoteDesktop.AutoToolTip = false;
-            this.toolStripButton_singlePC_remoteDesktop.Image = global::Hades2Lite.Properties.Resources.remote;
-            this.toolStripButton_singlePC_remoteDesktop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_singlePC_remoteDesktop.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_singlePC_remoteDesktop.Name = "toolStripButton_singlePC_remoteDesktop";
-            this.toolStripButton_singlePC_remoteDesktop.Size = new System.Drawing.Size(65, 38);
-            this.toolStripButton_singlePC_remoteDesktop.Text = "RDP";
-            // 
-            // toolStripDropDownButton7
-            // 
-            this.toolStripDropDownButton7.AutoToolTip = false;
-            this.toolStripDropDownButton7.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem,
-            this.wOLToolStripMenuItem,
-            this.usługiToolStripMenuItem,
-            this.informacjeOSystemieOperacyjnymToolStripMenuItem,
-            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem});
-            this.toolStripDropDownButton7.Image = global::Hades2Lite.Properties.Resources.os;
-            this.toolStripDropDownButton7.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton7.Name = "toolStripDropDownButton7";
-            this.toolStripDropDownButton7.Size = new System.Drawing.Size(105, 38);
-            this.toolStripDropDownButton7.Text = "Komputer";
-            // 
-            // bitlockerKluczOdzyskiwaniaToolStripMenuItem
-            // 
-            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem.Name = "bitlockerKluczOdzyskiwaniaToolStripMenuItem";
-            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
-            this.bitlockerKluczOdzyskiwaniaToolStripMenuItem.Text = "Bitlocker - klucz odzyskiwania";
-            // 
-            // wOLToolStripMenuItem
-            // 
-            this.wOLToolStripMenuItem.Name = "wOLToolStripMenuItem";
-            this.wOLToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
-            this.wOLToolStripMenuItem.Text = "WOL";
-            // 
-            // usługiToolStripMenuItem
-            // 
-            this.usługiToolStripMenuItem.Name = "usługiToolStripMenuItem";
-            this.usługiToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
-            this.usługiToolStripMenuItem.Text = "Usługi";
-            // 
-            // informacjeOSystemieOperacyjnymToolStripMenuItem
-            // 
-            this.informacjeOSystemieOperacyjnymToolStripMenuItem.Name = "informacjeOSystemieOperacyjnymToolStripMenuItem";
-            this.informacjeOSystemieOperacyjnymToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
-            this.informacjeOSystemieOperacyjnymToolStripMenuItem.Text = "Informacje o systemie operacyjnym";
-            // 
-            // informacjeSzczegółoweOKomputerzeToolStripMenuItem
-            // 
-            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem.Name = "informacjeSzczegółoweOKomputerzeToolStripMenuItem";
-            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
-            this.informacjeSzczegółoweOKomputerzeToolStripMenuItem.Text = "Informacje szczegółowe o komputerze";
-            // 
-            // toolStripDropDownButton8
-            // 
-            this.toolStripDropDownButton8.AutoToolTip = false;
-            this.toolStripDropDownButton8.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ProfilToolStripMenuItem_Refresh_Profile,
-            this.UżytkownikaToolStripMenuItem_User_Printers,
-            this.ToolStripMenuItem_User_Info,
-            this.toolStripMenuItem_User_Uprawnienia});
-            this.toolStripDropDownButton8.Image = global::Hades2Lite.Properties.Resources.lookfor;
-            this.toolStripDropDownButton8.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton8.Name = "toolStripDropDownButton8";
-            this.toolStripDropDownButton8.Size = new System.Drawing.Size(113, 38);
-            this.toolStripDropDownButton8.Text = "Użytkownik";
-            // 
-            // ProfilToolStripMenuItem_Refresh_Profile
-            // 
-            this.ProfilToolStripMenuItem_Refresh_Profile.Name = "ProfilToolStripMenuItem_Refresh_Profile";
-            this.ProfilToolStripMenuItem_Refresh_Profile.Size = new System.Drawing.Size(240, 22);
-            this.ProfilToolStripMenuItem_Refresh_Profile.Text = "Odśwież profil";
-            // 
-            // UżytkownikaToolStripMenuItem_User_Printers
-            // 
-            this.UżytkownikaToolStripMenuItem_User_Printers.Name = "UżytkownikaToolStripMenuItem_User_Printers";
-            this.UżytkownikaToolStripMenuItem_User_Printers.Size = new System.Drawing.Size(240, 22);
-            this.UżytkownikaToolStripMenuItem_User_Printers.Text = "Drukarki użytkownika";
-            // 
-            // ToolStripMenuItem_User_Info
-            // 
-            this.ToolStripMenuItem_User_Info.Name = "ToolStripMenuItem_User_Info";
-            this.ToolStripMenuItem_User_Info.Size = new System.Drawing.Size(240, 22);
-            this.ToolStripMenuItem_User_Info.Text = "Informacje szczegółowe";
-            // 
-            // toolStripMenuItem_User_Uprawnienia
-            // 
-            this.toolStripMenuItem_User_Uprawnienia.Name = "toolStripMenuItem_User_Uprawnienia";
-            this.toolStripMenuItem_User_Uprawnienia.Size = new System.Drawing.Size(240, 22);
-            this.toolStripMenuItem_User_Uprawnienia.Text = "Uprawnienia użytkownika w AD";
-            // 
-            // toolStripDropDownButton5
-            // 
-            this.toolStripDropDownButton5.AutoToolTip = false;
-            this.toolStripDropDownButton5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_run_Ajaks32,
-            this.toolStripMenuItem_run_Ajaks64});
-            this.toolStripDropDownButton5.Image = global::Hades2Lite.Properties.Resources.ajaks;
-            this.toolStripDropDownButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton5.Name = "toolStripDropDownButton5";
-            this.toolStripDropDownButton5.Size = new System.Drawing.Size(86, 38);
-            this.toolStripDropDownButton5.Text = "AJAKS";
-            // 
-            // toolStripMenuItem_run_Ajaks32
-            // 
-            this.toolStripMenuItem_run_Ajaks32.Name = "toolStripMenuItem_run_Ajaks32";
-            this.toolStripMenuItem_run_Ajaks32.Size = new System.Drawing.Size(123, 22);
-            this.toolStripMenuItem_run_Ajaks32.Text = "Ajaks x32";
-            // 
-            // toolStripMenuItem_run_Ajaks64
-            // 
-            this.toolStripMenuItem_run_Ajaks64.Name = "toolStripMenuItem_run_Ajaks64";
-            this.toolStripMenuItem_run_Ajaks64.Size = new System.Drawing.Size(123, 22);
-            this.toolStripMenuItem_run_Ajaks64.Text = "Ajaks x64";
-            // 
-            // toolStripDropDownButton6
-            // 
-            this.toolStripDropDownButton6.AutoToolTip = false;
-            this.toolStripDropDownButton6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI,
-            this.toolStripMenuItem_singlePC_audyt_Office,
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations});
-            this.toolStripDropDownButton6.Image = global::Hades2Lite.Properties.Resources.audit__1_;
-            this.toolStripDropDownButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton6.Name = "toolStripDropDownButton6";
-            this.toolStripDropDownButton6.Size = new System.Drawing.Size(90, 38);
-            this.toolStripDropDownButton6.Text = "Audyty";
-            this.toolStripDropDownButton6.ToolTipText = "Audyty";
-            // 
-            // toolStripMenuItem_singlePC_audyt_aplikacji_KSI
-            // 
-            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI.Name = "toolStripMenuItem_singlePC_audyt_aplikacji_KSI";
-            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI.Size = new System.Drawing.Size(211, 22);
-            this.toolStripMenuItem_singlePC_audyt_aplikacji_KSI.Text = "Audyt aplikacji KSI";
-            // 
-            // toolStripMenuItem_singlePC_audyt_Office
-            // 
-            this.toolStripMenuItem_singlePC_audyt_Office.Name = "toolStripMenuItem_singlePC_audyt_Office";
-            this.toolStripMenuItem_singlePC_audyt_Office.Size = new System.Drawing.Size(211, 22);
-            this.toolStripMenuItem_singlePC_audyt_Office.Text = "Audyt Office";
-            // 
-            // toolStripMenuItem_singlePC_audyt_all_aplikations
-            // 
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Name = "toolStripMenuItem_singlePC_audyt_all_aplikations";
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Size = new System.Drawing.Size(211, 22);
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Text = "Audyt wszystkich aplikacji";
-            // 
-            // toolStripButton_singlePC_instalator
-            // 
-            this.toolStripButton_singlePC_instalator.AutoToolTip = false;
-            this.toolStripButton_singlePC_instalator.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_singlePC_instalator.Image")));
-            this.toolStripButton_singlePC_instalator.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_singlePC_instalator.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_singlePC_instalator.Name = "toolStripButton_singlePC_instalator";
-            this.toolStripButton_singlePC_instalator.Size = new System.Drawing.Size(92, 38);
-            this.toolStripButton_singlePC_instalator.Text = "Instalator";
-            this.toolStripButton_singlePC_instalator.ToolTipText = "Audyty";
-            // 
-            // toolStripDropDownButton3
-            // 
-            this.toolStripDropDownButton3.AutoToolTip = false;
-            this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_C,
-            this.toolStripMenuItem_Autostart,
-            this.toolStripMenuItem_APPKSI,
-            this.toolStripMenuItem_CCMCACHE,
-            this.toolStripMenuItem_CSI,
-            this.toolStripMenuItem_CWI_PC,
-            this.toolStripMenuItemPROKOM,
-            this.toolStripMenuItem_SKRYPTY,
-            this.toolStripMenuItem_USERS});
-            this.toolStripDropDownButton3.Image = global::Hades2Lite.Properties.Resources.dir;
-            this.toolStripDropDownButton3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.toolStripDropDownButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
-            this.toolStripDropDownButton3.Size = new System.Drawing.Size(68, 38);
-            this.toolStripDropDownButton3.Text = "C:\\";
-            // 
-            // toolStripMenuItem_C
-            // 
-            this.toolStripMenuItem_C.Name = "toolStripMenuItem_C";
-            this.toolStripMenuItem_C.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_C.Text = "C:\\";
-            // 
-            // toolStripMenuItem_Autostart
-            // 
-            this.toolStripMenuItem_Autostart.Name = "toolStripMenuItem_Autostart";
-            this.toolStripMenuItem_Autostart.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_Autostart.Text = "AUTOSTART";
-            // 
-            // toolStripMenuItem_APPKSI
-            // 
-            this.toolStripMenuItem_APPKSI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_APPKSI_APPKSI,
-            this.toolStripMenuItem_APPKSI_InstallLogs});
-            this.toolStripMenuItem_APPKSI.Name = "toolStripMenuItem_APPKSI";
-            this.toolStripMenuItem_APPKSI.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_APPKSI.Text = "APPKSI";
-            // 
-            // toolStripMenuItem_APPKSI_APPKSI
-            // 
-            this.toolStripMenuItem_APPKSI_APPKSI.Name = "toolStripMenuItem_APPKSI_APPKSI";
-            this.toolStripMenuItem_APPKSI_APPKSI.Size = new System.Drawing.Size(130, 22);
-            this.toolStripMenuItem_APPKSI_APPKSI.Text = "APPKSI";
-            // 
-            // toolStripMenuItem_APPKSI_InstallLogs
-            // 
-            this.toolStripMenuItem_APPKSI_InstallLogs.Name = "toolStripMenuItem_APPKSI_InstallLogs";
-            this.toolStripMenuItem_APPKSI_InstallLogs.Size = new System.Drawing.Size(130, 22);
-            this.toolStripMenuItem_APPKSI_InstallLogs.Text = "InstallLogs";
-            // 
-            // toolStripMenuItem_CCMCACHE
-            // 
-            this.toolStripMenuItem_CCMCACHE.Name = "toolStripMenuItem_CCMCACHE";
-            this.toolStripMenuItem_CCMCACHE.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_CCMCACHE.Text = "CCMCACHE";
-            // 
-            // toolStripMenuItem_CSI
-            // 
-            this.toolStripMenuItem_CSI.Name = "toolStripMenuItem_CSI";
-            this.toolStripMenuItem_CSI.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_CSI.Text = "CSI";
-            // 
-            // toolStripMenuItem_CWI_PC
-            // 
-            this.toolStripMenuItem_CWI_PC.Name = "toolStripMenuItem_CWI_PC";
-            this.toolStripMenuItem_CWI_PC.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_CWI_PC.Text = "CWI-PC";
-            // 
-            // toolStripMenuItemPROKOM
-            // 
-            this.toolStripMenuItemPROKOM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_PROKOM_PROKOM,
-            this.toolStripMenuItem_PROKOM_COMMON});
-            this.toolStripMenuItemPROKOM.Name = "toolStripMenuItemPROKOM";
-            this.toolStripMenuItemPROKOM.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItemPROKOM.Text = "PROKOM";
-            // 
-            // toolStripMenuItem_PROKOM_PROKOM
-            // 
-            this.toolStripMenuItem_PROKOM_PROKOM.Name = "toolStripMenuItem_PROKOM_PROKOM";
-            this.toolStripMenuItem_PROKOM_PROKOM.Size = new System.Drawing.Size(131, 22);
-            this.toolStripMenuItem_PROKOM_PROKOM.Text = "PROKOM";
-            // 
-            // toolStripMenuItem_PROKOM_COMMON
-            // 
-            this.toolStripMenuItem_PROKOM_COMMON.Name = "toolStripMenuItem_PROKOM_COMMON";
-            this.toolStripMenuItem_PROKOM_COMMON.Size = new System.Drawing.Size(131, 22);
-            this.toolStripMenuItem_PROKOM_COMMON.Text = "COMMON";
-            // 
-            // toolStripMenuItem_SKRYPTY
-            // 
-            this.toolStripMenuItem_SKRYPTY.Name = "toolStripMenuItem_SKRYPTY";
-            this.toolStripMenuItem_SKRYPTY.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_SKRYPTY.Text = "SKRYPTY";
-            // 
-            // toolStripMenuItem_USERS
-            // 
-            this.toolStripMenuItem_USERS.Name = "toolStripMenuItem_USERS";
-            this.toolStripMenuItem_USERS.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem_USERS.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_USERS.Text = "UŻYTKOWNICY";
-            // 
-            // toolStripDropDownButton4
-            // 
-            this.toolStripDropDownButton4.AutoToolTip = false;
-            this.toolStripDropDownButton4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem87,
-            this.toolStripMenuItem88,
-            this.toolStripMenuItem89,
-            this.toolStripMenuItem90});
-            this.toolStripDropDownButton4.Image = global::Hades2Lite.Properties.Resources.dir;
-            this.toolStripDropDownButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton4.Name = "toolStripDropDownButton4";
-            this.toolStripDropDownButton4.Size = new System.Drawing.Size(68, 38);
-            this.toolStripDropDownButton4.Text = "D:\\";
-            // 
-            // toolStripMenuItem87
-            // 
-            this.toolStripMenuItem87.Name = "toolStripMenuItem87";
-            this.toolStripMenuItem87.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem87.Text = "D:\\";
-            // 
-            // toolStripMenuItem88
-            // 
-            this.toolStripMenuItem88.Name = "toolStripMenuItem88";
-            this.toolStripMenuItem88.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem88.Text = "APPKSI";
-            // 
-            // toolStripMenuItem89
-            // 
-            this.toolStripMenuItem89.Name = "toolStripMenuItem89";
-            this.toolStripMenuItem89.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem89.Text = "CSI";
-            // 
-            // toolStripMenuItem90
-            // 
-            this.toolStripMenuItem90.Name = "toolStripMenuItem90";
-            this.toolStripMenuItem90.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem90.Text = "CI-OHD";
-            // 
-            // toolStripDropDownButton_Desktops
-            // 
-            this.toolStripDropDownButton_Desktops.AutoToolTip = false;
-            this.toolStripDropDownButton_Desktops.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_userDesktop,
-            this.ToolStripMenuItem_publicDesktop});
-            this.toolStripDropDownButton_Desktops.Image = global::Hades2Lite.Properties.Resources.desktop;
-            this.toolStripDropDownButton_Desktops.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton_Desktops.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton_Desktops.Name = "toolStripDropDownButton_Desktops";
-            this.toolStripDropDownButton_Desktops.Size = new System.Drawing.Size(95, 38);
-            this.toolStripDropDownButton_Desktops.Text = "Desktop";
-            // 
-            // ToolStripMenuItem_userDesktop
-            // 
-            this.ToolStripMenuItem_userDesktop.Name = "ToolStripMenuItem_userDesktop";
-            this.ToolStripMenuItem_userDesktop.Size = new System.Drawing.Size(153, 22);
-            this.ToolStripMenuItem_userDesktop.Text = "User Desktop";
-            // 
-            // ToolStripMenuItem_publicDesktop
-            // 
-            this.ToolStripMenuItem_publicDesktop.Name = "ToolStripMenuItem_publicDesktop";
-            this.ToolStripMenuItem_publicDesktop.Size = new System.Drawing.Size(153, 22);
-            this.ToolStripMenuItem_publicDesktop.Text = "Public Desktop";
-            // 
-            // toolStripDropDownButton_Dystrybucja
-            // 
-            this.toolStripDropDownButton_Dystrybucja.AutoToolTip = false;
-            this.toolStripDropDownButton_Dystrybucja.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_Dystrybucja_AI,
-            this.toolStripMenuItem_Dystrybucja_CI_OHD,
-            this.toolStripMenuItem_Dystrybucja_CWI_PC});
-            this.toolStripDropDownButton_Dystrybucja.Image = global::Hades2Lite.Properties.Resources.dir;
-            this.toolStripDropDownButton_Dystrybucja.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton_Dystrybucja.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton_Dystrybucja.Name = "toolStripDropDownButton_Dystrybucja";
-            this.toolStripDropDownButton_Dystrybucja.Size = new System.Drawing.Size(114, 38);
-            this.toolStripDropDownButton_Dystrybucja.Text = "Dystrybucja";
-            // 
-            // toolStripMenuItem_Dystrybucja_AI
-            // 
-            this.toolStripMenuItem_Dystrybucja_AI.Name = "toolStripMenuItem_Dystrybucja_AI";
-            this.toolStripMenuItem_Dystrybucja_AI.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem_Dystrybucja_AI.Text = "AI";
-            // 
-            // toolStripMenuItem_Dystrybucja_CI_OHD
-            // 
-            this.toolStripMenuItem_Dystrybucja_CI_OHD.Name = "toolStripMenuItem_Dystrybucja_CI_OHD";
-            this.toolStripMenuItem_Dystrybucja_CI_OHD.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem_Dystrybucja_CI_OHD.Text = "CI-OHD";
-            // 
-            // toolStripMenuItem_Dystrybucja_CWI_PC
-            // 
-            this.toolStripMenuItem_Dystrybucja_CWI_PC.Name = "toolStripMenuItem_Dystrybucja_CWI_PC";
-            this.toolStripMenuItem_Dystrybucja_CWI_PC.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem_Dystrybucja_CWI_PC.Text = "CWI-PC";
-            // 
-            // toolStripButton_manage_computers_lists
-            // 
-            this.toolStripButton_manage_computers_lists.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_manage_computers_lists.Image")));
-            this.toolStripButton_manage_computers_lists.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_manage_computers_lists.Name = "toolStripButton_manage_computers_lists";
-            this.toolStripButton_manage_computers_lists.Size = new System.Drawing.Size(185, 22);
-            this.toolStripButton_manage_computers_lists.Text = "Zarządzaj listami komputerów";
             // 
             // pictureBox1
             // 
@@ -3009,6 +3238,15 @@
             this.btn_LAPS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_LAPS.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(65, 86);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 13);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "narzędzia domenowe";
+            // 
             // pictureBox_Separator
             // 
             this.pictureBox_Separator.Image = global::Hades2Lite.Properties.Resources.separator_main;
@@ -3033,240 +3271,14 @@
             this.btn_ActiveDirectory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ActiveDirectory.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button11
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.ImageIndex = 11;
-            this.button3.ImageList = this.img_MainIcons;
-            this.button3.Location = new System.Drawing.Point(248, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(67, 72);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "Powershell";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.ImageIndex = 9;
-            this.button4.ImageList = this.img_MainIcons;
-            this.button4.Location = new System.Drawing.Point(312, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(67, 72);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "Wycinanie";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(289, 86);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(99, 13);
-            this.label44.TabIndex = 37;
-            this.label44.Text = "narzędzia Windows";
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.ImageIndex = 12;
-            this.button5.ImageList = this.img_MainIcons;
-            this.button5.Location = new System.Drawing.Point(377, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(67, 72);
-            this.button5.TabIndex = 38;
-            this.button5.Text = "Regedit";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Hades2Lite.Properties.Resources.separator_main;
-            this.pictureBox2.Location = new System.Drawing.Point(450, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(10, 73);
-            this.pictureBox2.TabIndex = 39;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.ImageIndex = 10;
-            this.button7.ImageList = this.img_MainIcons;
-            this.button7.Location = new System.Drawing.Point(464, 5);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(67, 72);
-            this.button7.TabIndex = 40;
-            this.button7.Text = "Mapa krosów";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.ImageIndex = 13;
-            this.button9.ImageList = this.img_MainIcons;
-            this.button9.Location = new System.Drawing.Point(554, 5);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(67, 72);
-            this.button9.TabIndex = 41;
-            this.button9.Text = "Sap\r\nlogon\r\n";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Hades2Lite.Properties.Resources.separator_main;
-            this.pictureBox3.Location = new System.Drawing.Point(538, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(10, 73);
-            this.pictureBox3.TabIndex = 42;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Hades2Lite.Properties.Resources.separator_main;
-            this.pictureBox4.Location = new System.Drawing.Point(625, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(10, 73);
-            this.pictureBox4.TabIndex = 43;
-            this.pictureBox4.TabStop = false;
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.ImageIndex = 14;
-            this.button10.ImageList = this.img_MainIcons;
-            this.button10.Location = new System.Drawing.Point(640, 5);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(67, 72);
-            this.button10.TabIndex = 44;
-            this.button10.Text = "Webex\r\nCI-OHD";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label45.Location = new System.Drawing.Point(131, 126);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(184, 16);
-            this.label45.TabIndex = 24;
-            this.label45.Text = "Microsoft Windows 11 Pro";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label46.Location = new System.Drawing.Point(28, 126);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(55, 16);
-            this.label46.TabIndex = 23;
-            this.label46.Text = "System:";
-            // 
-            // pl_KonfiguracjaPADDING
-            // 
-            this.pl_KonfiguracjaPADDING.Controls.Add(this.panel12);
-            this.pl_KonfiguracjaPADDING.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_KonfiguracjaPADDING.Location = new System.Drawing.Point(0, 0);
-            this.pl_KonfiguracjaPADDING.Name = "pl_KonfiguracjaPADDING";
-            this.pl_KonfiguracjaPADDING.Padding = new System.Windows.Forms.Padding(8, 8, 5, 8);
-            this.pl_KonfiguracjaPADDING.Size = new System.Drawing.Size(1156, 565);
-            this.pl_KonfiguracjaPADDING.TabIndex = 0;
-            // 
-            // panel12
-            // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.tabControl2);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(8, 8);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1143, 549);
-            this.panel12.TabIndex = 0;
-            // 
-            // pl_PomocPADDING
-            // 
-            this.pl_PomocPADDING.Controls.Add(this.pl_PomocMain);
-            this.pl_PomocPADDING.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_PomocPADDING.Location = new System.Drawing.Point(0, 0);
-            this.pl_PomocPADDING.Name = "pl_PomocPADDING";
-            this.pl_PomocPADDING.Padding = new System.Windows.Forms.Padding(8, 8, 5, 8);
-            this.pl_PomocPADDING.Size = new System.Drawing.Size(1156, 565);
-            this.pl_PomocPADDING.TabIndex = 1;
-            // 
-            // pl_PomocMain
-            // 
-            this.pl_PomocMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pl_PomocMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_PomocMain.Location = new System.Drawing.Point(8, 8);
-            this.pl_PomocMain.Name = "pl_PomocMain";
-            this.pl_PomocMain.Size = new System.Drawing.Size(1143, 549);
-            this.pl_PomocMain.TabIndex = 0;
-            // 
-            // pl_NiezbednikPadding
-            // 
-            this.pl_NiezbednikPadding.Controls.Add(this.pl_NiezbednikMain);
-            this.pl_NiezbednikPadding.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_NiezbednikPadding.Location = new System.Drawing.Point(8, 8);
-            this.pl_NiezbednikPadding.Name = "pl_NiezbednikPadding";
-            this.pl_NiezbednikPadding.Size = new System.Drawing.Size(1143, 549);
-            this.pl_NiezbednikPadding.TabIndex = 4;
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage3);
-            this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Location = new System.Drawing.Point(0, 0);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1141, 547);
-            this.tabControl2.TabIndex = 0;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1133, 521);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "Ogólne";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(192, 74);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "Ścieżki do programów";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(192, 74);
-            this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "Szablon weryfikacji";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.button11.Location = new System.Drawing.Point(8, 8);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 0;
+            this.button11.Text = "button11";
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // frm_Hades2Lite
             // 
@@ -3287,6 +3299,29 @@
             this.pl_NarzedziownikMiddlePadding.ResumeLayout(false);
             this.pl_NarzedziownikMiddle.ResumeLayout(false);
             this.pl_NarzedziownikMiddle.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.panel_singlePC_top.ResumeLayout(false);
             this.panel61.ResumeLayout(false);
             this.panel61.PerformLayout();
@@ -3303,51 +3338,29 @@
             this.toolStrip6.ResumeLayout(false);
             this.toolStrip6.PerformLayout();
             this.Niezbednik.ResumeLayout(false);
-            this.Konfiguracja.ResumeLayout(false);
-            this.Pomoc.ResumeLayout(false);
-            this.pl_MainForm.ResumeLayout(false);
-            this.pl_MainFormMiddle.ResumeLayout(false);
-            this.pl_MainFormTOP.ResumeLayout(false);
-            this.pl_MainFormTOP.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.pl_NiezbednikPadding.ResumeLayout(false);
+            this.pl_NiezbednikMain.ResumeLayout(false);
             this.panel59.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel60.ResumeLayout(false);
-            this.pl_NiezbednikMain.ResumeLayout(false);
+            this.Konfiguracja.ResumeLayout(false);
+            this.pl_KonfiguracjaPADDING.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.Pomoc.ResumeLayout(false);
+            this.pl_PomocPADDING.ResumeLayout(false);
+            this.pl_MainForm.ResumeLayout(false);
+            this.pl_MainFormMiddle.ResumeLayout(false);
+            this.pl_MainFormTOP.ResumeLayout(false);
+            this.pl_MainFormTOP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pl_MainHADES.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Separator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.pl_KonfiguracjaPADDING.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.pl_PomocPADDING.ResumeLayout(false);
-            this.pl_NiezbednikPadding.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3608,6 +3621,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Button button11;
     }
 }
 
