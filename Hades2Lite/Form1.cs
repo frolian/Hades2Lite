@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Hades2common;
 using System.Diagnostics;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Microsoft.Win32;
 
 
 namespace Hades2Lite
@@ -37,10 +38,33 @@ namespace Hades2Lite
         {
 
         }
+
+        private void EnableButtons()
+        {
+            tsb_remoteSCCM.Enabled = true;
+            tsb_rdp.Enabled = true;
+            btn_computerManagement.Enabled = true;
+            btn_remoteCmd.Enabled = true;
+            btn_shutdownPC.Enabled = true;
+            btn_restartPC.Enabled = true;
+        }
+
+        private void DisableButtons()
+        {
+            tsb_remoteSCCM.Enabled = false;
+            tsb_rdp.Enabled = false;
+            btn_computerManagement.Enabled = false;
+            btn_remoteCmd.Enabled = false;
+            btn_shutdownPC.Enabled = false;
+            btn_restartPC.Enabled = false;
+        }
+
         //-------------------Funkcje button click----------------------------------------------------------
         private async void btn_GetComputerDetails_Click(object sender, EventArgs e)
         {
             string computerName = tbx_pcName.Text.ToUpper();
+            string recoveryPhrase = null;
+
             if (string.IsNullOrEmpty(computerName) | computerName == "PODAJ NAZWĘ LUB IP KOMPUTERA")
             {
                 MessageBox.Show("Podaj nazwę komputera, lub jego adres IP.", "Informacja o błędzie", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -65,12 +89,32 @@ namespace Hades2Lite
                     tbx_buildDetails.Text = "Pobieram dane...";
                     tbx_architectureDetails.Text = "Pobieram dane...";
 
+
+                    
+
                     OperatingSystemDetails osDetails = new OperatingSystemDetails();
                     osDetails = Hades2common.ToolBox.GetOSInfo(computerName);
                     tbx_osDetailName.Text = osDetails.Name.ToString();
 
                     ComputerDetails computerDetails = new ComputerDetails();
                     computerDetails = Hades2common.ToolBox.GetComputerDetailsInfo(computerName);
+
+                    string userName = UserDetails.LookForUser(computerName);
+
+
+                    Hades2common.UserInfo ADUserData = new Hades2common.UserInfo();
+                    ADUserData = UserDetails.GetADUserInfo(userName);
+                    ADUserData.Status = UserDetails.getUserComputerStatus(computerName);
+
+                    
+
+
+                    tbx_phoneDetails.Text = ADUserData.LoginAD.ToString();
+                    tbx_cellPhoneDetails.Text = ADUserData.OfficePhone.ToString();
+                    tbx_emailDetails.Text = ADUserData.Email.ToString();
+                    tbx_departmentDetails.Text = ADUserData.Department.ToString();
+                    tbx_ksiCodeDetails.Text = ADUserData.KSIcode.ToString();
+                    tbx_unitDetails.Text = ADUserData.State.ToString();
 
                     tbx_snDetail.Text = computerDetails.SerialNumber.ToString();
                     tbx_macDetails.Text = computerDetails.MACAddress.ToString();
@@ -83,6 +127,15 @@ namespace Hades2Lite
                     tbx_architectureDetails.Text = computerDetails.OSArchitecture.ToString();
 
                     tsb_remoteSCCM.Enabled = true;
+                    tsb_rdp.Enabled = true;
+                    btn_computerManagement.Enabled = true;
+                    btn_remoteCmd.Enabled = true;
+                    btn_shutdownPC.Enabled = true;
+                    btn_restartPC.Enabled = true;
+
+                    recoveryPhrase = Hades2common.ToolBox.GetBitlockerRecoveryInfo(computerName);
+
+                    tbx_bitlockerDetails.Text = recoveryPhrase;
 
                     //MessageBox.Show($"{osDetails.Name}\n{osDetails.OSArchitecture}\n{osDetails.BuildDisplay}\n{osDetails.BuildNumber}.{osDetails.UBRNumber}");
                 }
@@ -224,6 +277,7 @@ namespace Hades2Lite
 
         private void btn_eraseData_Click(object sender, EventArgs e)
         {
+            DisableButtons();
             clearPCName();
         }
 
@@ -387,10 +441,12 @@ namespace Hades2Lite
             if (tbx_pcName.Text.Length >= 4)
             {
                 btn_GetComputerData.Enabled = true;
+                btn_pinglong.Enabled = true;
             }
             else
             {
                 btn_GetComputerData.Enabled = false;
+                btn_pinglong.Enabled = false;
             }
         }
 
@@ -410,6 +466,379 @@ namespace Hades2Lite
                 tbx_pcName.Text = "";
                 tbx_pcName.ForeColor = Color.Black;
             }
+        }
+
+        private void tsb_c__Click(object sender, EventArgs e)
+        {
+         
+            string computerName = tbx_pcName.Text.ToUpper();
+            if (string.IsNullOrEmpty(computerName) | computerName == "PODAJ NAZWĘ LUB IP KOMPUTERA")
+            {
+                MessageBox.Show("Podaj nazwę komputera, lub jego adres IP.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            Hades2common.ToolBox.OpenUNCAsync(computerName, "C$");
+            
+        }
+
+        private void tsb_autostart_Click(object sender, EventArgs e)
+        {
+
+            string computerName = tbx_pcName.Text.ToUpper();
+            if (string.IsNullOrEmpty(computerName) | computerName == "PODAJ NAZWĘ LUB IP KOMPUTERA")
+            {
+                MessageBox.Show("Podaj nazwę komputera, lub jego adres IP.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            Hades2common.ToolBox.OpenUNCAsync(computerName, @"C$\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup");
+
+        }
+
+        private void tsb_listManagement_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ComputersListsForm computerList = new ComputersListsForm();
+                computerList.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Podczas odczytu usług wystapił błąd: " + ex.Message);
+                return;
+            }
+        }
+
+        private async void tsb_services_Click(object sender, EventArgs e)
+        {
+            string computerName = tbx_pcName.Text.ToUpper();
+            if (string.IsNullOrEmpty(computerName) | computerName == "PODAJ NAZWĘ LUB IP KOMPUTERA")
+            {
+                MessageBox.Show("Podaj nazwę komputera, lub jego adres IP.", "Informacja o błędzie", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            bool active = await Task.Run(() => Hades2common.ToolBox.PingAndCheckDiskAsync(computerName));
+
+            if (active)
+            {
+                ServicesForm services = new ServicesForm(computerName);
+                services.Text = $"Manager usług - komputer {computerName}";
+                services.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show($"Komputer {computerName} jest niedostępny!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void tsb_profileRefresh_Click(object sender, EventArgs e)
+        {
+            // Ścieżka do skryptu PowerShell
+            string scriptPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scripts", "profil.ps1");
+            string computerName = tbx_pcName.Text.ToUpper();
+
+            // Sprawdzenie, czy skrypt istnieje
+            if (System.IO.File.Exists(scriptPath))
+            {
+                try
+                {
+                    // Uruchomienie skryptu PowerShell
+                    ProcessStartInfo startInfo = new ProcessStartInfo()
+                    {
+                        FileName = "powershell.exe",
+                        Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" {computerName}",
+                        RedirectStandardOutput = true,
+                        RedirectStandardError = true,
+                        UseShellExecute = false,
+                        CreateNoWindow = false
+                    };
+
+                    using (Process process = new Process())
+                    {
+                        process.StartInfo = startInfo;
+                        process.Start();
+                        process.WaitForExit();
+
+                        // Odczytanie wyników
+                        string output = process.StandardOutput.ReadToEnd();
+                        string error = process.StandardError.ReadToEnd();
+
+                        // Wyświetlenie wyników w MessageBox
+                        if (string.IsNullOrEmpty(error))
+                        {
+                            MessageBox.Show("Script executed successfully:\n" + output);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Script error:\n" + error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Script not found: " + scriptPath);
+            }
+        }
+
+        private void tsb_wol_Click(object sender, EventArgs e)
+        {
+            // Ścieżka do skryptu PowerShell
+            string scriptPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scripts", "WOL.ps1");
+            string sccmServer = "SCM11-ADMCE.ZUS.AD";
+            string sccmCollection = "Chrzanow - Windows Workstation";
+            string computerName = tbx_pcName.Text.ToUpper();
+
+            // Sprawdzenie, czy skrypt istnieje
+            if (System.IO.File.Exists(scriptPath))
+            {
+                try
+                {
+                    // Uruchomienie skryptu PowerShell
+                    ProcessStartInfo startInfo = new ProcessStartInfo()
+                    {
+                        FileName = "powershell.exe",
+                        Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" {sccmServer} {sccmCollection} {computerName}",
+                        RedirectStandardOutput = true,
+                        RedirectStandardError = true,
+                        UseShellExecute = false,
+                        CreateNoWindow = false
+                    };
+
+                    using (Process process = new Process())
+                    {
+                        process.StartInfo = startInfo;
+                        process.Start();
+                        process.WaitForExit();
+
+                        // Odczytanie wyników
+                        string output = process.StandardOutput.ReadToEnd();
+                        string error = process.StandardError.ReadToEnd();
+
+                        // Wyświetlenie wyników w MessageBox
+                        if (string.IsNullOrEmpty(error))
+                        {
+                            MessageBox.Show("Script executed successfully:\n" + output);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Script error:\n" + error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Script not found: " + scriptPath);
+            }
+        }
+
+        private void tsb_installer_Click(object sender, EventArgs e)
+        {
+            // Ścieżka do skryptu PowerShell
+            string scriptPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scripts", "installKSIAPP.ps1");
+            string sfsServer = "SFS01-OSCI1";
+            string computerName = tbx_pcName.Text.ToUpper();
+
+            // Sprawdzenie, czy skrypt istnieje
+            if (System.IO.File.Exists(scriptPath))
+            {
+                try
+                {
+                    // Uruchomienie skryptu PowerShell
+                    ProcessStartInfo startInfo = new ProcessStartInfo()
+                    {
+                        FileName = "powershell.exe",
+                        Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" {computerName} {sfsServer}",
+                        RedirectStandardOutput = true,
+                        RedirectStandardError = true,
+                        UseShellExecute = false,
+                        CreateNoWindow = false
+                    };
+
+                    using (Process process = new Process())
+                    {
+                        process.StartInfo = startInfo;
+                        process.Start();
+                        process.WaitForExit();
+
+                        // Odczytanie wyników
+                        string output = process.StandardOutput.ReadToEnd();
+                        string error = process.StandardError.ReadToEnd();
+
+                        // Wyświetlenie wyników w MessageBox
+                        if (string.IsNullOrEmpty(error))
+                        {
+                            MessageBox.Show("Script executed successfully:\n" + output);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Script error:\n" + error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Script not found: " + scriptPath);
+            }
+        }
+
+        private void tsb_officeAudit_Click(object sender, EventArgs e)
+        {
+            // Ścieżka do skryptu PowerShell
+            string scriptPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scripts", "OfficeAudit.ps1");
+            string sfsServer = "SFS01-OSCI1";
+            string computerName = tbx_pcName.Text.ToUpper();
+
+            // Sprawdzenie, czy skrypt istnieje
+            if (System.IO.File.Exists(scriptPath))
+            {
+                try
+                {
+                    // Uruchomienie skryptu PowerShell
+                    ProcessStartInfo startInfo = new ProcessStartInfo()
+                    {
+                        FileName = "powershell.exe",
+                        Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" {computerName}",
+                        RedirectStandardOutput = true,
+                        RedirectStandardError = true,
+                        UseShellExecute = false,
+                        CreateNoWindow = false
+                    };
+
+                    using (Process process = new Process())
+                    {
+                        process.StartInfo = startInfo;
+                        process.Start();
+                        process.WaitForExit();
+
+                        // Odczytanie wyników
+                        string output = process.StandardOutput.ReadToEnd();
+                        string error = process.StandardError.ReadToEnd();
+
+                        // Wyświetlenie wyników w MessageBox
+                        if (string.IsNullOrEmpty(error))
+                        {
+                            MessageBox.Show("Script executed successfully:\n" + output);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Script error:\n" + error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Script not found: " + scriptPath);
+            }
+        }
+
+        private void tsb_usersPrinter_Click(object sender, EventArgs e)
+        {
+            string computerName = tbx_pcName.Text.ToUpper();
+            if (string.IsNullOrEmpty(computerName) | computerName == "PODAJ NAZWĘ LUB IP KOMPUTERA")
+            {
+                MessageBox.Show("Podaj nazwę komputera, lub jego adres IP.", "Informacja o błędzie", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string outputPath = @".\userPrinters.txt";
+
+            // get the logged-in user of the specified computer
+            var computerSystem = new System.Management.ManagementObject($"Win32_ComputerSystem.Name='{computerName}'");
+            string userName = Hades2common.UserDetails.LookForUser(computerName);
+
+            string userProfilePrinters = $"Komputer: {computerName}\r\nZalogowany użytkownik: {userName}\r\n\r\nDrukarki sieciowe zainstalowane na profilu użytkownika:";
+
+            // get that user's AD object
+            var adObj = new System.Security.Principal.NTAccount(userName);
+
+            // get the SID for the user's AD Object 
+            var strSID = adObj.Translate(typeof(System.Security.Principal.SecurityIdentifier)).ToString();
+
+            var rootKey = $@"{strSID}\Printers\Connections";
+
+            try
+            {
+                using (var registry = RegistryKey.OpenRemoteBaseKey(RegistryHive.Users, computerName))
+                {
+                    foreach (var subKeyName in registry.OpenSubKey(rootKey).GetSubKeyNames())
+                    {
+                        // This is really the list of printers
+                        userProfilePrinters += $"\r\n{subKeyName}";
+                    }
+
+                    userProfilePrinters = userProfilePrinters.Replace(',', '\\');
+
+                    // get a handle to the "USERS" hive on the computer
+                    using (var reg = RegistryKey.OpenRemoteBaseKey(RegistryHive.Users, computerName))
+                    {
+                        using (var regKey = reg.OpenSubKey($@"{strSID}\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows"))
+                        {
+                            // read the new value from the Registry for verification
+                            var regValue = regKey.GetValue("Device").ToString();
+
+                            // remove value from comma to the end of the string
+                            regValue = regValue.TrimEnd().Split(',')[0];
+
+                            userProfilePrinters += $"\r\n\r\nDrukarka domyślna:\r\n{regValue}";
+
+                            File.WriteAllText(outputPath, userProfilePrinters);
+
+                            try
+                            {
+                                // Uruchamia przeglądarkę z określonym adresem URL
+                                Process.Start(new ProcessStartInfo
+                                {
+                                    FileName = outputPath,
+                                    UseShellExecute = true
+                                });
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("Wystąpił błąd podczas otwierania przeglądarki: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+
+
+
+                        }
+                    }
+                }
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Console.WriteLine($"Registry - access denied {rootKey}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void btn_itTeren_Click(object sender, EventArgs e)
+        {
+            Hades2common.URL.OpenUrl("http://it.zus.ad/teren");
         }
     }
 }

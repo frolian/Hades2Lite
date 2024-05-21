@@ -133,6 +133,16 @@ namespace Hades2Lite.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_refresh_16__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-refresh-16 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_refresh_32__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-refresh-32 (1)", resourceCulture);
