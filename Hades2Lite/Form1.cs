@@ -24,6 +24,7 @@ namespace Hades2Lite
         public frm_Hades2Lite()
         {
             InitializeComponent();
+            LoadIniFile();
 
             materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
             materialSkinManager.EnforceBackcolorOnAllComponents = false;
@@ -33,6 +34,35 @@ namespace Hades2Lite
 
 
         }
+
+        private void LoadIniFile()
+        {
+            try
+            {
+                string iniPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "hades2lite.ini");
+                IniFile iniFile = new IniFile(iniPath);
+
+                string sfs = iniFile.Read("Servers", "SFS");
+                string sccm = iniFile.Read("Servers", "SCCM");
+                string sccmCollection = iniFile.Read("Servers", "SCCMCOLLECTION");
+                string adPath = iniFile.Read("Paths", "AD_PATH");
+                string remotePath = iniFile.Read("Paths", "REMOTE_PATH");
+                string lapsPath = iniFile.Read("Paths", "LAPS_PATH");
+                string sccmconsolePath = iniFile.Read("Paths", "SCCMCONSOLE_PATH");
+                string powershellPath = iniFile.Read("Paths", "POWERSHELL_PATH");
+                string sapPath = iniFile.Read("Paths", "SAP_PATH");
+                string mapakrosowPath = iniFile.Read("Paths", "MAPAKROSOW_PATH");
+
+                
+
+                MessageBox.Show($"SFS: {sfs}\nSCCM: {sccm}\nSCCMCOLLECTION: {sccmCollection}\nAD_PATH: {adPath}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Błąd: {ex.Message}");
+            }
+        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -47,6 +77,8 @@ namespace Hades2Lite
             btn_remoteCmd.Enabled = true;
             btn_shutdownPC.Enabled = true;
             btn_restartPC.Enabled = true;
+            btn_sendMsg.Enabled = true;
+            btn_refreshUser.Enabled = true;
 
             tsb_services.Enabled = true;
             tsb_user.Enabled = true;
@@ -1051,5 +1083,32 @@ namespace Hades2Lite
         {
 
         }
+
+        private void tabControl2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string iniPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "hades2lite.ini");
+                IniFile iniFile = new IniFile(iniPath);
+
+                string adPath = iniFile.Read("Paths", "AD_PATH");
+                tbx_adpathDetails.Text = adPath;
+
+                if (File.Exists(adPath))
+                {
+                    tbx_adpathDetails.ForeColor = Color.Green;
+                }
+                else
+                {
+                    tbx_adpathDetails.ForeColor = Color.Red;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Błąd: {ex.Message}");
+                tbx_adpathDetails.ForeColor = Color.Red; // In case of error, set the text color to red
+            }
+        }
+
     }
 }

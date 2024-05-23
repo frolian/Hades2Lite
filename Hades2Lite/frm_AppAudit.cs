@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Hades2common;
 
 
 namespace Hades2Lite
@@ -16,13 +17,14 @@ namespace Hades2Lite
     public partial class frm_AppAudit : Form
 
     {
-
         public string ComputerName { get; set; }
 
         public frm_AppAudit()
         {
             InitializeComponent();
+            
         }
+
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
@@ -71,7 +73,19 @@ namespace Hades2Lite
                 if (File.Exists(fullPath))
                 {
                     FileVersionInfo versionInfo = FileVersionInfo.GetVersionInfo(fullPath);
-                    return versionInfo.ProductVersion.Replace(".", string.Empty);
+                    string productVersion = versionInfo.ProductVersion;
+
+                    if (!string.IsNullOrEmpty(productVersion))
+                    {
+                        // Usunięcie kropek i spacji z ProductVersion
+                        return productVersion.Replace(".", string.Empty).Replace(" ", string.Empty);
+                    }
+                    else
+                    {
+                        // Jeśli ProductVersion nie istnieje, zwróć rozmiar pliku w bajtach
+                        FileInfo fileInfo = new FileInfo(fullPath);
+                        return fileInfo.Length.ToString();
+                    }
                 }
                 else
                 {
@@ -83,5 +97,7 @@ namespace Hades2Lite
                 return $"Błąd: {ex.Message}";
             }
         }
+
+
     }
 }

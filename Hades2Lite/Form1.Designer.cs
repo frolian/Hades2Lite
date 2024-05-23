@@ -85,8 +85,6 @@
             this.freeD_label = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.graphicsCard_textBox = new System.Windows.Forms.TextBox();
-            this.procesor_textBox = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.ram_label = new System.Windows.Forms.Label();
@@ -279,7 +277,7 @@
             this.label55 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbx_adpathDetails = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
@@ -315,6 +313,21 @@
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_addressDetails = new System.Windows.Forms.Label();
+            this.lbl_cellPhoneDetails = new System.Windows.Forms.Label();
+            this.lbl_loginAdDetails = new System.Windows.Forms.Label();
+            this.lbl_address = new System.Windows.Forms.Label();
+            this.lbl_cellPhone = new System.Windows.Forms.Label();
+            this.lbl_loginAd = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_sid = new System.Windows.Forms.Label();
+            this.lbl_roomDetails = new System.Windows.Forms.Label();
+            this.lbl_room = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.materialTabControl1.SuspendLayout();
             this.Narzedziownik.SuspendLayout();
             this.pl_NarzedziownikMain.SuspendLayout();
@@ -372,6 +385,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Separator)).BeginInit();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -947,17 +961,17 @@
             this.restartTime_label.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.restartTime_label.Location = new System.Drawing.Point(187, 94);
             this.restartTime_label.Name = "restartTime_label";
-            this.restartTime_label.Size = new System.Drawing.Size(50, 17);
+            this.restartTime_label.Size = new System.Drawing.Size(132, 17);
             this.restartTime_label.TabIndex = 32;
-            this.restartTime_label.Text = "label19";
+            this.restartTime_label.Text = "                               ";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label22.Location = new System.Drawing.Point(28, 19);
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label22.Location = new System.Drawing.Point(25, 19);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(59, 16);
+            this.label22.Size = new System.Drawing.Size(52, 17);
             this.label22.TabIndex = 25;
             this.label22.Text = "Zasoby";
             // 
@@ -965,7 +979,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label19.Location = new System.Drawing.Point(27, 95);
+            this.label19.Location = new System.Drawing.Point(28, 95);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(156, 17);
             this.label19.TabIndex = 31;
@@ -975,7 +989,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label20.Location = new System.Drawing.Point(28, 56);
+            this.label20.Location = new System.Drawing.Point(28, 47);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(106, 17);
             this.label20.TabIndex = 2;
@@ -985,27 +999,27 @@
             // 
             this.freeC_label.AutoSize = true;
             this.freeC_label.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.freeC_label.Location = new System.Drawing.Point(187, 56);
+            this.freeC_label.Location = new System.Drawing.Point(187, 47);
             this.freeC_label.Name = "freeC_label";
-            this.freeC_label.Size = new System.Drawing.Size(50, 17);
+            this.freeC_label.Size = new System.Drawing.Size(132, 17);
             this.freeC_label.TabIndex = 15;
-            this.freeC_label.Text = "label17";
+            this.freeC_label.Text = "                               ";
             // 
             // freeD_label
             // 
             this.freeD_label.AutoSize = true;
             this.freeD_label.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.freeD_label.Location = new System.Drawing.Point(187, 76);
+            this.freeD_label.Location = new System.Drawing.Point(187, 67);
             this.freeD_label.Name = "freeD_label";
-            this.freeD_label.Size = new System.Drawing.Size(50, 17);
+            this.freeD_label.Size = new System.Drawing.Size(132, 17);
             this.freeD_label.TabIndex = 28;
-            this.freeD_label.Text = "label17";
+            this.freeD_label.Text = "                               ";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label21.Location = new System.Drawing.Point(28, 76);
+            this.label21.Location = new System.Drawing.Point(28, 67);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(107, 17);
             this.label21.TabIndex = 27;
@@ -1013,8 +1027,8 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.graphicsCard_textBox);
-            this.groupBox8.Controls.Add(this.procesor_textBox);
+            this.groupBox8.Controls.Add(this.label9);
+            this.groupBox8.Controls.Add(this.label6);
             this.groupBox8.Controls.Add(this.label33);
             this.groupBox8.Controls.Add(this.label34);
             this.groupBox8.Controls.Add(this.ram_label);
@@ -1029,39 +1043,11 @@
             this.groupBox8.TabIndex = 46;
             this.groupBox8.TabStop = false;
             // 
-            // graphicsCard_textBox
-            // 
-            this.graphicsCard_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.graphicsCard_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.graphicsCard_textBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.graphicsCard_textBox.Location = new System.Drawing.Point(138, 86);
-            this.graphicsCard_textBox.Multiline = true;
-            this.graphicsCard_textBox.Name = "graphicsCard_textBox";
-            this.graphicsCard_textBox.ReadOnly = true;
-            this.graphicsCard_textBox.Size = new System.Drawing.Size(279, 27);
-            this.graphicsCard_textBox.TabIndex = 35;
-            this.graphicsCard_textBox.TabStop = false;
-            this.graphicsCard_textBox.Text = "graphicsCard";
-            // 
-            // procesor_textBox
-            // 
-            this.procesor_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.procesor_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.procesor_textBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.procesor_textBox.Location = new System.Drawing.Point(138, 54);
-            this.procesor_textBox.Multiline = true;
-            this.procesor_textBox.Name = "procesor_textBox";
-            this.procesor_textBox.ReadOnly = true;
-            this.procesor_textBox.Size = new System.Drawing.Size(278, 34);
-            this.procesor_textBox.TabIndex = 34;
-            this.procesor_textBox.TabStop = false;
-            this.procesor_textBox.Text = "procesor";
-            // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label33.Location = new System.Drawing.Point(28, 54);
+            this.label33.Location = new System.Drawing.Point(28, 45);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(60, 17);
             this.label33.TabIndex = 33;
@@ -1071,7 +1057,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label34.Location = new System.Drawing.Point(28, 86);
+            this.label34.Location = new System.Drawing.Point(28, 65);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(96, 17);
             this.label34.TabIndex = 29;
@@ -1081,17 +1067,17 @@
             // 
             this.ram_label.AutoSize = true;
             this.ram_label.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ram_label.Location = new System.Drawing.Point(138, 116);
+            this.ram_label.Location = new System.Drawing.Point(138, 85);
             this.ram_label.Name = "ram_label";
-            this.ram_label.Size = new System.Drawing.Size(31, 17);
+            this.ram_label.Size = new System.Drawing.Size(132, 17);
             this.ram_label.TabIndex = 26;
-            this.ram_label.Text = "ram";
+            this.ram_label.Text = "                               ";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label35.Location = new System.Drawing.Point(26, 116);
+            this.label35.Location = new System.Drawing.Point(28, 85);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(36, 17);
             this.label35.TabIndex = 25;
@@ -1109,10 +1095,10 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label36.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label36.Location = new System.Drawing.Point(26, 16);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(118, 16);
+            this.label36.Size = new System.Drawing.Size(106, 17);
             this.label36.TabIndex = 23;
             this.label36.Text = "Dane sprzętowe";
             // 
@@ -1120,17 +1106,17 @@
             // 
             this.bios_label.AutoSize = true;
             this.bios_label.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.bios_label.Location = new System.Drawing.Point(138, 143);
+            this.bios_label.Location = new System.Drawing.Point(138, 105);
             this.bios_label.Name = "bios_label";
-            this.bios_label.Size = new System.Drawing.Size(50, 17);
+            this.bios_label.Size = new System.Drawing.Size(132, 17);
             this.bios_label.TabIndex = 16;
-            this.bios_label.Text = "smbios";
+            this.bios_label.Text = "                               ";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label37.Location = new System.Drawing.Point(28, 143);
+            this.label37.Location = new System.Drawing.Point(28, 105);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(54, 17);
             this.label37.TabIndex = 1;
@@ -1650,9 +1636,8 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.groupBox12);
             this.tabPage7.Controls.Add(this.textBox14);
-            this.tabPage7.Controls.Add(this.tbx_ksiCodeDetails);
-            this.tabPage7.Controls.Add(this.lbl_ksiCode);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -1665,21 +1650,21 @@
             // 
             this.tbx_ksiCodeDetails.AutoSize = true;
             this.tbx_ksiCodeDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbx_ksiCodeDetails.Location = new System.Drawing.Point(121, 59);
+            this.tbx_ksiCodeDetails.Location = new System.Drawing.Point(134, 129);
             this.tbx_ksiCodeDetails.Name = "tbx_ksiCodeDetails";
-            this.tbx_ksiCodeDetails.Size = new System.Drawing.Size(128, 17);
+            this.tbx_ksiCodeDetails.Size = new System.Drawing.Size(132, 17);
             this.tbx_ksiCodeDetails.TabIndex = 28;
-            this.tbx_ksiCodeDetails.Text = "                              ";
+            this.tbx_ksiCodeDetails.Text = "                               ";
             // 
             // lbl_ksiCode
             // 
             this.lbl_ksiCode.AutoSize = true;
             this.lbl_ksiCode.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_ksiCode.Location = new System.Drawing.Point(12, 59);
+            this.lbl_ksiCode.Location = new System.Drawing.Point(26, 129);
             this.lbl_ksiCode.Name = "lbl_ksiCode";
-            this.lbl_ksiCode.Size = new System.Drawing.Size(79, 17);
+            this.lbl_ksiCode.Size = new System.Drawing.Size(57, 17);
             this.lbl_ksiCode.TabIndex = 27;
-            this.lbl_ksiCode.Text = "Kod KSI TJO";
+            this.lbl_ksiCode.Text = "Kod KSI:";
             this.lbl_ksiCode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel61
@@ -2117,7 +2102,7 @@
             // tsb_wol
             // 
             this.tsb_wol.Name = "tsb_wol";
-            this.tsb_wol.Size = new System.Drawing.Size(107, 22);
+            this.tsb_wol.Size = new System.Drawing.Size(180, 22);
             this.tsb_wol.Text = "WOL";
             this.tsb_wol.Click += new System.EventHandler(this.tsb_wol_Click);
             // 
@@ -2125,7 +2110,7 @@
             // 
             this.tsb_services.Enabled = false;
             this.tsb_services.Name = "tsb_services";
-            this.tsb_services.Size = new System.Drawing.Size(107, 22);
+            this.tsb_services.Size = new System.Drawing.Size(180, 22);
             this.tsb_services.Text = "Usługi";
             this.tsb_services.Click += new System.EventHandler(this.tsb_services_Click);
             // 
@@ -2181,14 +2166,14 @@
             // 
             this.toolStripMenuItem_run_Ajaks32.Enabled = false;
             this.toolStripMenuItem_run_Ajaks32.Name = "toolStripMenuItem_run_Ajaks32";
-            this.toolStripMenuItem_run_Ajaks32.Size = new System.Drawing.Size(123, 22);
+            this.toolStripMenuItem_run_Ajaks32.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem_run_Ajaks32.Text = "Ajaks x32";
             // 
             // toolStripMenuItem_run_Ajaks64
             // 
             this.toolStripMenuItem_run_Ajaks64.Enabled = false;
             this.toolStripMenuItem_run_Ajaks64.Name = "toolStripMenuItem_run_Ajaks64";
-            this.toolStripMenuItem_run_Ajaks64.Size = new System.Drawing.Size(123, 22);
+            this.toolStripMenuItem_run_Ajaks64.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem_run_Ajaks64.Text = "Ajaks x64";
             // 
             // tsb_audit
@@ -2198,7 +2183,6 @@
             this.tsb_ksiappAudit,
             this.tsb_officeAudit,
             this.toolStripMenuItem_singlePC_audyt_all_aplikations});
-            this.tsb_audit.Enabled = false;
             this.tsb_audit.Image = global::Hades2Lite.Properties.Resources.audit__1_;
             this.tsb_audit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsb_audit.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -2271,14 +2255,14 @@
             // tsb_c_
             // 
             this.tsb_c_.Name = "tsb_c_";
-            this.tsb_c_.Size = new System.Drawing.Size(155, 22);
+            this.tsb_c_.Size = new System.Drawing.Size(180, 22);
             this.tsb_c_.Text = "C:\\";
             this.tsb_c_.Click += new System.EventHandler(this.tsb_c__Click);
             // 
             // tsb_autostart
             // 
             this.tsb_autostart.Name = "tsb_autostart";
-            this.tsb_autostart.Size = new System.Drawing.Size(155, 22);
+            this.tsb_autostart.Size = new System.Drawing.Size(180, 22);
             this.tsb_autostart.Text = "AUTOSTART";
             this.tsb_autostart.Click += new System.EventHandler(this.tsb_autostart_Click);
             // 
@@ -2288,7 +2272,7 @@
             this.toolStripMenuItem_APPKSI_APPKSI,
             this.toolStripMenuItem_APPKSI_InstallLogs});
             this.toolStripMenuItem_APPKSI.Name = "toolStripMenuItem_APPKSI";
-            this.toolStripMenuItem_APPKSI.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_APPKSI.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem_APPKSI.Text = "APPKSI";
             // 
             // toolStripMenuItem_APPKSI_APPKSI
@@ -2306,19 +2290,19 @@
             // toolStripMenuItem_CCMCACHE
             // 
             this.toolStripMenuItem_CCMCACHE.Name = "toolStripMenuItem_CCMCACHE";
-            this.toolStripMenuItem_CCMCACHE.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_CCMCACHE.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem_CCMCACHE.Text = "CCMCACHE";
             // 
             // toolStripMenuItem_CSI
             // 
             this.toolStripMenuItem_CSI.Name = "toolStripMenuItem_CSI";
-            this.toolStripMenuItem_CSI.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_CSI.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem_CSI.Text = "CSI";
             // 
             // toolStripMenuItem_CWI_PC
             // 
             this.toolStripMenuItem_CWI_PC.Name = "toolStripMenuItem_CWI_PC";
-            this.toolStripMenuItem_CWI_PC.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_CWI_PC.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem_CWI_PC.Text = "CWI-PC";
             // 
             // toolStripMenuItemPROKOM
@@ -2327,7 +2311,7 @@
             this.toolStripMenuItem_PROKOM_PROKOM,
             this.toolStripMenuItem_PROKOM_COMMON});
             this.toolStripMenuItemPROKOM.Name = "toolStripMenuItemPROKOM";
-            this.toolStripMenuItemPROKOM.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItemPROKOM.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemPROKOM.Text = "PROKOM";
             // 
             // toolStripMenuItem_PROKOM_PROKOM
@@ -2345,14 +2329,14 @@
             // toolStripMenuItem_SKRYPTY
             // 
             this.toolStripMenuItem_SKRYPTY.Name = "toolStripMenuItem_SKRYPTY";
-            this.toolStripMenuItem_SKRYPTY.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_SKRYPTY.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem_SKRYPTY.Text = "SKRYPTY";
             // 
             // toolStripMenuItem_USERS
             // 
             this.toolStripMenuItem_USERS.Name = "toolStripMenuItem_USERS";
             this.toolStripMenuItem_USERS.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem_USERS.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_USERS.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem_USERS.Text = "UŻYTKOWNICY";
             // 
             // tsb_d
@@ -2374,25 +2358,25 @@
             // toolStripMenuItem87
             // 
             this.toolStripMenuItem87.Name = "toolStripMenuItem87";
-            this.toolStripMenuItem87.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem87.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem87.Text = "D:\\";
             // 
             // toolStripMenuItem88
             // 
             this.toolStripMenuItem88.Name = "toolStripMenuItem88";
-            this.toolStripMenuItem88.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem88.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem88.Text = "APPKSI";
             // 
             // toolStripMenuItem89
             // 
             this.toolStripMenuItem89.Name = "toolStripMenuItem89";
-            this.toolStripMenuItem89.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem89.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem89.Text = "CSI";
             // 
             // toolStripMenuItem90
             // 
             this.toolStripMenuItem90.Name = "toolStripMenuItem90";
-            this.toolStripMenuItem90.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem90.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem90.Text = "CI-OHD";
             // 
             // tsb_desktop
@@ -2412,13 +2396,13 @@
             // tsb_desktop_User
             // 
             this.tsb_desktop_User.Name = "tsb_desktop_User";
-            this.tsb_desktop_User.Size = new System.Drawing.Size(153, 22);
+            this.tsb_desktop_User.Size = new System.Drawing.Size(180, 22);
             this.tsb_desktop_User.Text = "User Desktop";
             // 
             // tsb_desktop_Public
             // 
             this.tsb_desktop_Public.Name = "tsb_desktop_Public";
-            this.tsb_desktop_Public.Size = new System.Drawing.Size(153, 22);
+            this.tsb_desktop_Public.Size = new System.Drawing.Size(180, 22);
             this.tsb_desktop_Public.Text = "Public Desktop";
             // 
             // tsb_distribution
@@ -2438,21 +2422,21 @@
             // tsb_distribution_AI
             // 
             this.tsb_distribution_AI.Name = "tsb_distribution_AI";
-            this.tsb_distribution_AI.Size = new System.Drawing.Size(116, 22);
+            this.tsb_distribution_AI.Size = new System.Drawing.Size(180, 22);
             this.tsb_distribution_AI.Text = "AI";
             // 
             // tsb_distribution_CI_OHD
             // 
             this.tsb_distribution_CI_OHD.Enabled = false;
             this.tsb_distribution_CI_OHD.Name = "tsb_distribution_CI_OHD";
-            this.tsb_distribution_CI_OHD.Size = new System.Drawing.Size(116, 22);
+            this.tsb_distribution_CI_OHD.Size = new System.Drawing.Size(180, 22);
             this.tsb_distribution_CI_OHD.Text = "CI-OHD";
             // 
             // tsb_distribution_CWI_PC
             // 
             this.tsb_distribution_CWI_PC.Enabled = false;
             this.tsb_distribution_CWI_PC.Name = "tsb_distribution_CWI_PC";
-            this.tsb_distribution_CWI_PC.Size = new System.Drawing.Size(116, 22);
+            this.tsb_distribution_CWI_PC.Size = new System.Drawing.Size(180, 22);
             this.tsb_distribution_CWI_PC.Text = "CWI-PC";
             // 
             // toolStrip6
@@ -3069,6 +3053,7 @@
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(1054, 529);
             this.tabControl2.TabIndex = 0;
+            this.tabControl2.SelectedIndexChanged += new System.EventHandler(this.tabControl2_SelectedIndexChanged);
             // 
             // tabPage3
             // 
@@ -3103,6 +3088,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(201, 20);
             this.textBox6.TabIndex = 4;
+            this.textBox6.Text = "SCM11-ADMCE.ZUS.AD";
             // 
             // textBox5
             // 
@@ -3265,12 +3251,12 @@
             this.textBox9.Size = new System.Drawing.Size(355, 20);
             this.textBox9.TabIndex = 10;
             // 
-            // textBox10
+            // tbx_adpathDetails
             // 
-            this.textBox10.Location = new System.Drawing.Point(111, 27);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(355, 20);
-            this.textBox10.TabIndex = 9;
+            this.tbx_adpathDetails.Location = new System.Drawing.Point(111, 27);
+            this.tbx_adpathDetails.Name = "tbx_adpathDetails";
+            this.tbx_adpathDetails.Size = new System.Drawing.Size(355, 20);
+            this.tbx_adpathDetails.TabIndex = 9;
             // 
             // label50
             // 
@@ -3674,7 +3660,7 @@
             this.groupBox11.Controls.Add(this.button16);
             this.groupBox11.Controls.Add(this.label50);
             this.groupBox11.Controls.Add(this.button15);
-            this.groupBox11.Controls.Add(this.textBox10);
+            this.groupBox11.Controls.Add(this.tbx_adpathDetails);
             this.groupBox11.Controls.Add(this.button14);
             this.groupBox11.Controls.Add(this.textBox9);
             this.groupBox11.Controls.Add(this.button13);
@@ -3692,6 +3678,169 @@
             this.groupBox11.TabIndex = 24;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Ścieżki do aplikacji";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.groupBox12.Controls.Add(this.lbl_roomDetails);
+            this.groupBox12.Controls.Add(this.lbl_room);
+            this.groupBox12.Controls.Add(this.label3);
+            this.groupBox12.Controls.Add(this.lbl_sid);
+            this.groupBox12.Controls.Add(this.panel13);
+            this.groupBox12.Controls.Add(this.label2);
+            this.groupBox12.Controls.Add(this.tbx_ksiCodeDetails);
+            this.groupBox12.Controls.Add(this.lbl_addressDetails);
+            this.groupBox12.Controls.Add(this.lbl_ksiCode);
+            this.groupBox12.Controls.Add(this.lbl_cellPhoneDetails);
+            this.groupBox12.Controls.Add(this.lbl_loginAdDetails);
+            this.groupBox12.Controls.Add(this.lbl_address);
+            this.groupBox12.Controls.Add(this.lbl_cellPhone);
+            this.groupBox12.Controls.Add(this.lbl_loginAd);
+            this.groupBox12.Location = new System.Drawing.Point(6, 32);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(375, 289);
+            this.groupBox12.TabIndex = 49;
+            this.groupBox12.TabStop = false;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Black;
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Location = new System.Drawing.Point(23, 35);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(280, 2);
+            this.panel13.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(20, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 17);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Dane z Active Directory";
+            // 
+            // lbl_addressDetails
+            // 
+            this.lbl_addressDetails.AutoSize = true;
+            this.lbl_addressDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_addressDetails.Location = new System.Drawing.Point(134, 109);
+            this.lbl_addressDetails.Name = "lbl_addressDetails";
+            this.lbl_addressDetails.Size = new System.Drawing.Size(132, 17);
+            this.lbl_addressDetails.TabIndex = 18;
+            this.lbl_addressDetails.Text = "                               ";
+            // 
+            // lbl_cellPhoneDetails
+            // 
+            this.lbl_cellPhoneDetails.AutoSize = true;
+            this.lbl_cellPhoneDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_cellPhoneDetails.Location = new System.Drawing.Point(134, 69);
+            this.lbl_cellPhoneDetails.Name = "lbl_cellPhoneDetails";
+            this.lbl_cellPhoneDetails.Size = new System.Drawing.Size(132, 17);
+            this.lbl_cellPhoneDetails.TabIndex = 19;
+            this.lbl_cellPhoneDetails.Text = "                               ";
+            // 
+            // lbl_loginAdDetails
+            // 
+            this.lbl_loginAdDetails.AutoSize = true;
+            this.lbl_loginAdDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_loginAdDetails.Location = new System.Drawing.Point(134, 44);
+            this.lbl_loginAdDetails.Name = "lbl_loginAdDetails";
+            this.lbl_loginAdDetails.Size = new System.Drawing.Size(131, 16);
+            this.lbl_loginAdDetails.TabIndex = 20;
+            this.lbl_loginAdDetails.Text = "                               ";
+            // 
+            // lbl_address
+            // 
+            this.lbl_address.AutoSize = true;
+            this.lbl_address.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_address.Location = new System.Drawing.Point(26, 109);
+            this.lbl_address.Name = "lbl_address";
+            this.lbl_address.Size = new System.Drawing.Size(45, 17);
+            this.lbl_address.TabIndex = 2;
+            this.lbl_address.Text = "Adres:";
+            // 
+            // lbl_cellPhone
+            // 
+            this.lbl_cellPhone.AutoSize = true;
+            this.lbl_cellPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_cellPhone.Location = new System.Drawing.Point(26, 69);
+            this.lbl_cellPhone.Name = "lbl_cellPhone";
+            this.lbl_cellPhone.Size = new System.Drawing.Size(62, 17);
+            this.lbl_cellPhone.TabIndex = 1;
+            this.lbl_cellPhone.Text = "Tel. kom.:";
+            // 
+            // lbl_loginAd
+            // 
+            this.lbl_loginAd.AutoSize = true;
+            this.lbl_loginAd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_loginAd.Location = new System.Drawing.Point(26, 44);
+            this.lbl_loginAd.Name = "lbl_loginAd";
+            this.lbl_loginAd.Size = new System.Drawing.Size(61, 17);
+            this.lbl_loginAd.TabIndex = 0;
+            this.lbl_loginAd.Text = "login AD:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(134, 149);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(132, 17);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "                               ";
+            // 
+            // lbl_sid
+            // 
+            this.lbl_sid.AutoSize = true;
+            this.lbl_sid.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_sid.Location = new System.Drawing.Point(26, 149);
+            this.lbl_sid.Name = "lbl_sid";
+            this.lbl_sid.Size = new System.Drawing.Size(30, 17);
+            this.lbl_sid.TabIndex = 29;
+            this.lbl_sid.Text = "SID:";
+            this.lbl_sid.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_roomDetails
+            // 
+            this.lbl_roomDetails.AutoSize = true;
+            this.lbl_roomDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_roomDetails.Location = new System.Drawing.Point(134, 89);
+            this.lbl_roomDetails.Name = "lbl_roomDetails";
+            this.lbl_roomDetails.Size = new System.Drawing.Size(132, 17);
+            this.lbl_roomDetails.TabIndex = 32;
+            this.lbl_roomDetails.Text = "                               ";
+            // 
+            // lbl_room
+            // 
+            this.lbl_room.AutoSize = true;
+            this.lbl_room.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_room.Location = new System.Drawing.Point(26, 89);
+            this.lbl_room.Name = "lbl_room";
+            this.lbl_room.Size = new System.Drawing.Size(43, 17);
+            this.lbl_room.TabIndex = 31;
+            this.lbl_room.Text = "Pokój:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(138, 65);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(132, 17);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "                               ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(138, 45);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(132, 17);
+            this.label9.TabIndex = 35;
+            this.label9.Text = "                               ";
             // 
             // frm_Hades2Lite
             // 
@@ -3790,6 +3939,8 @@
             this.groupBox10.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3939,8 +4090,6 @@
         private System.Windows.Forms.Label lbl_model;
         private System.Windows.Forms.Label lbl_manufacturer;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox graphicsCard_textBox;
-        private System.Windows.Forms.TextBox procesor_textBox;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label ram_label;
@@ -4059,7 +4208,7 @@
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbx_adpathDetails;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
@@ -4082,6 +4231,21 @@
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_addressDetails;
+        private System.Windows.Forms.Label lbl_cellPhoneDetails;
+        private System.Windows.Forms.Label lbl_loginAdDetails;
+        private System.Windows.Forms.Label lbl_address;
+        private System.Windows.Forms.Label lbl_cellPhone;
+        private System.Windows.Forms.Label lbl_loginAd;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_sid;
+        private System.Windows.Forms.Label lbl_roomDetails;
+        private System.Windows.Forms.Label lbl_room;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
     }
 }
 
