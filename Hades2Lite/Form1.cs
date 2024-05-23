@@ -47,6 +47,21 @@ namespace Hades2Lite
             btn_remoteCmd.Enabled = true;
             btn_shutdownPC.Enabled = true;
             btn_restartPC.Enabled = true;
+
+            tsb_services.Enabled = true;
+            tsb_user.Enabled = true;
+            tsb_profileRefresh.Enabled = true;
+            tsb_usersPrinter.Enabled = true;
+            tsb_ajaks.Enabled = true;
+            tsb_audit.Enabled = true;
+            tsb_installer.Enabled = true;
+            tsb_c.Enabled = true;
+            tsb_d.Enabled = true;
+            tsb_desktop.Enabled = true;
+            tsb_distribution_CI_OHD.Enabled = true;
+            tsb_distribution_CWI_PC.Enabled = true;
+
+            
         }
 
         private void DisableButtons()
@@ -57,6 +72,18 @@ namespace Hades2Lite
             btn_remoteCmd.Enabled = false;
             btn_shutdownPC.Enabled = false;
             btn_restartPC.Enabled = false;
+
+            tsb_services.Enabled = false;
+            tsb_user.Enabled = false;
+            tsb_ajaks.Enabled = false;
+            tsb_audit.Enabled = false;
+            tsb_installer.Enabled = false;
+            tsb_c.Enabled = false;
+            tsb_d.Enabled = false;
+            tsb_desktop.Enabled = false;
+            tsb_distribution_CI_OHD.Enabled = false;
+            tsb_distribution_CWI_PC.Enabled = false;
+
         }
 
         //-------------------Funkcje button click----------------------------------------------------------
@@ -64,6 +91,7 @@ namespace Hades2Lite
         {
             string computerName = tbx_pcName.Text.ToUpper();
             string recoveryPhrase = null;
+            string userStatus = null;
 
             if (string.IsNullOrEmpty(computerName) | computerName == "PODAJ NAZWĘ LUB IP KOMPUTERA")
             {
@@ -77,7 +105,9 @@ namespace Hades2Lite
             {
                 try
                 {
-                    
+                    EnableButtons();
+                    tab_computers.Enabled = true;
+                    tab_users.Enabled = true;
 
                     tbx_snDetail.Text = "Pobieram dane...";
                     tbx_snDetail.Text = "Pobieram dane...";
@@ -89,8 +119,16 @@ namespace Hades2Lite
                     tbx_buildDetails.Text = "Pobieram dane...";
                     tbx_architectureDetails.Text = "Pobieram dane...";
 
+                    tbx_usernameDetails.Text = "Pobieram dane...";
+                    tbx_cellPhoneDetails.Text = "Pobieram dane...";
+                    tbx_emailDetails.Text = "Pobieram dane...";
+                    tbx_departmentDetails.Text = "Pobieram dane...";
+                    tbx_ksiCodeDetails.Text = "Pobieram dane..."; ;
+                    tbx_unitDetails.Text = "Pobieram dane...";
+                    tbx_deptDetails.Text = "Pobieram dane...";
+                    tbx_titleDetails.Text = "Pobieram dane...";
 
-                    
+
 
                     OperatingSystemDetails osDetails = new OperatingSystemDetails();
                     osDetails = Hades2common.ToolBox.GetOSInfo(computerName);
@@ -105,16 +143,22 @@ namespace Hades2Lite
                     Hades2common.UserInfo ADUserData = new Hades2common.UserInfo();
                     ADUserData = UserDetails.GetADUserInfo(userName);
                     ADUserData.Status = UserDetails.getUserComputerStatus(computerName);
+                    userStatus = UserDetails.getUserComputerStatus(computerName);
 
-                    
+                    lbl_statusDetails.Text = userStatus.ToString();
 
 
-                    tbx_phoneDetails.Text = ADUserData.LoginAD.ToString();
+
+
+
+                    tbx_usernameDetails.Text = ADUserData.Imie.ToString() + " " + ADUserData.Nazwisko.ToString();
                     tbx_cellPhoneDetails.Text = ADUserData.OfficePhone.ToString();
                     tbx_emailDetails.Text = ADUserData.Email.ToString();
                     tbx_departmentDetails.Text = ADUserData.Department.ToString();
                     tbx_ksiCodeDetails.Text = ADUserData.KSIcode.ToString();
-                    tbx_unitDetails.Text = ADUserData.State.ToString();
+                    tbx_unitDetails.Text = ADUserData.Description.ToString();
+                    tbx_deptDetails.Text = ADUserData.Oddzial.ToString();
+                    tbx_titleDetails.Text = ADUserData.Title.ToString();
 
                     tbx_snDetail.Text = computerDetails.SerialNumber.ToString();
                     tbx_macDetails.Text = computerDetails.MACAddress.ToString();
@@ -126,16 +170,13 @@ namespace Hades2Lite
                     tbx_buildDetails.Text = computerDetails.OSBuild.ToString();
                     tbx_architectureDetails.Text = computerDetails.OSArchitecture.ToString();
 
-                    tsb_remoteSCCM.Enabled = true;
-                    tsb_rdp.Enabled = true;
-                    btn_computerManagement.Enabled = true;
-                    btn_remoteCmd.Enabled = true;
-                    btn_shutdownPC.Enabled = true;
-                    btn_restartPC.Enabled = true;
+                    
 
                     recoveryPhrase = Hades2common.ToolBox.GetBitlockerRecoveryInfo(computerName);
 
                     tbx_bitlockerDetails.Text = recoveryPhrase;
+                    
+
 
                     //MessageBox.Show($"{osDetails.Name}\n{osDetails.OSArchitecture}\n{osDetails.BuildDisplay}\n{osDetails.BuildNumber}.{osDetails.UBRNumber}");
                 }
@@ -326,14 +367,31 @@ namespace Hades2Lite
         void clearPCName()
         {
             tbx_snDetail.Text = string.Empty;
-            tbx_snDetail.Text = string.Empty;
             tbx_macDetails.Text = string.Empty;
             tbx_ipDetails.Text = string.Empty;
             tbx_manufacturerDetails.Text = string.Empty;
             tbx_modelDetails.Text = string.Empty;
             tbx_versionDetails.Text = string.Empty;
             tbx_buildDetails.Text = string.Empty;
+            tbx_osDetailName.Text = string.Empty;
+            tbx_buildDetails.Text = string.Empty;
             tbx_architectureDetails.Text = string.Empty;
+
+            lbl_statusDetails.Text = string.Empty;
+
+            tbx_usernameDetails.Text = string.Empty;
+            tbx_cellPhoneDetails.Text = string.Empty;
+            tbx_emailDetails.Text = string.Empty;
+            tbx_departmentDetails.Text = string.Empty;
+            tbx_ksiCodeDetails.Text = string.Empty; ;
+            tbx_unitDetails.Text = string.Empty;
+            tbx_deptDetails.Text = string.Empty;
+            tbx_titleDetails.Text = string.Empty;
+
+
+
+
+
             tbx_pcName.Text = string.Empty;
             tbx_pcName.Focus();
             tbx_pcName.SelectAll();
@@ -438,10 +496,13 @@ namespace Hades2Lite
         private void tbx_pcName_TextChanged(object sender, EventArgs e)
         {
             // Sprawdź długość tekstu w TextBox1
-            if (tbx_pcName.Text.Length >= 4)
+            if (tbx_pcName.Text.Length >= 6)
             {
                 btn_GetComputerData.Enabled = true;
                 btn_pinglong.Enabled = true;
+                tsb_wol.Enabled = true;
+                tsb_computer.Enabled = true;
+
             }
             else
             {
@@ -754,6 +815,78 @@ namespace Hades2Lite
             }
         }
 
+        private void tsb_ksiappAudit_Click(object sender, EventArgs e)
+        {
+            //// Ścieżka do skryptu PowerShell
+            //string scriptPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scripts", "checkapps.ps1");
+            //string sfsServer = "SFS01-OSCI1";
+            //string computerName = tbx_pcName.Text.ToUpper();
+
+            //// Sprawdzenie, czy skrypt istnieje
+            //if (System.IO.File.Exists(scriptPath))
+            //{
+            //    try
+            //    {
+            //        // Uruchomienie skryptu PowerShell
+            //        ProcessStartInfo startInfo = new ProcessStartInfo()
+            //        {
+            //            FileName = "powershell.exe",
+            //            Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" {computerName} {sfsServer}",
+            //            RedirectStandardOutput = true,
+            //            RedirectStandardError = true,
+            //            UseShellExecute = false,
+            //            CreateNoWindow = false
+            //        };
+
+            //        using (Process process = new Process())
+            //        {
+            //            process.StartInfo = startInfo;
+            //            process.Start();
+            //            process.WaitForExit();
+
+            //            // Odczytanie wyników
+            //            string output = process.StandardOutput.ReadToEnd();
+            //            string error = process.StandardError.ReadToEnd();
+
+            //            // Wyświetlenie wyników w MessageBox
+            //            if (string.IsNullOrEmpty(error))
+            //            {
+            //                MessageBox.Show("Script executed successfully:\n" + output);
+            //            }
+            //            else
+            //            {
+            //                MessageBox.Show("Script error:\n" + error);
+            //            }
+            //        }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show("An error occurred: " + ex.Message);
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Script not found: " + scriptPath);
+            //}
+
+            {
+                try
+                {
+                    string computerName = tbx_pcName.Text.Trim();
+                    frm_AppAudit appAudit = new frm_AppAudit();
+                    appAudit.ComputerName = computerName;
+                    appAudit.ShowDialog();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Podczas odczytu usług wystapił błąd: " + ex.Message);
+                    return;
+                }
+            }
+
+
+        }
+
         private void tsb_usersPrinter_Click(object sender, EventArgs e)
         {
             string computerName = tbx_pcName.Text.ToUpper();
@@ -839,6 +972,84 @@ namespace Hades2Lite
         private void btn_itTeren_Click(object sender, EventArgs e)
         {
             Hades2common.URL.OpenUrl("http://it.zus.ad/teren");
+        }
+
+        private void btn_ActiveDirectory_Click(object sender, EventArgs e)
+        {
+            Hades2common.runExe.RunExe("C:\\Program Files (x86)\\SAP\\FrontEnd\\SapGui\\SapLogon.exe");
+        }
+
+        private void frm_Hades2Lite_KeyDown(object sender, KeyEventArgs e)
+        {
+           // if (e.KeyCode == Keys.F5)
+            {
+                string clipboardText = Clipboard.GetText();
+
+
+
+                //tbx_pcName.Text = clipboardText;
+                MessageBox.Show(clipboardText);
+
+                // Wywołanie bezpośredniego zdarzenia KeyDown dla textBox1
+              //  tbx_pcName_KeyDown(textBox1, new KeyEventArgs(Keys.Enter));
+
+               // e.SuppressKeyPress = true; // Zatrzymaj propagację zdarzenia
+                //RefreshComputerInfo(sender, e);
+            }
+        }
+
+        private async void btn_sendMsg_Click(object sender, EventArgs e)
+        {
+            string computerName = tbx_pcName.Text.ToUpper();
+            textBox_singlePc_messageText.Focus();
+            if (string.IsNullOrEmpty(computerName) | computerName == "PODAJ NAZWĘ LUB IP KOMPUTERA")
+            {
+                MessageBox.Show("Podaj nazwę komputera, lub jego adres IP.", "Informacja o błędzie", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string textFromTextBox = textBox_singlePc_messageText.Text; // + Environment.NewLine;
+            if (string.IsNullOrEmpty(textFromTextBox))
+            {
+                MessageBox.Show("Komunikat który chcesz wysłać jest pusty.\nKomunikat musi posiadać treść.", "Informacja o błędzie", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            bool active = await Task.Run(() => Hades2common.ToolBox.PingAndCheckDiskAsync(computerName));
+
+            if (active)
+            {
+                bool sendSuccessfully = await Task.Run<bool>(() =>
+                {
+                    StringBuilder message = new StringBuilder("Komunikat od Administratora OHD\n");
+                    message.Append($"Tu wstawić z parametrów Imie i Nazwisko o raz telefon Admina OHD\n");
+                    message.Append("\n\n");
+                    message.Append($"{textFromTextBox}");
+                    message.Append("\n");
+
+                    return ToolBox.SendMsg(computerName, message.ToString());
+                });
+
+                if (sendSuccessfully) MessageBox.Show($"Wiadomość do komputera {computerName} została wysłana pomyślnie", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show($"Komputer {computerName} jest niedostępny!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void tbx_pcName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                btn_GetComputerDetails_Click(pcName_textBox,e);
+            }
+        }
+
+        private void panel_singlePC_top_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
