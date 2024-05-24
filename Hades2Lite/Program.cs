@@ -21,14 +21,14 @@ namespace Hades2Lite
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new frm_Hades2Lite());
 
-            if (CheckUserGroupMembership())
+           // if (CheckUserGroupMembership())
             {
                 Application.Run(new frm_Hades2Lite());
             }
-            else
-            {
-                MessageBox.Show("Brak uprawnień.\nNie jesteś członkiem grupy GG_HADES2_CHRO1.\nPoproś swojego bezpośredniego przełożonego o nadanie uprawnień do grupy i spróbuj ponownie.", "Sprawdzenie uprawnień", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+          //  else
+         //   {
+         //       MessageBox.Show("Brak uprawnień.\nNie jesteś członkiem grupy GG_HADES2_CHRO1.\nPoproś swojego bezpośredniego przełożonego o nadanie uprawnień do grupy i spróbuj ponownie.", "Sprawdzenie uprawnień", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+          //  }
 
         }
 

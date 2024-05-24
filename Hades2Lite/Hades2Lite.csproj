@@ -126,7 +126,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-full-16.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\separator_main.png" />
   </ItemGroup>
@@ -186,6 +188,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-refresh-16 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ping-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sap-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-service-16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
