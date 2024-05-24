@@ -159,6 +159,10 @@ namespace Hades2Lite
                     tbx_unitDetails.Text = "Pobieram dane...";
                     tbx_deptDetails.Text = "Pobieram dane...";
                     tbx_titleDetails.Text = "Pobieram dane...";
+                    lbl_loginAdDetails.Text = "Pobieram dane...";
+                    lbl_cellPhoneDetails.Text = "Pobieram dane...";
+                    lbl_roomDetails.Text = "Pobieram dane...";
+                    lbl_addressDetails.Text = "Pobieram dane...";
 
 
 
@@ -191,6 +195,15 @@ namespace Hades2Lite
                     tbx_unitDetails.Text = ADUserData.Description.ToString();
                     tbx_deptDetails.Text = ADUserData.Oddzial.ToString();
                     tbx_titleDetails.Text = ADUserData.Title.ToString();
+
+                    //------------------druga zakładka danych uzytkownika---------------------------
+
+                    lbl_loginAdDetails.Text = ADUserData.LoginAD.ToString();
+                    lbl_cellPhoneDetails.Text = ADUserData.MobilePhone.ToString();
+                    lbl_roomDetails.Text = ADUserData.Biuro.ToString();
+                    lbl_addressDetails.Text = ADUserData.Adress.ToString();
+
+
 
                     tbx_snDetail.Text = computerDetails.SerialNumber.ToString();
                     tbx_macDetails.Text = computerDetails.MACAddress.ToString();

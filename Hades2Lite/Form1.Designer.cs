@@ -85,6 +85,8 @@
             this.freeD_label = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.ram_label = new System.Windows.Forms.Label();
@@ -111,6 +113,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tbx_bitlockerDetails = new System.Windows.Forms.Label();
             this.tab_users = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -138,9 +141,24 @@
             this.lbl_title = new System.Windows.Forms.Label();
             this.lbl_dep = new System.Windows.Forms.Label();
             this.lbl_unit = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.lbl_roomDetails = new System.Windows.Forms.Label();
+            this.lbl_room = new System.Windows.Forms.Label();
+            this.lbl_sidDetails = new System.Windows.Forms.Label();
+            this.lbl_sid = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.tbx_ksiCodeDetails = new System.Windows.Forms.Label();
+            this.lbl_addressDetails = new System.Windows.Forms.Label();
             this.lbl_ksiCode = new System.Windows.Forms.Label();
+            this.lbl_cellPhoneDetails = new System.Windows.Forms.Label();
+            this.lbl_loginAdDetails = new System.Windows.Forms.Label();
+            this.lbl_address = new System.Windows.Forms.Label();
+            this.lbl_cellPhone = new System.Windows.Forms.Label();
+            this.lbl_loginAd = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.panel61 = new System.Windows.Forms.Panel();
             this.panel_bottom_border = new System.Windows.Forms.Panel();
             this.tbx_pcName = new System.Windows.Forms.TextBox();
@@ -255,32 +273,34 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label47 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
+            this.label48 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.tbx_adpathDetails = new System.Windows.Forms.TextBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.label52 = new System.Windows.Forms.Label();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label51 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
+            this.label50 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.tbx_adpathDetails = new System.Windows.Forms.TextBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.label55 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.Pomoc = new System.Windows.Forms.TabPage();
             this.pl_PomocPADDING = new System.Windows.Forms.Panel();
@@ -308,26 +328,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox_Separator = new System.Windows.Forms.PictureBox();
             this.btn_ActiveDirectory = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbl_addressDetails = new System.Windows.Forms.Label();
-            this.lbl_cellPhoneDetails = new System.Windows.Forms.Label();
-            this.lbl_loginAdDetails = new System.Windows.Forms.Label();
-            this.lbl_address = new System.Windows.Forms.Label();
-            this.lbl_cellPhone = new System.Windows.Forms.Label();
-            this.lbl_loginAd = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbl_sid = new System.Windows.Forms.Label();
-            this.lbl_roomDetails = new System.Windows.Forms.Label();
-            this.lbl_room = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.materialTabControl1.SuspendLayout();
             this.Narzedziownik.SuspendLayout();
             this.pl_NarzedziownikMain.SuspendLayout();
@@ -350,6 +351,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.panel61.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel_singlePC_top2.SuspendLayout();
@@ -370,7 +372,9 @@
             this.panel12.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.Pomoc.SuspendLayout();
             this.pl_PomocPADDING.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -383,9 +387,6 @@
             this.pl_MainHADES.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Separator)).BeginInit();
-            this.groupBox10.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -1043,6 +1044,26 @@
             this.groupBox8.TabIndex = 46;
             this.groupBox8.TabStop = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(138, 45);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(132, 17);
+            this.label9.TabIndex = 35;
+            this.label9.Text = "                               ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(138, 65);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(132, 17);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "                               ";
+            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -1324,6 +1345,23 @@
             this.tabPage8.Text = "Bitlocker";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox2.Location = new System.Drawing.Point(6, 6);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox2.Size = new System.Drawing.Size(375, 26);
+            this.textBox2.TabIndex = 49;
+            this.textBox2.TabStop = false;
+            this.textBox2.Text = "Komputer";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // tbx_bitlockerDetails
             // 
             this.tbx_bitlockerDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -1354,6 +1392,7 @@
             this.tabPage6.Controls.Add(this.lbl_status);
             this.tabPage6.Controls.Add(this.lbl_statusDetails);
             this.tabPage6.Controls.Add(this.groupBox3);
+            this.tabPage6.Controls.Add(this.checkBox1);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -1369,7 +1408,7 @@
             this.btn_refreshUser.FlatAppearance.BorderSize = 0;
             this.btn_refreshUser.Image = global::Hades2Lite.Properties.Resources.icons8_refresh_16__1_;
             this.btn_refreshUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_refreshUser.Location = new System.Drawing.Point(306, 36);
+            this.btn_refreshUser.Location = new System.Drawing.Point(254, 36);
             this.btn_refreshUser.Name = "btn_refreshUser";
             this.btn_refreshUser.Size = new System.Drawing.Size(76, 27);
             this.btn_refreshUser.TabIndex = 46;
@@ -1634,6 +1673,18 @@
             this.lbl_unit.TabIndex = 0;
             this.lbl_unit.Text = "Jednostka";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox1.Location = new System.Drawing.Point(331, 41);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(53, 17);
+            this.checkBox1.TabIndex = 48;
+            this.checkBox1.Text = "w pętli";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.groupBox12);
@@ -1646,6 +1697,89 @@
             this.tabPage7.Text = "Dane z Active Directory";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // groupBox12
+            // 
+            this.groupBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.groupBox12.Controls.Add(this.lbl_roomDetails);
+            this.groupBox12.Controls.Add(this.lbl_room);
+            this.groupBox12.Controls.Add(this.lbl_sidDetails);
+            this.groupBox12.Controls.Add(this.lbl_sid);
+            this.groupBox12.Controls.Add(this.panel13);
+            this.groupBox12.Controls.Add(this.label2);
+            this.groupBox12.Controls.Add(this.tbx_ksiCodeDetails);
+            this.groupBox12.Controls.Add(this.lbl_addressDetails);
+            this.groupBox12.Controls.Add(this.lbl_ksiCode);
+            this.groupBox12.Controls.Add(this.lbl_cellPhoneDetails);
+            this.groupBox12.Controls.Add(this.lbl_loginAdDetails);
+            this.groupBox12.Controls.Add(this.lbl_address);
+            this.groupBox12.Controls.Add(this.lbl_cellPhone);
+            this.groupBox12.Controls.Add(this.lbl_loginAd);
+            this.groupBox12.Location = new System.Drawing.Point(6, 32);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(375, 289);
+            this.groupBox12.TabIndex = 49;
+            this.groupBox12.TabStop = false;
+            // 
+            // lbl_roomDetails
+            // 
+            this.lbl_roomDetails.AutoSize = true;
+            this.lbl_roomDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_roomDetails.Location = new System.Drawing.Point(134, 89);
+            this.lbl_roomDetails.Name = "lbl_roomDetails";
+            this.lbl_roomDetails.Size = new System.Drawing.Size(132, 17);
+            this.lbl_roomDetails.TabIndex = 32;
+            this.lbl_roomDetails.Text = "                               ";
+            // 
+            // lbl_room
+            // 
+            this.lbl_room.AutoSize = true;
+            this.lbl_room.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_room.Location = new System.Drawing.Point(26, 89);
+            this.lbl_room.Name = "lbl_room";
+            this.lbl_room.Size = new System.Drawing.Size(43, 17);
+            this.lbl_room.TabIndex = 31;
+            this.lbl_room.Text = "Pokój:";
+            // 
+            // lbl_sidDetails
+            // 
+            this.lbl_sidDetails.AutoSize = true;
+            this.lbl_sidDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_sidDetails.Location = new System.Drawing.Point(134, 149);
+            this.lbl_sidDetails.Name = "lbl_sidDetails";
+            this.lbl_sidDetails.Size = new System.Drawing.Size(132, 17);
+            this.lbl_sidDetails.TabIndex = 30;
+            this.lbl_sidDetails.Text = "                               ";
+            // 
+            // lbl_sid
+            // 
+            this.lbl_sid.AutoSize = true;
+            this.lbl_sid.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_sid.Location = new System.Drawing.Point(26, 149);
+            this.lbl_sid.Name = "lbl_sid";
+            this.lbl_sid.Size = new System.Drawing.Size(30, 17);
+            this.lbl_sid.TabIndex = 29;
+            this.lbl_sid.Text = "SID:";
+            this.lbl_sid.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Black;
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Location = new System.Drawing.Point(23, 35);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(280, 2);
+            this.panel13.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(20, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 17);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Dane z Active Directory";
+            // 
             // tbx_ksiCodeDetails
             // 
             this.tbx_ksiCodeDetails.AutoSize = true;
@@ -1655,6 +1789,16 @@
             this.tbx_ksiCodeDetails.Size = new System.Drawing.Size(132, 17);
             this.tbx_ksiCodeDetails.TabIndex = 28;
             this.tbx_ksiCodeDetails.Text = "                               ";
+            // 
+            // lbl_addressDetails
+            // 
+            this.lbl_addressDetails.AutoSize = true;
+            this.lbl_addressDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_addressDetails.Location = new System.Drawing.Point(134, 109);
+            this.lbl_addressDetails.Name = "lbl_addressDetails";
+            this.lbl_addressDetails.Size = new System.Drawing.Size(132, 17);
+            this.lbl_addressDetails.TabIndex = 18;
+            this.lbl_addressDetails.Text = "                               ";
             // 
             // lbl_ksiCode
             // 
@@ -1666,6 +1810,73 @@
             this.lbl_ksiCode.TabIndex = 27;
             this.lbl_ksiCode.Text = "Kod KSI:";
             this.lbl_ksiCode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_cellPhoneDetails
+            // 
+            this.lbl_cellPhoneDetails.AutoSize = true;
+            this.lbl_cellPhoneDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_cellPhoneDetails.Location = new System.Drawing.Point(134, 69);
+            this.lbl_cellPhoneDetails.Name = "lbl_cellPhoneDetails";
+            this.lbl_cellPhoneDetails.Size = new System.Drawing.Size(132, 17);
+            this.lbl_cellPhoneDetails.TabIndex = 19;
+            this.lbl_cellPhoneDetails.Text = "                               ";
+            // 
+            // lbl_loginAdDetails
+            // 
+            this.lbl_loginAdDetails.AutoSize = true;
+            this.lbl_loginAdDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_loginAdDetails.Location = new System.Drawing.Point(134, 44);
+            this.lbl_loginAdDetails.Name = "lbl_loginAdDetails";
+            this.lbl_loginAdDetails.Size = new System.Drawing.Size(131, 16);
+            this.lbl_loginAdDetails.TabIndex = 20;
+            this.lbl_loginAdDetails.Text = "                               ";
+            // 
+            // lbl_address
+            // 
+            this.lbl_address.AutoSize = true;
+            this.lbl_address.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_address.Location = new System.Drawing.Point(26, 109);
+            this.lbl_address.Name = "lbl_address";
+            this.lbl_address.Size = new System.Drawing.Size(45, 17);
+            this.lbl_address.TabIndex = 2;
+            this.lbl_address.Text = "Adres:";
+            // 
+            // lbl_cellPhone
+            // 
+            this.lbl_cellPhone.AutoSize = true;
+            this.lbl_cellPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_cellPhone.Location = new System.Drawing.Point(26, 69);
+            this.lbl_cellPhone.Name = "lbl_cellPhone";
+            this.lbl_cellPhone.Size = new System.Drawing.Size(62, 17);
+            this.lbl_cellPhone.TabIndex = 1;
+            this.lbl_cellPhone.Text = "Tel. kom.:";
+            // 
+            // lbl_loginAd
+            // 
+            this.lbl_loginAd.AutoSize = true;
+            this.lbl_loginAd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_loginAd.Location = new System.Drawing.Point(26, 44);
+            this.lbl_loginAd.Name = "lbl_loginAd";
+            this.lbl_loginAd.Size = new System.Drawing.Size(61, 17);
+            this.lbl_loginAd.TabIndex = 0;
+            this.lbl_loginAd.Text = "login AD:";
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox14.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox14.Location = new System.Drawing.Point(6, 6);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox14.Size = new System.Drawing.Size(375, 26);
+            this.textBox14.TabIndex = 48;
+            this.textBox14.TabStop = false;
+            this.textBox14.Text = "Użytkownik";
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel61
             // 
@@ -2102,7 +2313,7 @@
             // tsb_wol
             // 
             this.tsb_wol.Name = "tsb_wol";
-            this.tsb_wol.Size = new System.Drawing.Size(180, 22);
+            this.tsb_wol.Size = new System.Drawing.Size(107, 22);
             this.tsb_wol.Text = "WOL";
             this.tsb_wol.Click += new System.EventHandler(this.tsb_wol_Click);
             // 
@@ -2110,7 +2321,7 @@
             // 
             this.tsb_services.Enabled = false;
             this.tsb_services.Name = "tsb_services";
-            this.tsb_services.Size = new System.Drawing.Size(180, 22);
+            this.tsb_services.Size = new System.Drawing.Size(107, 22);
             this.tsb_services.Text = "Usługi";
             this.tsb_services.Click += new System.EventHandler(this.tsb_services_Click);
             // 
@@ -2166,14 +2377,14 @@
             // 
             this.toolStripMenuItem_run_Ajaks32.Enabled = false;
             this.toolStripMenuItem_run_Ajaks32.Name = "toolStripMenuItem_run_Ajaks32";
-            this.toolStripMenuItem_run_Ajaks32.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_run_Ajaks32.Size = new System.Drawing.Size(123, 22);
             this.toolStripMenuItem_run_Ajaks32.Text = "Ajaks x32";
             // 
             // toolStripMenuItem_run_Ajaks64
             // 
             this.toolStripMenuItem_run_Ajaks64.Enabled = false;
             this.toolStripMenuItem_run_Ajaks64.Name = "toolStripMenuItem_run_Ajaks64";
-            this.toolStripMenuItem_run_Ajaks64.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_run_Ajaks64.Size = new System.Drawing.Size(123, 22);
             this.toolStripMenuItem_run_Ajaks64.Text = "Ajaks x64";
             // 
             // tsb_audit
@@ -2255,14 +2466,14 @@
             // tsb_c_
             // 
             this.tsb_c_.Name = "tsb_c_";
-            this.tsb_c_.Size = new System.Drawing.Size(180, 22);
+            this.tsb_c_.Size = new System.Drawing.Size(155, 22);
             this.tsb_c_.Text = "C:\\";
             this.tsb_c_.Click += new System.EventHandler(this.tsb_c__Click);
             // 
             // tsb_autostart
             // 
             this.tsb_autostart.Name = "tsb_autostart";
-            this.tsb_autostart.Size = new System.Drawing.Size(180, 22);
+            this.tsb_autostart.Size = new System.Drawing.Size(155, 22);
             this.tsb_autostart.Text = "AUTOSTART";
             this.tsb_autostart.Click += new System.EventHandler(this.tsb_autostart_Click);
             // 
@@ -2272,7 +2483,7 @@
             this.toolStripMenuItem_APPKSI_APPKSI,
             this.toolStripMenuItem_APPKSI_InstallLogs});
             this.toolStripMenuItem_APPKSI.Name = "toolStripMenuItem_APPKSI";
-            this.toolStripMenuItem_APPKSI.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_APPKSI.Size = new System.Drawing.Size(155, 22);
             this.toolStripMenuItem_APPKSI.Text = "APPKSI";
             // 
             // toolStripMenuItem_APPKSI_APPKSI
@@ -2290,19 +2501,19 @@
             // toolStripMenuItem_CCMCACHE
             // 
             this.toolStripMenuItem_CCMCACHE.Name = "toolStripMenuItem_CCMCACHE";
-            this.toolStripMenuItem_CCMCACHE.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_CCMCACHE.Size = new System.Drawing.Size(155, 22);
             this.toolStripMenuItem_CCMCACHE.Text = "CCMCACHE";
             // 
             // toolStripMenuItem_CSI
             // 
             this.toolStripMenuItem_CSI.Name = "toolStripMenuItem_CSI";
-            this.toolStripMenuItem_CSI.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_CSI.Size = new System.Drawing.Size(155, 22);
             this.toolStripMenuItem_CSI.Text = "CSI";
             // 
             // toolStripMenuItem_CWI_PC
             // 
             this.toolStripMenuItem_CWI_PC.Name = "toolStripMenuItem_CWI_PC";
-            this.toolStripMenuItem_CWI_PC.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_CWI_PC.Size = new System.Drawing.Size(155, 22);
             this.toolStripMenuItem_CWI_PC.Text = "CWI-PC";
             // 
             // toolStripMenuItemPROKOM
@@ -2311,7 +2522,7 @@
             this.toolStripMenuItem_PROKOM_PROKOM,
             this.toolStripMenuItem_PROKOM_COMMON});
             this.toolStripMenuItemPROKOM.Name = "toolStripMenuItemPROKOM";
-            this.toolStripMenuItemPROKOM.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemPROKOM.Size = new System.Drawing.Size(155, 22);
             this.toolStripMenuItemPROKOM.Text = "PROKOM";
             // 
             // toolStripMenuItem_PROKOM_PROKOM
@@ -2329,14 +2540,14 @@
             // toolStripMenuItem_SKRYPTY
             // 
             this.toolStripMenuItem_SKRYPTY.Name = "toolStripMenuItem_SKRYPTY";
-            this.toolStripMenuItem_SKRYPTY.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_SKRYPTY.Size = new System.Drawing.Size(155, 22);
             this.toolStripMenuItem_SKRYPTY.Text = "SKRYPTY";
             // 
             // toolStripMenuItem_USERS
             // 
             this.toolStripMenuItem_USERS.Name = "toolStripMenuItem_USERS";
             this.toolStripMenuItem_USERS.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem_USERS.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_USERS.Size = new System.Drawing.Size(155, 22);
             this.toolStripMenuItem_USERS.Text = "UŻYTKOWNICY";
             // 
             // tsb_d
@@ -2358,25 +2569,25 @@
             // toolStripMenuItem87
             // 
             this.toolStripMenuItem87.Name = "toolStripMenuItem87";
-            this.toolStripMenuItem87.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem87.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem87.Text = "D:\\";
             // 
             // toolStripMenuItem88
             // 
             this.toolStripMenuItem88.Name = "toolStripMenuItem88";
-            this.toolStripMenuItem88.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem88.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem88.Text = "APPKSI";
             // 
             // toolStripMenuItem89
             // 
             this.toolStripMenuItem89.Name = "toolStripMenuItem89";
-            this.toolStripMenuItem89.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem89.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem89.Text = "CSI";
             // 
             // toolStripMenuItem90
             // 
             this.toolStripMenuItem90.Name = "toolStripMenuItem90";
-            this.toolStripMenuItem90.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem90.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem90.Text = "CI-OHD";
             // 
             // tsb_desktop
@@ -2396,13 +2607,13 @@
             // tsb_desktop_User
             // 
             this.tsb_desktop_User.Name = "tsb_desktop_User";
-            this.tsb_desktop_User.Size = new System.Drawing.Size(180, 22);
+            this.tsb_desktop_User.Size = new System.Drawing.Size(153, 22);
             this.tsb_desktop_User.Text = "User Desktop";
             // 
             // tsb_desktop_Public
             // 
             this.tsb_desktop_Public.Name = "tsb_desktop_Public";
-            this.tsb_desktop_Public.Size = new System.Drawing.Size(180, 22);
+            this.tsb_desktop_Public.Size = new System.Drawing.Size(153, 22);
             this.tsb_desktop_Public.Text = "Public Desktop";
             // 
             // tsb_distribution
@@ -2422,21 +2633,21 @@
             // tsb_distribution_AI
             // 
             this.tsb_distribution_AI.Name = "tsb_distribution_AI";
-            this.tsb_distribution_AI.Size = new System.Drawing.Size(180, 22);
+            this.tsb_distribution_AI.Size = new System.Drawing.Size(116, 22);
             this.tsb_distribution_AI.Text = "AI";
             // 
             // tsb_distribution_CI_OHD
             // 
             this.tsb_distribution_CI_OHD.Enabled = false;
             this.tsb_distribution_CI_OHD.Name = "tsb_distribution_CI_OHD";
-            this.tsb_distribution_CI_OHD.Size = new System.Drawing.Size(180, 22);
+            this.tsb_distribution_CI_OHD.Size = new System.Drawing.Size(116, 22);
             this.tsb_distribution_CI_OHD.Text = "CI-OHD";
             // 
             // tsb_distribution_CWI_PC
             // 
             this.tsb_distribution_CWI_PC.Enabled = false;
             this.tsb_distribution_CWI_PC.Name = "tsb_distribution_CWI_PC";
-            this.tsb_distribution_CWI_PC.Size = new System.Drawing.Size(180, 22);
+            this.tsb_distribution_CWI_PC.Size = new System.Drawing.Size(116, 22);
             this.tsb_distribution_CWI_PC.Text = "CWI-PC";
             // 
             // toolStrip6
@@ -3066,6 +3277,31 @@
             this.tabPage3.Text = "Ogólne";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label47);
+            this.groupBox10.Controls.Add(this.button11);
+            this.groupBox10.Controls.Add(this.label48);
+            this.groupBox10.Controls.Add(this.textBox7);
+            this.groupBox10.Controls.Add(this.label49);
+            this.groupBox10.Controls.Add(this.textBox6);
+            this.groupBox10.Controls.Add(this.textBox5);
+            this.groupBox10.Location = new System.Drawing.Point(9, 6);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(418, 209);
+            this.groupBox10.TabIndex = 7;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Dane serwera SFS i SCCM";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(68, 53);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(66, 13);
+            this.label47.TabIndex = 0;
+            this.label47.Text = "Serwer SFS:";
+            // 
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(266, 158);
@@ -3075,12 +3311,30 @@
             this.button11.Text = "Zapisz";
             this.button11.UseVisualStyleBackColor = true;
             // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(58, 87);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(76, 13);
+            this.label48.TabIndex = 1;
+            this.label48.Text = "Serwer SCCM:";
+            // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(140, 118);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(201, 20);
             this.textBox7.TabIndex = 5;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(50, 121);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(84, 13);
+            this.label49.TabIndex = 2;
+            this.label49.Text = "Kolekcja SCCM:";
             // 
             // textBox6
             // 
@@ -3097,33 +3351,6 @@
             this.textBox5.Size = new System.Drawing.Size(201, 20);
             this.textBox5.TabIndex = 3;
             // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(50, 121);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(84, 13);
-            this.label49.TabIndex = 2;
-            this.label49.Text = "Kolekcja SCCM:";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(58, 87);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(76, 13);
-            this.label48.TabIndex = 1;
-            this.label48.Text = "Serwer SCCM:";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(68, 53);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(66, 13);
-            this.label47.TabIndex = 0;
-            this.label47.Text = "Serwer SFS:";
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.groupBox11);
@@ -3135,6 +3362,42 @@
             this.tabPage4.Text = "Ścieżki do programów";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.label52);
+            this.groupBox11.Controls.Add(this.button17);
+            this.groupBox11.Controls.Add(this.label51);
+            this.groupBox11.Controls.Add(this.button16);
+            this.groupBox11.Controls.Add(this.label50);
+            this.groupBox11.Controls.Add(this.button15);
+            this.groupBox11.Controls.Add(this.tbx_adpathDetails);
+            this.groupBox11.Controls.Add(this.button14);
+            this.groupBox11.Controls.Add(this.textBox9);
+            this.groupBox11.Controls.Add(this.button13);
+            this.groupBox11.Controls.Add(this.textBox8);
+            this.groupBox11.Controls.Add(this.button12);
+            this.groupBox11.Controls.Add(this.label55);
+            this.groupBox11.Controls.Add(this.textBox11);
+            this.groupBox11.Controls.Add(this.label54);
+            this.groupBox11.Controls.Add(this.textBox12);
+            this.groupBox11.Controls.Add(this.label53);
+            this.groupBox11.Controls.Add(this.textBox13);
+            this.groupBox11.Location = new System.Drawing.Point(6, 3);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(598, 263);
+            this.groupBox11.TabIndex = 24;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Ścieżki do aplikacji";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(23, 30);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(85, 13);
+            this.label52.TabIndex = 6;
+            this.label52.Text = "Active Directory:";
+            // 
             // button17
             // 
             this.button17.Location = new System.Drawing.Point(473, 195);
@@ -3143,129 +3406,6 @@
             this.button17.TabIndex = 23;
             this.button17.Text = "Wybierz";
             this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(473, 161);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 23);
-            this.button16.TabIndex = 22;
-            this.button16.Text = "Wybierz";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(473, 127);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 23);
-            this.button15.TabIndex = 21;
-            this.button15.Text = "Wybierz";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(473, 93);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 20;
-            this.button14.Text = "Wybierz";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(473, 59);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 23);
-            this.button13.TabIndex = 19;
-            this.button13.Text = "Wybierz";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(473, 25);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 18;
-            this.button12.Text = "Wybierz";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(111, 197);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(355, 20);
-            this.textBox11.TabIndex = 17;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(111, 163);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(355, 20);
-            this.textBox12.TabIndex = 16;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(111, 129);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(355, 20);
-            this.textBox13.TabIndex = 15;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(50, 200);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(58, 13);
-            this.label53.TabIndex = 14;
-            this.label53.Text = "Sap logon:";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(33, 166);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(75, 13);
-            this.label54.TabIndex = 13;
-            this.label54.Text = "Mapa Krosów:";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(47, 132);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(61, 13);
-            this.label55.TabIndex = 12;
-            this.label55.Text = "Powershell:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(111, 95);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(355, 20);
-            this.textBox8.TabIndex = 11;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(111, 61);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(355, 20);
-            this.textBox9.TabIndex = 10;
-            // 
-            // tbx_adpathDetails
-            // 
-            this.tbx_adpathDetails.Location = new System.Drawing.Point(111, 27);
-            this.tbx_adpathDetails.Name = "tbx_adpathDetails";
-            this.tbx_adpathDetails.Size = new System.Drawing.Size(355, 20);
-            this.tbx_adpathDetails.TabIndex = 9;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(27, 98);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(81, 13);
-            this.label50.TabIndex = 8;
-            this.label50.Text = "Konsola SCCM:";
             // 
             // label51
             // 
@@ -3276,14 +3416,128 @@
             this.label51.TabIndex = 7;
             this.label51.Text = "LAPS UI:";
             // 
-            // label52
+            // button16
             // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(23, 30);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(85, 13);
-            this.label52.TabIndex = 6;
-            this.label52.Text = "Active Directory:";
+            this.button16.Location = new System.Drawing.Point(473, 161);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(75, 23);
+            this.button16.TabIndex = 22;
+            this.button16.Text = "Wybierz";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(27, 98);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(81, 13);
+            this.label50.TabIndex = 8;
+            this.label50.Text = "Konsola SCCM:";
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(473, 127);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 23);
+            this.button15.TabIndex = 21;
+            this.button15.Text = "Wybierz";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // tbx_adpathDetails
+            // 
+            this.tbx_adpathDetails.Location = new System.Drawing.Point(111, 27);
+            this.tbx_adpathDetails.Name = "tbx_adpathDetails";
+            this.tbx_adpathDetails.Size = new System.Drawing.Size(355, 20);
+            this.tbx_adpathDetails.TabIndex = 9;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(473, 93);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 23);
+            this.button14.TabIndex = 20;
+            this.button14.Text = "Wybierz";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(111, 61);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(355, 20);
+            this.textBox9.TabIndex = 10;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(473, 59);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 23);
+            this.button13.TabIndex = 19;
+            this.button13.Text = "Wybierz";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(111, 95);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(355, 20);
+            this.textBox8.TabIndex = 11;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(473, 25);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 18;
+            this.button12.Text = "Wybierz";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(47, 132);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(61, 13);
+            this.label55.TabIndex = 12;
+            this.label55.Text = "Powershell:";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(111, 197);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(355, 20);
+            this.textBox11.TabIndex = 17;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(33, 166);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(75, 13);
+            this.label54.TabIndex = 13;
+            this.label54.Text = "Mapa Krosów:";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(111, 163);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(355, 20);
+            this.textBox12.TabIndex = 16;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(50, 200);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(58, 13);
+            this.label53.TabIndex = 14;
+            this.label53.Text = "Sap logon:";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(111, 129);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(355, 20);
+            this.textBox13.TabIndex = 15;
             // 
             // tabPage5
             // 
@@ -3602,246 +3856,6 @@
             this.btn_ActiveDirectory.UseVisualStyleBackColor = true;
             this.btn_ActiveDirectory.Click += new System.EventHandler(this.btn_ActiveDirectory_Click);
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox2.Location = new System.Drawing.Point(6, 6);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(375, 26);
-            this.textBox2.TabIndex = 49;
-            this.textBox2.TabStop = false;
-            this.textBox2.Text = "Komputer";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox14
-            // 
-            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox14.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox14.Location = new System.Drawing.Point(6, 6);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox14.Size = new System.Drawing.Size(375, 26);
-            this.textBox14.TabIndex = 48;
-            this.textBox14.TabStop = false;
-            this.textBox14.Text = "Użytkownik";
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.label47);
-            this.groupBox10.Controls.Add(this.button11);
-            this.groupBox10.Controls.Add(this.label48);
-            this.groupBox10.Controls.Add(this.textBox7);
-            this.groupBox10.Controls.Add(this.label49);
-            this.groupBox10.Controls.Add(this.textBox6);
-            this.groupBox10.Controls.Add(this.textBox5);
-            this.groupBox10.Location = new System.Drawing.Point(9, 6);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(418, 209);
-            this.groupBox10.TabIndex = 7;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Dane serwera SFS i SCCM";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.label52);
-            this.groupBox11.Controls.Add(this.button17);
-            this.groupBox11.Controls.Add(this.label51);
-            this.groupBox11.Controls.Add(this.button16);
-            this.groupBox11.Controls.Add(this.label50);
-            this.groupBox11.Controls.Add(this.button15);
-            this.groupBox11.Controls.Add(this.tbx_adpathDetails);
-            this.groupBox11.Controls.Add(this.button14);
-            this.groupBox11.Controls.Add(this.textBox9);
-            this.groupBox11.Controls.Add(this.button13);
-            this.groupBox11.Controls.Add(this.textBox8);
-            this.groupBox11.Controls.Add(this.button12);
-            this.groupBox11.Controls.Add(this.label55);
-            this.groupBox11.Controls.Add(this.textBox11);
-            this.groupBox11.Controls.Add(this.label54);
-            this.groupBox11.Controls.Add(this.textBox12);
-            this.groupBox11.Controls.Add(this.label53);
-            this.groupBox11.Controls.Add(this.textBox13);
-            this.groupBox11.Location = new System.Drawing.Point(6, 3);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(598, 263);
-            this.groupBox11.TabIndex = 24;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Ścieżki do aplikacji";
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.groupBox12.Controls.Add(this.lbl_roomDetails);
-            this.groupBox12.Controls.Add(this.lbl_room);
-            this.groupBox12.Controls.Add(this.label3);
-            this.groupBox12.Controls.Add(this.lbl_sid);
-            this.groupBox12.Controls.Add(this.panel13);
-            this.groupBox12.Controls.Add(this.label2);
-            this.groupBox12.Controls.Add(this.tbx_ksiCodeDetails);
-            this.groupBox12.Controls.Add(this.lbl_addressDetails);
-            this.groupBox12.Controls.Add(this.lbl_ksiCode);
-            this.groupBox12.Controls.Add(this.lbl_cellPhoneDetails);
-            this.groupBox12.Controls.Add(this.lbl_loginAdDetails);
-            this.groupBox12.Controls.Add(this.lbl_address);
-            this.groupBox12.Controls.Add(this.lbl_cellPhone);
-            this.groupBox12.Controls.Add(this.lbl_loginAd);
-            this.groupBox12.Location = new System.Drawing.Point(6, 32);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(375, 289);
-            this.groupBox12.TabIndex = 49;
-            this.groupBox12.TabStop = false;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Black;
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Location = new System.Drawing.Point(23, 35);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(280, 2);
-            this.panel13.TabIndex = 22;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(20, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 17);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Dane z Active Directory";
-            // 
-            // lbl_addressDetails
-            // 
-            this.lbl_addressDetails.AutoSize = true;
-            this.lbl_addressDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_addressDetails.Location = new System.Drawing.Point(134, 109);
-            this.lbl_addressDetails.Name = "lbl_addressDetails";
-            this.lbl_addressDetails.Size = new System.Drawing.Size(132, 17);
-            this.lbl_addressDetails.TabIndex = 18;
-            this.lbl_addressDetails.Text = "                               ";
-            // 
-            // lbl_cellPhoneDetails
-            // 
-            this.lbl_cellPhoneDetails.AutoSize = true;
-            this.lbl_cellPhoneDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_cellPhoneDetails.Location = new System.Drawing.Point(134, 69);
-            this.lbl_cellPhoneDetails.Name = "lbl_cellPhoneDetails";
-            this.lbl_cellPhoneDetails.Size = new System.Drawing.Size(132, 17);
-            this.lbl_cellPhoneDetails.TabIndex = 19;
-            this.lbl_cellPhoneDetails.Text = "                               ";
-            // 
-            // lbl_loginAdDetails
-            // 
-            this.lbl_loginAdDetails.AutoSize = true;
-            this.lbl_loginAdDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_loginAdDetails.Location = new System.Drawing.Point(134, 44);
-            this.lbl_loginAdDetails.Name = "lbl_loginAdDetails";
-            this.lbl_loginAdDetails.Size = new System.Drawing.Size(131, 16);
-            this.lbl_loginAdDetails.TabIndex = 20;
-            this.lbl_loginAdDetails.Text = "                               ";
-            // 
-            // lbl_address
-            // 
-            this.lbl_address.AutoSize = true;
-            this.lbl_address.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_address.Location = new System.Drawing.Point(26, 109);
-            this.lbl_address.Name = "lbl_address";
-            this.lbl_address.Size = new System.Drawing.Size(45, 17);
-            this.lbl_address.TabIndex = 2;
-            this.lbl_address.Text = "Adres:";
-            // 
-            // lbl_cellPhone
-            // 
-            this.lbl_cellPhone.AutoSize = true;
-            this.lbl_cellPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_cellPhone.Location = new System.Drawing.Point(26, 69);
-            this.lbl_cellPhone.Name = "lbl_cellPhone";
-            this.lbl_cellPhone.Size = new System.Drawing.Size(62, 17);
-            this.lbl_cellPhone.TabIndex = 1;
-            this.lbl_cellPhone.Text = "Tel. kom.:";
-            // 
-            // lbl_loginAd
-            // 
-            this.lbl_loginAd.AutoSize = true;
-            this.lbl_loginAd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_loginAd.Location = new System.Drawing.Point(26, 44);
-            this.lbl_loginAd.Name = "lbl_loginAd";
-            this.lbl_loginAd.Size = new System.Drawing.Size(61, 17);
-            this.lbl_loginAd.TabIndex = 0;
-            this.lbl_loginAd.Text = "login AD:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(134, 149);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 17);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "                               ";
-            // 
-            // lbl_sid
-            // 
-            this.lbl_sid.AutoSize = true;
-            this.lbl_sid.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_sid.Location = new System.Drawing.Point(26, 149);
-            this.lbl_sid.Name = "lbl_sid";
-            this.lbl_sid.Size = new System.Drawing.Size(30, 17);
-            this.lbl_sid.TabIndex = 29;
-            this.lbl_sid.Text = "SID:";
-            this.lbl_sid.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_roomDetails
-            // 
-            this.lbl_roomDetails.AutoSize = true;
-            this.lbl_roomDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_roomDetails.Location = new System.Drawing.Point(134, 89);
-            this.lbl_roomDetails.Name = "lbl_roomDetails";
-            this.lbl_roomDetails.Size = new System.Drawing.Size(132, 17);
-            this.lbl_roomDetails.TabIndex = 32;
-            this.lbl_roomDetails.Text = "                               ";
-            // 
-            // lbl_room
-            // 
-            this.lbl_room.AutoSize = true;
-            this.lbl_room.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_room.Location = new System.Drawing.Point(26, 89);
-            this.lbl_room.Name = "lbl_room";
-            this.lbl_room.Size = new System.Drawing.Size(43, 17);
-            this.lbl_room.TabIndex = 31;
-            this.lbl_room.Text = "Pokój:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(138, 65);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 17);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "                               ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(138, 45);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(132, 17);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "                               ";
-            // 
             // frm_Hades2Lite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3894,6 +3908,8 @@
             this.groupBox3.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
             this.panel61.ResumeLayout(false);
             this.panel61.PerformLayout();
             this.panel21.ResumeLayout(false);
@@ -3920,7 +3936,11 @@
             this.panel12.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.Pomoc.ResumeLayout(false);
             this.pl_PomocPADDING.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
@@ -3935,12 +3955,6 @@
             this.pl_MainHADES.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Separator)).EndInit();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4240,12 +4254,13 @@
         private System.Windows.Forms.Label lbl_address;
         private System.Windows.Forms.Label lbl_cellPhone;
         private System.Windows.Forms.Label lbl_loginAd;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_sidDetails;
         private System.Windows.Forms.Label lbl_sid;
         private System.Windows.Forms.Label lbl_roomDetails;
         private System.Windows.Forms.Label lbl_room;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
