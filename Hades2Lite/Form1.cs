@@ -1,6 +1,7 @@
 ﻿using MaterialSkin.Controls;
 using System;
 using System.IO;
+using System.Data.SQLite;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,7 @@ namespace Hades2Lite
         {
             InitializeComponent();
             LoadIniFile();
+            LoadDataIntoDataGridView();
 
             materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
             materialSkinManager.EnforceBackcolorOnAllComponents = false;
@@ -34,6 +36,29 @@ namespace Hades2Lite
 
 
         }
+        private void LoadDataIntoDataGridView()
+        {
+            DataTable dataTable = GetDataTableFromSQLite();
+            dataGridView1.DataSource = dataTable;
+        }
+
+        private DataTable GetDataTableFromSQLite()
+        {
+            string connectionString = "Data Source=.\\db\\computers.db;Version=3;";
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT * FROM computers";
+                using (var command = new SQLiteCommand(query, connection))
+                using (var adapter = new SQLiteDataAdapter(command))
+                {
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    return dataTable;
+                }
+            }
+        }
+
 
         private void LoadIniFile()
         {
@@ -574,7 +599,7 @@ namespace Hades2Lite
             }
         }
 
-        private void tsb_c__Click(object sender, EventArgs e)
+        private async void tsb_c__Click(object sender, EventArgs e)
         {
          
             string computerName = tbx_pcName.Text.ToUpper();
@@ -584,11 +609,11 @@ namespace Hades2Lite
                 return;
             }
 
-            Hades2common.ToolBox.OpenUNCAsync(computerName, "C$");
+            await Hades2common.ToolBox.OpenUNCAsync(computerName, "C$");
             
         }
 
-        private void tsb_autostart_Click(object sender, EventArgs e)
+        private async void tsb_autostart_Click(object sender, EventArgs e)
         {
 
             string computerName = tbx_pcName.Text.ToUpper();
@@ -598,7 +623,7 @@ namespace Hades2Lite
                 return;
             }
 
-            Hades2common.ToolBox.OpenUNCAsync(computerName, @"C$\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup");
+            await Hades2common.ToolBox.OpenUNCAsync(computerName, @"C$\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup");
 
         }
 
@@ -809,7 +834,7 @@ namespace Hades2Lite
         {
             // Ścieżka do skryptu PowerShell
             string scriptPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scripts", "OfficeAudit.ps1");
-            string sfsServer = "SFS01-OSCI1";
+            //string sfsServer = "SFS01-OSCI1";
             string computerName = tbx_pcName.Text.ToUpper();
 
             // Sprawdzenie, czy skrypt istnieje
@@ -862,75 +887,47 @@ namespace Hades2Lite
 
         private void tsb_ksiappAudit_Click(object sender, EventArgs e)
         {
-            //// Ścieżka do skryptu PowerShell
-            //string scriptPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scripts", "checkapps.ps1");
-            //string sfsServer = "SFS01-OSCI1";
-            //string computerName = tbx_pcName.Text.ToUpper();
-
-            //// Sprawdzenie, czy skrypt istnieje
-            //if (System.IO.File.Exists(scriptPath))
-            //{
-            //    try
-            //    {
-            //        // Uruchomienie skryptu PowerShell
-            //        ProcessStartInfo startInfo = new ProcessStartInfo()
-            //        {
-            //            FileName = "powershell.exe",
-            //            Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" {computerName} {sfsServer}",
-            //            RedirectStandardOutput = true,
-            //            RedirectStandardError = true,
-            //            UseShellExecute = false,
-            //            CreateNoWindow = false
-            //        };
-
-            //        using (Process process = new Process())
-            //        {
-            //            process.StartInfo = startInfo;
-            //            process.Start();
-            //            process.WaitForExit();
-
-            //            // Odczytanie wyników
-            //            string output = process.StandardOutput.ReadToEnd();
-            //            string error = process.StandardError.ReadToEnd();
-
-            //            // Wyświetlenie wyników w MessageBox
-            //            if (string.IsNullOrEmpty(error))
-            //            {
-            //                MessageBox.Show("Script executed successfully:\n" + output);
-            //            }
-            //            else
-            //            {
-            //                MessageBox.Show("Script error:\n" + error);
-            //            }
-            //        }
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show("An error occurred: " + ex.Message);
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Script not found: " + scriptPath);
-            //}
-
+            try
             {
-                try
+                // Sprawdzenie, czy tabPage9 jest otwarty
+                if (tabControl1.SelectedTab == tabPage9)
                 {
+                    // Sprawdzenie liczby zaznaczonych wierszy w dataGridView1
+                    int selectedRowCount = dataGridView1.SelectedRows.Count;
+
+                    if (selectedRowCount > 1)
+                    {
+                        // Wyświetlenie komunikatu, jeśli zaznaczono więcej niż jeden wiersz
+                        MessageBox.Show($"Wybrałeś {selectedRowCount} wiersze.");
+                        return; // Zatrzymanie wykonywania funkcji
+                    }
+                    else if (selectedRowCount == 0)
+                    {
+                        // Kontynuacja, jeśli nie zaznaczono żadnego wiersza
+                        string computerName = tbx_pcName.Text.Trim();
+                        frm_AppAudit appAudit = new frm_AppAudit();
+                        appAudit.ComputerName = computerName;
+                        appAudit.ShowDialog();
+                    }
+                    // Możesz dodać inny blok else, aby obsłużyć sytuację, gdy zaznaczono dokładnie jeden wiersz, jeśli to konieczne.
+                }
+                else
+                {
+                    // Wykonaj funkcję normalnie, jeśli tabPage9 nie jest otwarty
                     string computerName = tbx_pcName.Text.Trim();
                     frm_AppAudit appAudit = new frm_AppAudit();
                     appAudit.ComputerName = computerName;
                     appAudit.ShowDialog();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Podczas odczytu usług wystapił błąd: " + ex.Message);
-                    return;
-                }
             }
-
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Podczas odczytu usług wystąpił błąd: " + ex.Message);
+                return;
+            }
         }
+
+
 
         private void tsb_usersPrinter_Click(object sender, EventArgs e)
         {

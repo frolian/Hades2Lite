@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Hades2Lite));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.Narzedziownik = new System.Windows.Forms.TabPage();
             this.pl_NarzedziownikMain = new System.Windows.Forms.Panel();
@@ -45,6 +49,13 @@
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.panel_singlePC_top = new System.Windows.Forms.Panel();
+            this.pl_NarzedziownikButtons = new System.Windows.Forms.Panel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.tab_computers = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -117,6 +128,7 @@
             this.tbx_bitlockerDetails = new System.Windows.Forms.Label();
             this.tab_users = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btn_refreshUser = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -130,9 +142,11 @@
             this.lbl_status = new System.Windows.Forms.Label();
             this.lbl_statusDetails = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tbx_departmentDetails = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.btn_GetComputerData = new System.Windows.Forms.Button();
             this.tbx_titleDetails = new System.Windows.Forms.Label();
             this.tbx_deptDetails = new System.Windows.Forms.Label();
             this.tbx_unitDetails = new System.Windows.Forms.Label();
@@ -163,20 +177,72 @@
             this.tbx_pcName = new System.Windows.Forms.TextBox();
             this.panel21 = new System.Windows.Forms.Panel();
             this.textBox_singlePc_messageText = new System.Windows.Forms.TextBox();
-            this.btn_GetComputerData = new System.Windows.Forms.Button();
+            this.btn_sendMsg = new System.Windows.Forms.Button();
             this.img_MainIcons = new System.Windows.Forms.ImageList(this.components);
+            this.btn_eraseData = new System.Windows.Forms.Button();
             this.panel_singlePC_top2 = new System.Windows.Forms.Panel();
+            this.btn_remoteCmd = new System.Windows.Forms.Button();
+            this.btn_computerManagement = new System.Windows.Forms.Button();
+            this.btn_shutdownPC = new System.Windows.Forms.Button();
+            this.btn_refreshDNS = new System.Windows.Forms.Button();
+            this.btn_pinglong = new System.Windows.Forms.Button();
+            this.btn_restartPC = new System.Windows.Forms.Button();
+            this.btn_releaseIP = new System.Windows.Forms.Button();
             this.pl_NarzedziownikMain_TOP = new System.Windows.Forms.Panel();
             this.panel58 = new System.Windows.Forms.Panel();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.toolStrip7 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton_menage_messages = new System.Windows.Forms.ToolStripButton();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.toolStrip_singlePC_fastFichers = new System.Windows.Forms.ToolStrip();
+            this.tsb_remoteSCCM = new System.Windows.Forms.ToolStripButton();
+            this.tsb_rdp = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsb_computer = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsb_wol = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_services = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_user = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsb_profileRefresh = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_usersPrinter = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsb_ajaks = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem_run_Ajaks32 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_run_Ajaks64 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_audit = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsb_ksiappAudit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_officeAudit = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_installer = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsb_c = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsb_c_ = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_autostart = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_APPKSI = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_APPKSI_APPKSI = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_APPKSI_InstallLogs = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_CCMCACHE = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_CSI = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_CWI_PC = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemPROKOM = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_PROKOM_PROKOM = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_PROKOM_COMMON = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_SKRYPTY = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_USERS = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_d = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem87 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem88 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem89 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem90 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_desktop = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsb_desktop_User = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_desktop_Public = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_distribution = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsb_distribution_AI = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_distribution_CI_OHD = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsb_distribution_CWI_PC = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip6 = new System.Windows.Forms.ToolStrip();
+            this.tsb_listManagement = new System.Windows.Forms.ToolStripButton();
             this.label29 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Niezbednik = new System.Windows.Forms.TabPage();
@@ -257,72 +323,6 @@
             this.pl_MainForm = new System.Windows.Forms.Panel();
             this.pl_MainFormMiddle = new System.Windows.Forms.Panel();
             this.pl_MainFormTOP = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
-            this.pl_MainHADES = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pl_NarzedziownikButtons = new System.Windows.Forms.Panel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.btn_refreshUser = new System.Windows.Forms.Button();
-            this.btn_sendMsg = new System.Windows.Forms.Button();
-            this.btn_eraseData = new System.Windows.Forms.Button();
-            this.btn_remoteCmd = new System.Windows.Forms.Button();
-            this.btn_computerManagement = new System.Windows.Forms.Button();
-            this.btn_shutdownPC = new System.Windows.Forms.Button();
-            this.btn_refreshDNS = new System.Windows.Forms.Button();
-            this.btn_pinglong = new System.Windows.Forms.Button();
-            this.btn_restartPC = new System.Windows.Forms.Button();
-            this.btn_releaseIP = new System.Windows.Forms.Button();
-            this.toolStripButton_menage_messages = new System.Windows.Forms.ToolStripButton();
-            this.tsb_remoteSCCM = new System.Windows.Forms.ToolStripButton();
-            this.tsb_rdp = new System.Windows.Forms.ToolStripButton();
-            this.tsb_computer = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsb_wol = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_services = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_user = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsb_profileRefresh = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_usersPrinter = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_ajaks = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem_run_Ajaks32 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_run_Ajaks64 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_audit = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsb_ksiappAudit = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_officeAudit = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_installer = new System.Windows.Forms.ToolStripButton();
-            this.tsb_c = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsb_c_ = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_autostart = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_APPKSI = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_APPKSI_APPKSI = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_APPKSI_InstallLogs = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_CCMCACHE = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_CSI = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_CWI_PC = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemPROKOM = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_PROKOM_PROKOM = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_PROKOM_COMMON = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_SKRYPTY = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_USERS = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_d = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem87 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem88 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem89 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem90 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_desktop = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsb_desktop_User = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_desktop_Public = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_distribution = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsb_distribution_AI = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_distribution_CI_OHD = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_distribution_CWI_PC = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsb_listManagement = new System.Windows.Forms.ToolStripButton();
             this.button10 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -330,20 +330,35 @@
             this.button7 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.label44 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pl_MainHADES = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_LAPS = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox_Separator = new System.Windows.Forms.PictureBox();
             this.btn_ActiveDirectory = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.COMPUTER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.USER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DETAILS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1.SuspendLayout();
             this.Narzedziownik.SuspendLayout();
             this.pl_NarzedziownikMain.SuspendLayout();
             this.pl_NarzedziownikMiddlePadding.SuspendLayout();
             this.pl_NarzedziownikMiddle.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            this.panel_singlePC_top.SuspendLayout();
+            this.pl_NarzedziownikButtons.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.tab_computers.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -389,14 +404,17 @@
             this.pl_MainForm.SuspendLayout();
             this.pl_MainFormMiddle.SuspendLayout();
             this.pl_MainFormTOP.SuspendLayout();
-            this.pl_MainHADES.SuspendLayout();
-            this.pl_NarzedziownikButtons.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pl_MainHADES.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Separator)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage9.SuspendLayout();
+            this.tabPage10.SuspendLayout();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -453,6 +471,7 @@
             // 
             this.pl_NarzedziownikMiddle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pl_NarzedziownikMiddle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pl_NarzedziownikMiddle.Controls.Add(this.tabControl1);
             this.pl_NarzedziownikMiddle.Controls.Add(this.groupBox9);
             this.pl_NarzedziownikMiddle.Controls.Add(this.panel_singlePC_top);
             this.pl_NarzedziownikMiddle.Controls.Add(this.panel_singlePC_top2);
@@ -567,19 +586,82 @@
             // 
             this.panel_singlePC_top.AutoSize = true;
             this.panel_singlePC_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.panel_singlePC_top.Controls.Add(this.pl_NarzedziownikButtons);
-            this.panel_singlePC_top.Controls.Add(this.tab_computers);
-            this.panel_singlePC_top.Controls.Add(this.tab_users);
-            this.panel_singlePC_top.Controls.Add(this.panel61);
-            this.panel_singlePC_top.Controls.Add(this.panel21);
-            this.panel_singlePC_top.Controls.Add(this.btn_sendMsg);
-            this.panel_singlePC_top.Controls.Add(this.btn_eraseData);
             this.panel_singlePC_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_singlePC_top.Location = new System.Drawing.Point(174, 0);
             this.panel_singlePC_top.Name = "panel_singlePC_top";
-            this.panel_singlePC_top.Size = new System.Drawing.Size(883, 448);
+            this.panel_singlePC_top.Size = new System.Drawing.Size(883, 0);
             this.panel_singlePC_top.TabIndex = 33;
             this.panel_singlePC_top.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_singlePC_top_Paint);
+            // 
+            // pl_NarzedziownikButtons
+            // 
+            this.pl_NarzedziownikButtons.Controls.Add(this.toolStrip1);
+            this.pl_NarzedziownikButtons.Location = new System.Drawing.Point(6, 6);
+            this.pl_NarzedziownikButtons.Name = "pl_NarzedziownikButtons";
+            this.pl_NarzedziownikButtons.Size = new System.Drawing.Size(325, 23);
+            this.pl_NarzedziownikButtons.TabIndex = 50;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.AutoSize = false;
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.toolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripSeparator2,
+            this.toolStripButton2,
+            this.toolStripButton3,
+            this.toolStripButton4});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStrip1.Size = new System.Drawing.Size(325, 24);
+            this.toolStrip1.TabIndex = 6;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.AutoToolTip = false;
+            this.toolStripButton1.Image = global::Hades2Lite.Properties.Resources.icons8_ping_16;
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(89, 21);
+            this.toolStripButton1.Text = "Dostępność";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 24);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.AutoToolTip = false;
+            this.toolStripButton2.Image = global::Hades2Lite.Properties.Resources.icons8_full_16;
+            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(91, 21);
+            this.toolStripButton2.Text = "Pełny raport";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.Image = global::Hades2Lite.Properties.Resources.icons8_sap_16;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(48, 21);
+            this.toolStripButton3.Text = "SAP";
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Image = global::Hades2Lite.Properties.Resources.icons8_service_16;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(60, 21);
+            this.toolStripButton4.Text = "SCCM";
+            this.toolStripButton4.ToolTipText = "SCCM";
             // 
             // tab_computers
             // 
@@ -587,7 +669,7 @@
             this.tab_computers.Controls.Add(this.tabPage2);
             this.tab_computers.Controls.Add(this.tabPage8);
             this.tab_computers.Enabled = false;
-            this.tab_computers.Location = new System.Drawing.Point(25, 93);
+            this.tab_computers.Location = new System.Drawing.Point(3, 96);
             this.tab_computers.Name = "tab_computers";
             this.tab_computers.SelectedIndex = 0;
             this.tab_computers.Size = new System.Drawing.Size(395, 352);
@@ -1387,7 +1469,7 @@
             this.tab_users.Controls.Add(this.tabPage6);
             this.tab_users.Controls.Add(this.tabPage7);
             this.tab_users.Enabled = false;
-            this.tab_users.Location = new System.Drawing.Point(462, 92);
+            this.tab_users.Location = new System.Drawing.Point(440, 95);
             this.tab_users.Name = "tab_users";
             this.tab_users.SelectedIndex = 0;
             this.tab_users.Size = new System.Drawing.Size(395, 352);
@@ -1410,14 +1492,28 @@
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Informacje podstawowe";
             // 
+            // btn_refreshUser
+            // 
+            this.btn_refreshUser.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_refreshUser.Enabled = false;
+            this.btn_refreshUser.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_refreshUser.FlatAppearance.BorderSize = 0;
+            this.btn_refreshUser.Image = global::Hades2Lite.Properties.Resources.icons8_refresh_16__1_;
+            this.btn_refreshUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_refreshUser.Location = new System.Drawing.Point(254, 36);
+            this.btn_refreshUser.Name = "btn_refreshUser";
+            this.btn_refreshUser.Size = new System.Drawing.Size(76, 27);
+            this.btn_refreshUser.TabIndex = 46;
+            this.btn_refreshUser.Text = "Odśwież";
+            this.btn_refreshUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_refreshUser.UseVisualStyleBackColor = false;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.tbx_emailDetails);
-            this.groupBox1.Controls.Add(this.btn_GetComputerData);
             this.groupBox1.Controls.Add(this.tbx_cellPhoneDetails);
             this.groupBox1.Controls.Add(this.tbx_usernameDetails);
             this.groupBox1.Controls.Add(this.lbl_email);
@@ -1550,9 +1646,11 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.panel3);
             this.groupBox3.Controls.Add(this.tbx_departmentDetails);
             this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.btn_GetComputerData);
             this.groupBox3.Controls.Add(this.tbx_titleDetails);
             this.groupBox3.Controls.Add(this.tbx_deptDetails);
             this.groupBox3.Controls.Add(this.tbx_unitDetails);
@@ -1565,6 +1663,21 @@
             this.groupBox3.Size = new System.Drawing.Size(375, 147);
             this.groupBox3.TabIndex = 36;
             this.groupBox3.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.ImageIndex = 7;
+            this.button2.Location = new System.Drawing.Point(239, 70);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(108, 25);
+            this.button2.TabIndex = 50;
+            this.button2.Text = "Pełny raport";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -1594,6 +1707,21 @@
             this.label14.Size = new System.Drawing.Size(89, 17);
             this.label14.TabIndex = 23;
             this.label14.Text = "Dane główne";
+            // 
+            // btn_GetComputerData
+            // 
+            this.btn_GetComputerData.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_GetComputerData.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_GetComputerData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_GetComputerData.ImageIndex = 7;
+            this.btn_GetComputerData.Location = new System.Drawing.Point(239, 98);
+            this.btn_GetComputerData.Name = "btn_GetComputerData";
+            this.btn_GetComputerData.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_GetComputerData.Size = new System.Drawing.Size(108, 25);
+            this.btn_GetComputerData.TabIndex = 14;
+            this.btn_GetComputerData.Text = "Dostępność";
+            this.btn_GetComputerData.UseVisualStyleBackColor = false;
+            this.btn_GetComputerData.Click += new System.EventHandler(this.btn_GetComputerDetails_Click);
             // 
             // tbx_titleDetails
             // 
@@ -1879,7 +2007,7 @@
             this.panel61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.panel61.Controls.Add(this.panel_bottom_border);
             this.panel61.Controls.Add(this.tbx_pcName);
-            this.panel61.Location = new System.Drawing.Point(27, 29);
+            this.panel61.Location = new System.Drawing.Point(5, 32);
             this.panel61.Name = "panel61";
             this.panel61.Padding = new System.Windows.Forms.Padding(10);
             this.panel61.Size = new System.Drawing.Size(326, 48);
@@ -1918,7 +2046,7 @@
             this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel21.Controls.Add(this.textBox_singlePc_messageText);
-            this.panel21.Location = new System.Drawing.Point(463, 7);
+            this.panel21.Location = new System.Drawing.Point(441, 10);
             this.panel21.Name = "panel21";
             this.panel21.Padding = new System.Windows.Forms.Padding(4);
             this.panel21.Size = new System.Drawing.Size(226, 75);
@@ -1939,20 +2067,24 @@
             this.textBox_singlePc_messageText.TabIndex = 0;
             this.textBox_singlePc_messageText.Text = "Tu wpisz treść komunikatu który chcesz wysłać do użytkownika";
             // 
-            // btn_GetComputerData
+            // btn_sendMsg
             // 
-            this.btn_GetComputerData.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_GetComputerData.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_GetComputerData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_GetComputerData.ImageIndex = 7;
-            this.btn_GetComputerData.Location = new System.Drawing.Point(160, 78);
-            this.btn_GetComputerData.Name = "btn_GetComputerData";
-            this.btn_GetComputerData.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_GetComputerData.Size = new System.Drawing.Size(108, 25);
-            this.btn_GetComputerData.TabIndex = 14;
-            this.btn_GetComputerData.Text = "Dostępność";
-            this.btn_GetComputerData.UseVisualStyleBackColor = false;
-            this.btn_GetComputerData.Click += new System.EventHandler(this.btn_GetComputerDetails_Click);
+            this.btn_sendMsg.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_sendMsg.Enabled = false;
+            this.btn_sendMsg.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btn_sendMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_sendMsg.ImageIndex = 8;
+            this.btn_sendMsg.ImageList = this.img_MainIcons;
+            this.btn_sendMsg.Location = new System.Drawing.Point(668, 10);
+            this.btn_sendMsg.Name = "btn_sendMsg";
+            this.btn_sendMsg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_sendMsg.Size = new System.Drawing.Size(167, 75);
+            this.btn_sendMsg.TabIndex = 20;
+            this.btn_sendMsg.Text = "Wyślij wiadomość systemową Msg";
+            this.btn_sendMsg.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_sendMsg.UseCompatibleTextRendering = true;
+            this.btn_sendMsg.UseVisualStyleBackColor = false;
+            this.btn_sendMsg.Click += new System.EventHandler(this.btn_sendMsg_Click);
             // 
             // img_MainIcons
             // 
@@ -1974,6 +2106,20 @@
             this.img_MainIcons.Images.SetKeyName(13, "favicon.ico");
             this.img_MainIcons.Images.SetKeyName(14, "webex.ico");
             // 
+            // btn_eraseData
+            // 
+            this.btn_eraseData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_eraseData.FlatAppearance.BorderSize = 0;
+            this.btn_eraseData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_eraseData.Image = global::Hades2Lite.Properties.Resources.erase;
+            this.btn_eraseData.Location = new System.Drawing.Point(338, 31);
+            this.btn_eraseData.Name = "btn_eraseData";
+            this.btn_eraseData.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_eraseData.Size = new System.Drawing.Size(55, 48);
+            this.btn_eraseData.TabIndex = 12;
+            this.btn_eraseData.UseVisualStyleBackColor = true;
+            this.btn_eraseData.Click += new System.EventHandler(this.btn_eraseData_Click);
+            // 
             // panel_singlePC_top2
             // 
             this.panel_singlePC_top2.AutoSize = true;
@@ -1991,6 +2137,132 @@
             this.panel_singlePC_top2.Padding = new System.Windows.Forms.Padding(10);
             this.panel_singlePC_top2.Size = new System.Drawing.Size(174, 438);
             this.panel_singlePC_top2.TabIndex = 32;
+            // 
+            // btn_remoteCmd
+            // 
+            this.btn_remoteCmd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_remoteCmd.Enabled = false;
+            this.btn_remoteCmd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_remoteCmd.FlatAppearance.BorderSize = 0;
+            this.btn_remoteCmd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_remoteCmd.Image = global::Hades2Lite.Properties.Resources.cmd;
+            this.btn_remoteCmd.Location = new System.Drawing.Point(15, 132);
+            this.btn_remoteCmd.Name = "btn_remoteCmd";
+            this.btn_remoteCmd.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_remoteCmd.Size = new System.Drawing.Size(146, 48);
+            this.btn_remoteCmd.TabIndex = 14;
+            this.btn_remoteCmd.Text = "Remote CMD";
+            this.btn_remoteCmd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_remoteCmd.UseVisualStyleBackColor = false;
+            this.btn_remoteCmd.Click += new System.EventHandler(this.btn_remoteCmd_Click);
+            // 
+            // btn_computerManagement
+            // 
+            this.btn_computerManagement.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_computerManagement.Enabled = false;
+            this.btn_computerManagement.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_computerManagement.FlatAppearance.BorderSize = 0;
+            this.btn_computerManagement.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_computerManagement.Image = global::Hades2Lite.Properties.Resources.management;
+            this.btn_computerManagement.Location = new System.Drawing.Point(15, 78);
+            this.btn_computerManagement.Name = "btn_computerManagement";
+            this.btn_computerManagement.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_computerManagement.Size = new System.Drawing.Size(146, 48);
+            this.btn_computerManagement.TabIndex = 13;
+            this.btn_computerManagement.Text = "Zarządzaj";
+            this.btn_computerManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_computerManagement.UseVisualStyleBackColor = false;
+            this.btn_computerManagement.Click += new System.EventHandler(this.btn_computerManagement_Click);
+            // 
+            // btn_shutdownPC
+            // 
+            this.btn_shutdownPC.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_shutdownPC.Enabled = false;
+            this.btn_shutdownPC.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_shutdownPC.FlatAppearance.BorderSize = 0;
+            this.btn_shutdownPC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_shutdownPC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_shutdownPC.Image = global::Hades2Lite.Properties.Resources.off;
+            this.btn_shutdownPC.Location = new System.Drawing.Point(15, 186);
+            this.btn_shutdownPC.Name = "btn_shutdownPC";
+            this.btn_shutdownPC.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_shutdownPC.Size = new System.Drawing.Size(146, 48);
+            this.btn_shutdownPC.TabIndex = 10;
+            this.btn_shutdownPC.Text = "Wyłącz komputer";
+            this.btn_shutdownPC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_shutdownPC.UseVisualStyleBackColor = false;
+            this.btn_shutdownPC.Click += new System.EventHandler(this.btn_shutdownPC_Click);
+            // 
+            // btn_refreshDNS
+            // 
+            this.btn_refreshDNS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_refreshDNS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_refreshDNS.FlatAppearance.BorderSize = 0;
+            this.btn_refreshDNS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_refreshDNS.Image = global::Hades2Lite.Properties.Resources.dns;
+            this.btn_refreshDNS.Location = new System.Drawing.Point(15, 348);
+            this.btn_refreshDNS.Name = "btn_refreshDNS";
+            this.btn_refreshDNS.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_refreshDNS.Size = new System.Drawing.Size(146, 48);
+            this.btn_refreshDNS.TabIndex = 12;
+            this.btn_refreshDNS.Text = "Odśwież u siebie DNS";
+            this.btn_refreshDNS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_refreshDNS.UseVisualStyleBackColor = false;
+            this.btn_refreshDNS.Click += new System.EventHandler(this.btn_refreshDNS_Click);
+            // 
+            // btn_pinglong
+            // 
+            this.btn_pinglong.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_pinglong.Enabled = false;
+            this.btn_pinglong.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_pinglong.FlatAppearance.BorderSize = 0;
+            this.btn_pinglong.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_pinglong.Image = global::Hades2Lite.Properties.Resources.ping;
+            this.btn_pinglong.Location = new System.Drawing.Point(15, 24);
+            this.btn_pinglong.Name = "btn_pinglong";
+            this.btn_pinglong.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_pinglong.Size = new System.Drawing.Size(146, 48);
+            this.btn_pinglong.TabIndex = 7;
+            this.btn_pinglong.Text = "Ping long";
+            this.btn_pinglong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_pinglong.UseVisualStyleBackColor = false;
+            this.btn_pinglong.Click += new System.EventHandler(this.btn_pinglong_Click);
+            // 
+            // btn_restartPC
+            // 
+            this.btn_restartPC.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_restartPC.Enabled = false;
+            this.btn_restartPC.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_restartPC.FlatAppearance.BorderSize = 0;
+            this.btn_restartPC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_restartPC.ForeColor = System.Drawing.Color.Black;
+            this.btn_restartPC.Image = global::Hades2Lite.Properties.Resources.restart;
+            this.btn_restartPC.Location = new System.Drawing.Point(15, 240);
+            this.btn_restartPC.Name = "btn_restartPC";
+            this.btn_restartPC.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_restartPC.Size = new System.Drawing.Size(146, 48);
+            this.btn_restartPC.TabIndex = 11;
+            this.btn_restartPC.Text = "Zrestartuj komputer";
+            this.btn_restartPC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_restartPC.UseVisualStyleBackColor = false;
+            this.btn_restartPC.Click += new System.EventHandler(this.btn_restartPC_Click);
+            // 
+            // btn_releaseIP
+            // 
+            this.btn_releaseIP.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_releaseIP.Enabled = false;
+            this.btn_releaseIP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_releaseIP.FlatAppearance.BorderSize = 0;
+            this.btn_releaseIP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_releaseIP.Image = global::Hades2Lite.Properties.Resources.release;
+            this.btn_releaseIP.Location = new System.Drawing.Point(14, 402);
+            this.btn_releaseIP.Name = "btn_releaseIP";
+            this.btn_releaseIP.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_releaseIP.Size = new System.Drawing.Size(146, 48);
+            this.btn_releaseIP.TabIndex = 8;
+            this.btn_releaseIP.Text = "Release IP";
+            this.btn_releaseIP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_releaseIP.UseVisualStyleBackColor = false;
             // 
             // pl_NarzedziownikMain_TOP
             // 
@@ -2012,7 +2284,6 @@
             this.panel58.Controls.Add(this.toolStrip_singlePC_fastFichers);
             this.panel58.Controls.Add(this.toolStrip6);
             this.panel58.Controls.Add(this.label29);
-            this.panel58.Controls.Add(this.comboBox1);
             this.panel58.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel58.Location = new System.Drawing.Point(0, 0);
             this.panel58.Name = "panel58";
@@ -2041,6 +2312,15 @@
             this.toolStrip7.Size = new System.Drawing.Size(159, 25);
             this.toolStrip7.TabIndex = 7;
             this.toolStrip7.Text = "toolStrip7";
+            // 
+            // toolStripButton_menage_messages
+            // 
+            this.toolStripButton_menage_messages.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_menage_messages.Image")));
+            this.toolStripButton_menage_messages.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_menage_messages.Name = "toolStripButton_menage_messages";
+            this.toolStripButton_menage_messages.Size = new System.Drawing.Size(156, 22);
+            this.toolStripButton_menage_messages.Text = "Zarzadzaj komunikatami";
+            this.toolStripButton_menage_messages.ToolTipText = "Zarządzaj komunikatami";
             // 
             // comboBox3
             // 
@@ -2091,11 +2371,92 @@
             this.toolStrip_singlePC_fastFichers.Size = new System.Drawing.Size(1065, 41);
             this.toolStrip_singlePC_fastFichers.TabIndex = 4;
             // 
+            // tsb_remoteSCCM
+            // 
+            this.tsb_remoteSCCM.AutoToolTip = false;
+            this.tsb_remoteSCCM.Enabled = false;
+            this.tsb_remoteSCCM.Image = global::Hades2Lite.Properties.Resources.sccm;
+            this.tsb_remoteSCCM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_remoteSCCM.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_remoteSCCM.Name = "tsb_remoteSCCM";
+            this.tsb_remoteSCCM.Size = new System.Drawing.Size(120, 38);
+            this.tsb_remoteSCCM.Text = "Remote SCCM";
+            this.tsb_remoteSCCM.Click += new System.EventHandler(this.tsb_remoteSCCM_Click);
+            // 
+            // tsb_rdp
+            // 
+            this.tsb_rdp.AutoToolTip = false;
+            this.tsb_rdp.Enabled = false;
+            this.tsb_rdp.Image = global::Hades2Lite.Properties.Resources.remote;
+            this.tsb_rdp.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_rdp.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_rdp.Name = "tsb_rdp";
+            this.tsb_rdp.Size = new System.Drawing.Size(65, 38);
+            this.tsb_rdp.Text = "RDP";
+            this.tsb_rdp.Click += new System.EventHandler(this.tsb_rdp_Click);
+            // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.toolStripSeparator11.Name = "toolStripSeparator11";
             this.toolStripSeparator11.Size = new System.Drawing.Size(6, 41);
+            // 
+            // tsb_computer
+            // 
+            this.tsb_computer.AutoToolTip = false;
+            this.tsb_computer.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsb_wol,
+            this.tsb_services});
+            this.tsb_computer.Enabled = false;
+            this.tsb_computer.Image = global::Hades2Lite.Properties.Resources.os;
+            this.tsb_computer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_computer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_computer.Name = "tsb_computer";
+            this.tsb_computer.Size = new System.Drawing.Size(105, 38);
+            this.tsb_computer.Text = "Komputer";
+            // 
+            // tsb_wol
+            // 
+            this.tsb_wol.Name = "tsb_wol";
+            this.tsb_wol.Size = new System.Drawing.Size(107, 22);
+            this.tsb_wol.Text = "WOL";
+            this.tsb_wol.Click += new System.EventHandler(this.tsb_wol_Click);
+            // 
+            // tsb_services
+            // 
+            this.tsb_services.Enabled = false;
+            this.tsb_services.Name = "tsb_services";
+            this.tsb_services.Size = new System.Drawing.Size(107, 22);
+            this.tsb_services.Text = "Usługi";
+            this.tsb_services.Click += new System.EventHandler(this.tsb_services_Click);
+            // 
+            // tsb_user
+            // 
+            this.tsb_user.AutoToolTip = false;
+            this.tsb_user.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsb_profileRefresh,
+            this.tsb_usersPrinter});
+            this.tsb_user.Enabled = false;
+            this.tsb_user.Image = global::Hades2Lite.Properties.Resources.lookfor;
+            this.tsb_user.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_user.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_user.Name = "tsb_user";
+            this.tsb_user.Size = new System.Drawing.Size(113, 38);
+            this.tsb_user.Text = "Użytkownik";
+            // 
+            // tsb_profileRefresh
+            // 
+            this.tsb_profileRefresh.Name = "tsb_profileRefresh";
+            this.tsb_profileRefresh.Size = new System.Drawing.Size(187, 22);
+            this.tsb_profileRefresh.Text = "Odśwież profil";
+            this.tsb_profileRefresh.Click += new System.EventHandler(this.tsb_profileRefresh_Click);
+            // 
+            // tsb_usersPrinter
+            // 
+            this.tsb_usersPrinter.Name = "tsb_usersPrinter";
+            this.tsb_usersPrinter.Size = new System.Drawing.Size(187, 22);
+            this.tsb_usersPrinter.Text = "Drukarki użytkownika";
+            this.tsb_usersPrinter.Click += new System.EventHandler(this.tsb_usersPrinter_Click);
             // 
             // toolStripSeparator10
             // 
@@ -2103,11 +2464,296 @@
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(6, 41);
             // 
+            // tsb_ajaks
+            // 
+            this.tsb_ajaks.AutoToolTip = false;
+            this.tsb_ajaks.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_run_Ajaks32,
+            this.toolStripMenuItem_run_Ajaks64});
+            this.tsb_ajaks.Enabled = false;
+            this.tsb_ajaks.Image = global::Hades2Lite.Properties.Resources.ajaks;
+            this.tsb_ajaks.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_ajaks.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_ajaks.Name = "tsb_ajaks";
+            this.tsb_ajaks.Size = new System.Drawing.Size(86, 38);
+            this.tsb_ajaks.Text = "AJAKS";
+            // 
+            // toolStripMenuItem_run_Ajaks32
+            // 
+            this.toolStripMenuItem_run_Ajaks32.Enabled = false;
+            this.toolStripMenuItem_run_Ajaks32.Name = "toolStripMenuItem_run_Ajaks32";
+            this.toolStripMenuItem_run_Ajaks32.Size = new System.Drawing.Size(123, 22);
+            this.toolStripMenuItem_run_Ajaks32.Text = "Ajaks x32";
+            // 
+            // toolStripMenuItem_run_Ajaks64
+            // 
+            this.toolStripMenuItem_run_Ajaks64.Enabled = false;
+            this.toolStripMenuItem_run_Ajaks64.Name = "toolStripMenuItem_run_Ajaks64";
+            this.toolStripMenuItem_run_Ajaks64.Size = new System.Drawing.Size(123, 22);
+            this.toolStripMenuItem_run_Ajaks64.Text = "Ajaks x64";
+            // 
+            // tsb_audit
+            // 
+            this.tsb_audit.AutoToolTip = false;
+            this.tsb_audit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsb_ksiappAudit,
+            this.tsb_officeAudit,
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations});
+            this.tsb_audit.Image = global::Hades2Lite.Properties.Resources.audit__1_;
+            this.tsb_audit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_audit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_audit.Name = "tsb_audit";
+            this.tsb_audit.Size = new System.Drawing.Size(90, 38);
+            this.tsb_audit.Text = "Audyty";
+            this.tsb_audit.ToolTipText = "Audyty";
+            // 
+            // tsb_ksiappAudit
+            // 
+            this.tsb_ksiappAudit.Name = "tsb_ksiappAudit";
+            this.tsb_ksiappAudit.Size = new System.Drawing.Size(211, 22);
+            this.tsb_ksiappAudit.Text = "Audyt aplikacji KSI";
+            this.tsb_ksiappAudit.Click += new System.EventHandler(this.tsb_ksiappAudit_Click);
+            // 
+            // tsb_officeAudit
+            // 
+            this.tsb_officeAudit.Name = "tsb_officeAudit";
+            this.tsb_officeAudit.Size = new System.Drawing.Size(211, 22);
+            this.tsb_officeAudit.Text = "Audyt Office";
+            this.tsb_officeAudit.Click += new System.EventHandler(this.tsb_officeAudit_Click);
+            // 
+            // toolStripMenuItem_singlePC_audyt_all_aplikations
+            // 
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Name = "toolStripMenuItem_singlePC_audyt_all_aplikations";
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Size = new System.Drawing.Size(211, 22);
+            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Text = "Audyt wszystkich aplikacji";
+            // 
+            // tsb_installer
+            // 
+            this.tsb_installer.AutoToolTip = false;
+            this.tsb_installer.Enabled = false;
+            this.tsb_installer.Image = ((System.Drawing.Image)(resources.GetObject("tsb_installer.Image")));
+            this.tsb_installer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_installer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_installer.Name = "tsb_installer";
+            this.tsb_installer.Size = new System.Drawing.Size(92, 38);
+            this.tsb_installer.Text = "Instalator";
+            this.tsb_installer.ToolTipText = "Audyty";
+            this.tsb_installer.Click += new System.EventHandler(this.tsb_installer_Click);
+            // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.ForeColor = System.Drawing.SystemColors.Control;
             this.toolStripSeparator12.Name = "toolStripSeparator12";
             this.toolStripSeparator12.Size = new System.Drawing.Size(6, 41);
+            // 
+            // tsb_c
+            // 
+            this.tsb_c.AutoToolTip = false;
+            this.tsb_c.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsb_c_,
+            this.tsb_autostart,
+            this.toolStripMenuItem_APPKSI,
+            this.toolStripMenuItem_CCMCACHE,
+            this.toolStripMenuItem_CSI,
+            this.toolStripMenuItem_CWI_PC,
+            this.toolStripMenuItemPROKOM,
+            this.toolStripMenuItem_SKRYPTY,
+            this.toolStripMenuItem_USERS});
+            this.tsb_c.Enabled = false;
+            this.tsb_c.Image = global::Hades2Lite.Properties.Resources.dir;
+            this.tsb_c.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tsb_c.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_c.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_c.Name = "tsb_c";
+            this.tsb_c.Size = new System.Drawing.Size(68, 38);
+            this.tsb_c.Text = "C:\\";
+            // 
+            // tsb_c_
+            // 
+            this.tsb_c_.Name = "tsb_c_";
+            this.tsb_c_.Size = new System.Drawing.Size(155, 22);
+            this.tsb_c_.Text = "C:\\";
+            this.tsb_c_.Click += new System.EventHandler(this.tsb_c__Click);
+            // 
+            // tsb_autostart
+            // 
+            this.tsb_autostart.Name = "tsb_autostart";
+            this.tsb_autostart.Size = new System.Drawing.Size(155, 22);
+            this.tsb_autostart.Text = "AUTOSTART";
+            this.tsb_autostart.Click += new System.EventHandler(this.tsb_autostart_Click);
+            // 
+            // toolStripMenuItem_APPKSI
+            // 
+            this.toolStripMenuItem_APPKSI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_APPKSI_APPKSI,
+            this.toolStripMenuItem_APPKSI_InstallLogs});
+            this.toolStripMenuItem_APPKSI.Name = "toolStripMenuItem_APPKSI";
+            this.toolStripMenuItem_APPKSI.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_APPKSI.Text = "APPKSI";
+            // 
+            // toolStripMenuItem_APPKSI_APPKSI
+            // 
+            this.toolStripMenuItem_APPKSI_APPKSI.Name = "toolStripMenuItem_APPKSI_APPKSI";
+            this.toolStripMenuItem_APPKSI_APPKSI.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem_APPKSI_APPKSI.Text = "APPKSI";
+            // 
+            // toolStripMenuItem_APPKSI_InstallLogs
+            // 
+            this.toolStripMenuItem_APPKSI_InstallLogs.Name = "toolStripMenuItem_APPKSI_InstallLogs";
+            this.toolStripMenuItem_APPKSI_InstallLogs.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem_APPKSI_InstallLogs.Text = "InstallLogs";
+            // 
+            // toolStripMenuItem_CCMCACHE
+            // 
+            this.toolStripMenuItem_CCMCACHE.Name = "toolStripMenuItem_CCMCACHE";
+            this.toolStripMenuItem_CCMCACHE.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_CCMCACHE.Text = "CCMCACHE";
+            // 
+            // toolStripMenuItem_CSI
+            // 
+            this.toolStripMenuItem_CSI.Name = "toolStripMenuItem_CSI";
+            this.toolStripMenuItem_CSI.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_CSI.Text = "CSI";
+            // 
+            // toolStripMenuItem_CWI_PC
+            // 
+            this.toolStripMenuItem_CWI_PC.Name = "toolStripMenuItem_CWI_PC";
+            this.toolStripMenuItem_CWI_PC.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_CWI_PC.Text = "CWI-PC";
+            // 
+            // toolStripMenuItemPROKOM
+            // 
+            this.toolStripMenuItemPROKOM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_PROKOM_PROKOM,
+            this.toolStripMenuItem_PROKOM_COMMON});
+            this.toolStripMenuItemPROKOM.Name = "toolStripMenuItemPROKOM";
+            this.toolStripMenuItemPROKOM.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItemPROKOM.Text = "PROKOM";
+            // 
+            // toolStripMenuItem_PROKOM_PROKOM
+            // 
+            this.toolStripMenuItem_PROKOM_PROKOM.Name = "toolStripMenuItem_PROKOM_PROKOM";
+            this.toolStripMenuItem_PROKOM_PROKOM.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem_PROKOM_PROKOM.Text = "PROKOM";
+            // 
+            // toolStripMenuItem_PROKOM_COMMON
+            // 
+            this.toolStripMenuItem_PROKOM_COMMON.Name = "toolStripMenuItem_PROKOM_COMMON";
+            this.toolStripMenuItem_PROKOM_COMMON.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem_PROKOM_COMMON.Text = "COMMON";
+            // 
+            // toolStripMenuItem_SKRYPTY
+            // 
+            this.toolStripMenuItem_SKRYPTY.Name = "toolStripMenuItem_SKRYPTY";
+            this.toolStripMenuItem_SKRYPTY.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_SKRYPTY.Text = "SKRYPTY";
+            // 
+            // toolStripMenuItem_USERS
+            // 
+            this.toolStripMenuItem_USERS.Name = "toolStripMenuItem_USERS";
+            this.toolStripMenuItem_USERS.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripMenuItem_USERS.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem_USERS.Text = "UŻYTKOWNICY";
+            // 
+            // tsb_d
+            // 
+            this.tsb_d.AutoToolTip = false;
+            this.tsb_d.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem87,
+            this.toolStripMenuItem88,
+            this.toolStripMenuItem89,
+            this.toolStripMenuItem90});
+            this.tsb_d.Enabled = false;
+            this.tsb_d.Image = global::Hades2Lite.Properties.Resources.dir;
+            this.tsb_d.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_d.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_d.Name = "tsb_d";
+            this.tsb_d.Size = new System.Drawing.Size(68, 38);
+            this.tsb_d.Text = "D:\\";
+            // 
+            // toolStripMenuItem87
+            // 
+            this.toolStripMenuItem87.Name = "toolStripMenuItem87";
+            this.toolStripMenuItem87.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem87.Text = "D:\\";
+            // 
+            // toolStripMenuItem88
+            // 
+            this.toolStripMenuItem88.Name = "toolStripMenuItem88";
+            this.toolStripMenuItem88.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem88.Text = "APPKSI";
+            // 
+            // toolStripMenuItem89
+            // 
+            this.toolStripMenuItem89.Name = "toolStripMenuItem89";
+            this.toolStripMenuItem89.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem89.Text = "CSI";
+            // 
+            // toolStripMenuItem90
+            // 
+            this.toolStripMenuItem90.Name = "toolStripMenuItem90";
+            this.toolStripMenuItem90.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem90.Text = "CI-OHD";
+            // 
+            // tsb_desktop
+            // 
+            this.tsb_desktop.AutoToolTip = false;
+            this.tsb_desktop.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsb_desktop_User,
+            this.tsb_desktop_Public});
+            this.tsb_desktop.Enabled = false;
+            this.tsb_desktop.Image = global::Hades2Lite.Properties.Resources.desktop;
+            this.tsb_desktop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_desktop.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_desktop.Name = "tsb_desktop";
+            this.tsb_desktop.Size = new System.Drawing.Size(95, 38);
+            this.tsb_desktop.Text = "Desktop";
+            // 
+            // tsb_desktop_User
+            // 
+            this.tsb_desktop_User.Name = "tsb_desktop_User";
+            this.tsb_desktop_User.Size = new System.Drawing.Size(153, 22);
+            this.tsb_desktop_User.Text = "User Desktop";
+            // 
+            // tsb_desktop_Public
+            // 
+            this.tsb_desktop_Public.Name = "tsb_desktop_Public";
+            this.tsb_desktop_Public.Size = new System.Drawing.Size(153, 22);
+            this.tsb_desktop_Public.Text = "Public Desktop";
+            // 
+            // tsb_distribution
+            // 
+            this.tsb_distribution.AutoToolTip = false;
+            this.tsb_distribution.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsb_distribution_AI,
+            this.tsb_distribution_CI_OHD,
+            this.tsb_distribution_CWI_PC});
+            this.tsb_distribution.Image = global::Hades2Lite.Properties.Resources.dir;
+            this.tsb_distribution.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsb_distribution.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_distribution.Name = "tsb_distribution";
+            this.tsb_distribution.Size = new System.Drawing.Size(114, 38);
+            this.tsb_distribution.Text = "Dystrybucja";
+            // 
+            // tsb_distribution_AI
+            // 
+            this.tsb_distribution_AI.Name = "tsb_distribution_AI";
+            this.tsb_distribution_AI.Size = new System.Drawing.Size(116, 22);
+            this.tsb_distribution_AI.Text = "AI";
+            // 
+            // tsb_distribution_CI_OHD
+            // 
+            this.tsb_distribution_CI_OHD.Enabled = false;
+            this.tsb_distribution_CI_OHD.Name = "tsb_distribution_CI_OHD";
+            this.tsb_distribution_CI_OHD.Size = new System.Drawing.Size(116, 22);
+            this.tsb_distribution_CI_OHD.Text = "CI-OHD";
+            // 
+            // tsb_distribution_CWI_PC
+            // 
+            this.tsb_distribution_CWI_PC.Enabled = false;
+            this.tsb_distribution_CWI_PC.Name = "tsb_distribution_CWI_PC";
+            this.tsb_distribution_CWI_PC.Size = new System.Drawing.Size(116, 22);
+            this.tsb_distribution_CWI_PC.Text = "CWI-PC";
             // 
             // toolStrip6
             // 
@@ -2121,6 +2767,15 @@
             this.toolStrip6.Size = new System.Drawing.Size(188, 25);
             this.toolStrip6.TabIndex = 1;
             this.toolStrip6.Text = "toolStrip6";
+            // 
+            // tsb_listManagement
+            // 
+            this.tsb_listManagement.Image = ((System.Drawing.Image)(resources.GetObject("tsb_listManagement.Image")));
+            this.tsb_listManagement.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_listManagement.Name = "tsb_listManagement";
+            this.tsb_listManagement.Size = new System.Drawing.Size(185, 22);
+            this.tsb_listManagement.Text = "Zarządzaj listami komputerów";
+            this.tsb_listManagement.Click += new System.EventHandler(this.tsb_listManagement_Click);
             // 
             // label29
             // 
@@ -2136,7 +2791,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(281, 5);
+            this.comboBox1.Location = new System.Drawing.Point(194, 7);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(163, 23);
             this.comboBox1.TabIndex = 0;
@@ -3096,678 +3751,6 @@
             this.pl_MainFormTOP.Size = new System.Drawing.Size(1077, 103);
             this.pl_MainFormTOP.TabIndex = 0;
             // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(289, 86);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(99, 13);
-            this.label44.TabIndex = 37;
-            this.label44.Text = "narzędzia Windows";
-            // 
-            // pl_MainHADES
-            // 
-            this.pl_MainHADES.Controls.Add(this.pictureBox1);
-            this.pl_MainHADES.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pl_MainHADES.Location = new System.Drawing.Point(895, 0);
-            this.pl_MainHADES.Name = "pl_MainHADES";
-            this.pl_MainHADES.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.pl_MainHADES.Size = new System.Drawing.Size(182, 103);
-            this.pl_MainHADES.TabIndex = 34;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(65, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 13);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "narzędzia domenowe";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ImageIndex = 7;
-            this.button2.Location = new System.Drawing.Point(160, 50);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(108, 25);
-            this.button2.TabIndex = 50;
-            this.button2.Text = "Pełny raport";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // pl_NarzedziownikButtons
-            // 
-            this.pl_NarzedziownikButtons.Controls.Add(this.toolStrip1);
-            this.pl_NarzedziownikButtons.Location = new System.Drawing.Point(28, 3);
-            this.pl_NarzedziownikButtons.Name = "pl_NarzedziownikButtons";
-            this.pl_NarzedziownikButtons.Size = new System.Drawing.Size(325, 23);
-            this.pl_NarzedziownikButtons.TabIndex = 50;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.toolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripSeparator2,
-            this.toolStripButton2,
-            this.toolStripButton3,
-            this.toolStripButton4});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(325, 24);
-            this.toolStrip1.TabIndex = 6;
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 24);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.AutoToolTip = false;
-            this.toolStripButton1.Image = global::Hades2Lite.Properties.Resources.icons8_ping_16;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(89, 21);
-            this.toolStripButton1.Text = "Dostępność";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.AutoToolTip = false;
-            this.toolStripButton2.Image = global::Hades2Lite.Properties.Resources.icons8_full_16;
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(91, 21);
-            this.toolStripButton2.Text = "Pełny raport";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.Image = global::Hades2Lite.Properties.Resources.icons8_sap_16;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(48, 21);
-            this.toolStripButton3.Text = "SAP";
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.Image = global::Hades2Lite.Properties.Resources.icons8_service_16;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(60, 21);
-            this.toolStripButton4.Text = "SCCM";
-            this.toolStripButton4.ToolTipText = "SCCM";
-            // 
-            // btn_refreshUser
-            // 
-            this.btn_refreshUser.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_refreshUser.Enabled = false;
-            this.btn_refreshUser.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_refreshUser.FlatAppearance.BorderSize = 0;
-            this.btn_refreshUser.Image = global::Hades2Lite.Properties.Resources.icons8_refresh_16__1_;
-            this.btn_refreshUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_refreshUser.Location = new System.Drawing.Point(254, 36);
-            this.btn_refreshUser.Name = "btn_refreshUser";
-            this.btn_refreshUser.Size = new System.Drawing.Size(76, 27);
-            this.btn_refreshUser.TabIndex = 46;
-            this.btn_refreshUser.Text = "Odśwież";
-            this.btn_refreshUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_refreshUser.UseVisualStyleBackColor = false;
-            // 
-            // btn_sendMsg
-            // 
-            this.btn_sendMsg.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_sendMsg.Enabled = false;
-            this.btn_sendMsg.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btn_sendMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_sendMsg.ImageIndex = 8;
-            this.btn_sendMsg.ImageList = this.img_MainIcons;
-            this.btn_sendMsg.Location = new System.Drawing.Point(690, 7);
-            this.btn_sendMsg.Name = "btn_sendMsg";
-            this.btn_sendMsg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_sendMsg.Size = new System.Drawing.Size(167, 75);
-            this.btn_sendMsg.TabIndex = 20;
-            this.btn_sendMsg.Text = "Wyślij wiadomość systemową Msg";
-            this.btn_sendMsg.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_sendMsg.UseCompatibleTextRendering = true;
-            this.btn_sendMsg.UseVisualStyleBackColor = false;
-            this.btn_sendMsg.Click += new System.EventHandler(this.btn_sendMsg_Click);
-            // 
-            // btn_eraseData
-            // 
-            this.btn_eraseData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_eraseData.FlatAppearance.BorderSize = 0;
-            this.btn_eraseData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_eraseData.Image = global::Hades2Lite.Properties.Resources.erase;
-            this.btn_eraseData.Location = new System.Drawing.Point(360, 28);
-            this.btn_eraseData.Name = "btn_eraseData";
-            this.btn_eraseData.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_eraseData.Size = new System.Drawing.Size(55, 48);
-            this.btn_eraseData.TabIndex = 12;
-            this.btn_eraseData.UseVisualStyleBackColor = true;
-            this.btn_eraseData.Click += new System.EventHandler(this.btn_eraseData_Click);
-            // 
-            // btn_remoteCmd
-            // 
-            this.btn_remoteCmd.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_remoteCmd.Enabled = false;
-            this.btn_remoteCmd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_remoteCmd.FlatAppearance.BorderSize = 0;
-            this.btn_remoteCmd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_remoteCmd.Image = global::Hades2Lite.Properties.Resources.cmd;
-            this.btn_remoteCmd.Location = new System.Drawing.Point(15, 132);
-            this.btn_remoteCmd.Name = "btn_remoteCmd";
-            this.btn_remoteCmd.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_remoteCmd.Size = new System.Drawing.Size(146, 48);
-            this.btn_remoteCmd.TabIndex = 14;
-            this.btn_remoteCmd.Text = "Remote CMD";
-            this.btn_remoteCmd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_remoteCmd.UseVisualStyleBackColor = false;
-            this.btn_remoteCmd.Click += new System.EventHandler(this.btn_remoteCmd_Click);
-            // 
-            // btn_computerManagement
-            // 
-            this.btn_computerManagement.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_computerManagement.Enabled = false;
-            this.btn_computerManagement.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_computerManagement.FlatAppearance.BorderSize = 0;
-            this.btn_computerManagement.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_computerManagement.Image = global::Hades2Lite.Properties.Resources.management;
-            this.btn_computerManagement.Location = new System.Drawing.Point(15, 78);
-            this.btn_computerManagement.Name = "btn_computerManagement";
-            this.btn_computerManagement.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_computerManagement.Size = new System.Drawing.Size(146, 48);
-            this.btn_computerManagement.TabIndex = 13;
-            this.btn_computerManagement.Text = "Zarządzaj";
-            this.btn_computerManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_computerManagement.UseVisualStyleBackColor = false;
-            this.btn_computerManagement.Click += new System.EventHandler(this.btn_computerManagement_Click);
-            // 
-            // btn_shutdownPC
-            // 
-            this.btn_shutdownPC.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_shutdownPC.Enabled = false;
-            this.btn_shutdownPC.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_shutdownPC.FlatAppearance.BorderSize = 0;
-            this.btn_shutdownPC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_shutdownPC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_shutdownPC.Image = global::Hades2Lite.Properties.Resources.off;
-            this.btn_shutdownPC.Location = new System.Drawing.Point(15, 186);
-            this.btn_shutdownPC.Name = "btn_shutdownPC";
-            this.btn_shutdownPC.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_shutdownPC.Size = new System.Drawing.Size(146, 48);
-            this.btn_shutdownPC.TabIndex = 10;
-            this.btn_shutdownPC.Text = "Wyłącz komputer";
-            this.btn_shutdownPC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_shutdownPC.UseVisualStyleBackColor = false;
-            this.btn_shutdownPC.Click += new System.EventHandler(this.btn_shutdownPC_Click);
-            // 
-            // btn_refreshDNS
-            // 
-            this.btn_refreshDNS.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_refreshDNS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_refreshDNS.FlatAppearance.BorderSize = 0;
-            this.btn_refreshDNS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_refreshDNS.Image = global::Hades2Lite.Properties.Resources.dns;
-            this.btn_refreshDNS.Location = new System.Drawing.Point(15, 348);
-            this.btn_refreshDNS.Name = "btn_refreshDNS";
-            this.btn_refreshDNS.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_refreshDNS.Size = new System.Drawing.Size(146, 48);
-            this.btn_refreshDNS.TabIndex = 12;
-            this.btn_refreshDNS.Text = "Odśwież u siebie DNS";
-            this.btn_refreshDNS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_refreshDNS.UseVisualStyleBackColor = false;
-            this.btn_refreshDNS.Click += new System.EventHandler(this.btn_refreshDNS_Click);
-            // 
-            // btn_pinglong
-            // 
-            this.btn_pinglong.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_pinglong.Enabled = false;
-            this.btn_pinglong.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_pinglong.FlatAppearance.BorderSize = 0;
-            this.btn_pinglong.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_pinglong.Image = global::Hades2Lite.Properties.Resources.ping;
-            this.btn_pinglong.Location = new System.Drawing.Point(15, 24);
-            this.btn_pinglong.Name = "btn_pinglong";
-            this.btn_pinglong.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_pinglong.Size = new System.Drawing.Size(146, 48);
-            this.btn_pinglong.TabIndex = 7;
-            this.btn_pinglong.Text = "Ping long";
-            this.btn_pinglong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_pinglong.UseVisualStyleBackColor = false;
-            this.btn_pinglong.Click += new System.EventHandler(this.btn_pinglong_Click);
-            // 
-            // btn_restartPC
-            // 
-            this.btn_restartPC.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_restartPC.Enabled = false;
-            this.btn_restartPC.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_restartPC.FlatAppearance.BorderSize = 0;
-            this.btn_restartPC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_restartPC.ForeColor = System.Drawing.Color.Black;
-            this.btn_restartPC.Image = global::Hades2Lite.Properties.Resources.restart;
-            this.btn_restartPC.Location = new System.Drawing.Point(15, 240);
-            this.btn_restartPC.Name = "btn_restartPC";
-            this.btn_restartPC.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_restartPC.Size = new System.Drawing.Size(146, 48);
-            this.btn_restartPC.TabIndex = 11;
-            this.btn_restartPC.Text = "Zrestartuj komputer";
-            this.btn_restartPC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_restartPC.UseVisualStyleBackColor = false;
-            this.btn_restartPC.Click += new System.EventHandler(this.btn_restartPC_Click);
-            // 
-            // btn_releaseIP
-            // 
-            this.btn_releaseIP.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_releaseIP.Enabled = false;
-            this.btn_releaseIP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_releaseIP.FlatAppearance.BorderSize = 0;
-            this.btn_releaseIP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_releaseIP.Image = global::Hades2Lite.Properties.Resources.release;
-            this.btn_releaseIP.Location = new System.Drawing.Point(14, 402);
-            this.btn_releaseIP.Name = "btn_releaseIP";
-            this.btn_releaseIP.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_releaseIP.Size = new System.Drawing.Size(146, 48);
-            this.btn_releaseIP.TabIndex = 8;
-            this.btn_releaseIP.Text = "Release IP";
-            this.btn_releaseIP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_releaseIP.UseVisualStyleBackColor = false;
-            // 
-            // toolStripButton_menage_messages
-            // 
-            this.toolStripButton_menage_messages.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_menage_messages.Image")));
-            this.toolStripButton_menage_messages.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_menage_messages.Name = "toolStripButton_menage_messages";
-            this.toolStripButton_menage_messages.Size = new System.Drawing.Size(156, 22);
-            this.toolStripButton_menage_messages.Text = "Zarzadzaj komunikatami";
-            this.toolStripButton_menage_messages.ToolTipText = "Zarządzaj komunikatami";
-            // 
-            // tsb_remoteSCCM
-            // 
-            this.tsb_remoteSCCM.AutoToolTip = false;
-            this.tsb_remoteSCCM.Enabled = false;
-            this.tsb_remoteSCCM.Image = global::Hades2Lite.Properties.Resources.sccm;
-            this.tsb_remoteSCCM.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_remoteSCCM.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_remoteSCCM.Name = "tsb_remoteSCCM";
-            this.tsb_remoteSCCM.Size = new System.Drawing.Size(120, 38);
-            this.tsb_remoteSCCM.Text = "Remote SCCM";
-            this.tsb_remoteSCCM.Click += new System.EventHandler(this.tsb_remoteSCCM_Click);
-            // 
-            // tsb_rdp
-            // 
-            this.tsb_rdp.AutoToolTip = false;
-            this.tsb_rdp.Enabled = false;
-            this.tsb_rdp.Image = global::Hades2Lite.Properties.Resources.remote;
-            this.tsb_rdp.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_rdp.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_rdp.Name = "tsb_rdp";
-            this.tsb_rdp.Size = new System.Drawing.Size(65, 38);
-            this.tsb_rdp.Text = "RDP";
-            this.tsb_rdp.Click += new System.EventHandler(this.tsb_rdp_Click);
-            // 
-            // tsb_computer
-            // 
-            this.tsb_computer.AutoToolTip = false;
-            this.tsb_computer.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsb_wol,
-            this.tsb_services});
-            this.tsb_computer.Enabled = false;
-            this.tsb_computer.Image = global::Hades2Lite.Properties.Resources.os;
-            this.tsb_computer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_computer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_computer.Name = "tsb_computer";
-            this.tsb_computer.Size = new System.Drawing.Size(105, 38);
-            this.tsb_computer.Text = "Komputer";
-            // 
-            // tsb_wol
-            // 
-            this.tsb_wol.Name = "tsb_wol";
-            this.tsb_wol.Size = new System.Drawing.Size(107, 22);
-            this.tsb_wol.Text = "WOL";
-            this.tsb_wol.Click += new System.EventHandler(this.tsb_wol_Click);
-            // 
-            // tsb_services
-            // 
-            this.tsb_services.Enabled = false;
-            this.tsb_services.Name = "tsb_services";
-            this.tsb_services.Size = new System.Drawing.Size(107, 22);
-            this.tsb_services.Text = "Usługi";
-            this.tsb_services.Click += new System.EventHandler(this.tsb_services_Click);
-            // 
-            // tsb_user
-            // 
-            this.tsb_user.AutoToolTip = false;
-            this.tsb_user.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsb_profileRefresh,
-            this.tsb_usersPrinter});
-            this.tsb_user.Enabled = false;
-            this.tsb_user.Image = global::Hades2Lite.Properties.Resources.lookfor;
-            this.tsb_user.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_user.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_user.Name = "tsb_user";
-            this.tsb_user.Size = new System.Drawing.Size(113, 38);
-            this.tsb_user.Text = "Użytkownik";
-            // 
-            // tsb_profileRefresh
-            // 
-            this.tsb_profileRefresh.Name = "tsb_profileRefresh";
-            this.tsb_profileRefresh.Size = new System.Drawing.Size(187, 22);
-            this.tsb_profileRefresh.Text = "Odśwież profil";
-            this.tsb_profileRefresh.Click += new System.EventHandler(this.tsb_profileRefresh_Click);
-            // 
-            // tsb_usersPrinter
-            // 
-            this.tsb_usersPrinter.Name = "tsb_usersPrinter";
-            this.tsb_usersPrinter.Size = new System.Drawing.Size(187, 22);
-            this.tsb_usersPrinter.Text = "Drukarki użytkownika";
-            this.tsb_usersPrinter.Click += new System.EventHandler(this.tsb_usersPrinter_Click);
-            // 
-            // tsb_ajaks
-            // 
-            this.tsb_ajaks.AutoToolTip = false;
-            this.tsb_ajaks.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_run_Ajaks32,
-            this.toolStripMenuItem_run_Ajaks64});
-            this.tsb_ajaks.Enabled = false;
-            this.tsb_ajaks.Image = global::Hades2Lite.Properties.Resources.ajaks;
-            this.tsb_ajaks.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_ajaks.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_ajaks.Name = "tsb_ajaks";
-            this.tsb_ajaks.Size = new System.Drawing.Size(86, 38);
-            this.tsb_ajaks.Text = "AJAKS";
-            // 
-            // toolStripMenuItem_run_Ajaks32
-            // 
-            this.toolStripMenuItem_run_Ajaks32.Enabled = false;
-            this.toolStripMenuItem_run_Ajaks32.Name = "toolStripMenuItem_run_Ajaks32";
-            this.toolStripMenuItem_run_Ajaks32.Size = new System.Drawing.Size(123, 22);
-            this.toolStripMenuItem_run_Ajaks32.Text = "Ajaks x32";
-            // 
-            // toolStripMenuItem_run_Ajaks64
-            // 
-            this.toolStripMenuItem_run_Ajaks64.Enabled = false;
-            this.toolStripMenuItem_run_Ajaks64.Name = "toolStripMenuItem_run_Ajaks64";
-            this.toolStripMenuItem_run_Ajaks64.Size = new System.Drawing.Size(123, 22);
-            this.toolStripMenuItem_run_Ajaks64.Text = "Ajaks x64";
-            // 
-            // tsb_audit
-            // 
-            this.tsb_audit.AutoToolTip = false;
-            this.tsb_audit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsb_ksiappAudit,
-            this.tsb_officeAudit,
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations});
-            this.tsb_audit.Image = global::Hades2Lite.Properties.Resources.audit__1_;
-            this.tsb_audit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_audit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_audit.Name = "tsb_audit";
-            this.tsb_audit.Size = new System.Drawing.Size(90, 38);
-            this.tsb_audit.Text = "Audyty";
-            this.tsb_audit.ToolTipText = "Audyty";
-            // 
-            // tsb_ksiappAudit
-            // 
-            this.tsb_ksiappAudit.Name = "tsb_ksiappAudit";
-            this.tsb_ksiappAudit.Size = new System.Drawing.Size(211, 22);
-            this.tsb_ksiappAudit.Text = "Audyt aplikacji KSI";
-            this.tsb_ksiappAudit.Click += new System.EventHandler(this.tsb_ksiappAudit_Click);
-            // 
-            // tsb_officeAudit
-            // 
-            this.tsb_officeAudit.Name = "tsb_officeAudit";
-            this.tsb_officeAudit.Size = new System.Drawing.Size(211, 22);
-            this.tsb_officeAudit.Text = "Audyt Office";
-            this.tsb_officeAudit.Click += new System.EventHandler(this.tsb_officeAudit_Click);
-            // 
-            // toolStripMenuItem_singlePC_audyt_all_aplikations
-            // 
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Name = "toolStripMenuItem_singlePC_audyt_all_aplikations";
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Size = new System.Drawing.Size(211, 22);
-            this.toolStripMenuItem_singlePC_audyt_all_aplikations.Text = "Audyt wszystkich aplikacji";
-            // 
-            // tsb_installer
-            // 
-            this.tsb_installer.AutoToolTip = false;
-            this.tsb_installer.Enabled = false;
-            this.tsb_installer.Image = ((System.Drawing.Image)(resources.GetObject("tsb_installer.Image")));
-            this.tsb_installer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_installer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_installer.Name = "tsb_installer";
-            this.tsb_installer.Size = new System.Drawing.Size(92, 38);
-            this.tsb_installer.Text = "Instalator";
-            this.tsb_installer.ToolTipText = "Audyty";
-            this.tsb_installer.Click += new System.EventHandler(this.tsb_installer_Click);
-            // 
-            // tsb_c
-            // 
-            this.tsb_c.AutoToolTip = false;
-            this.tsb_c.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsb_c_,
-            this.tsb_autostart,
-            this.toolStripMenuItem_APPKSI,
-            this.toolStripMenuItem_CCMCACHE,
-            this.toolStripMenuItem_CSI,
-            this.toolStripMenuItem_CWI_PC,
-            this.toolStripMenuItemPROKOM,
-            this.toolStripMenuItem_SKRYPTY,
-            this.toolStripMenuItem_USERS});
-            this.tsb_c.Enabled = false;
-            this.tsb_c.Image = global::Hades2Lite.Properties.Resources.dir;
-            this.tsb_c.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.tsb_c.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_c.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_c.Name = "tsb_c";
-            this.tsb_c.Size = new System.Drawing.Size(68, 38);
-            this.tsb_c.Text = "C:\\";
-            // 
-            // tsb_c_
-            // 
-            this.tsb_c_.Name = "tsb_c_";
-            this.tsb_c_.Size = new System.Drawing.Size(155, 22);
-            this.tsb_c_.Text = "C:\\";
-            this.tsb_c_.Click += new System.EventHandler(this.tsb_c__Click);
-            // 
-            // tsb_autostart
-            // 
-            this.tsb_autostart.Name = "tsb_autostart";
-            this.tsb_autostart.Size = new System.Drawing.Size(155, 22);
-            this.tsb_autostart.Text = "AUTOSTART";
-            this.tsb_autostart.Click += new System.EventHandler(this.tsb_autostart_Click);
-            // 
-            // toolStripMenuItem_APPKSI
-            // 
-            this.toolStripMenuItem_APPKSI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_APPKSI_APPKSI,
-            this.toolStripMenuItem_APPKSI_InstallLogs});
-            this.toolStripMenuItem_APPKSI.Name = "toolStripMenuItem_APPKSI";
-            this.toolStripMenuItem_APPKSI.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_APPKSI.Text = "APPKSI";
-            // 
-            // toolStripMenuItem_APPKSI_APPKSI
-            // 
-            this.toolStripMenuItem_APPKSI_APPKSI.Name = "toolStripMenuItem_APPKSI_APPKSI";
-            this.toolStripMenuItem_APPKSI_APPKSI.Size = new System.Drawing.Size(130, 22);
-            this.toolStripMenuItem_APPKSI_APPKSI.Text = "APPKSI";
-            // 
-            // toolStripMenuItem_APPKSI_InstallLogs
-            // 
-            this.toolStripMenuItem_APPKSI_InstallLogs.Name = "toolStripMenuItem_APPKSI_InstallLogs";
-            this.toolStripMenuItem_APPKSI_InstallLogs.Size = new System.Drawing.Size(130, 22);
-            this.toolStripMenuItem_APPKSI_InstallLogs.Text = "InstallLogs";
-            // 
-            // toolStripMenuItem_CCMCACHE
-            // 
-            this.toolStripMenuItem_CCMCACHE.Name = "toolStripMenuItem_CCMCACHE";
-            this.toolStripMenuItem_CCMCACHE.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_CCMCACHE.Text = "CCMCACHE";
-            // 
-            // toolStripMenuItem_CSI
-            // 
-            this.toolStripMenuItem_CSI.Name = "toolStripMenuItem_CSI";
-            this.toolStripMenuItem_CSI.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_CSI.Text = "CSI";
-            // 
-            // toolStripMenuItem_CWI_PC
-            // 
-            this.toolStripMenuItem_CWI_PC.Name = "toolStripMenuItem_CWI_PC";
-            this.toolStripMenuItem_CWI_PC.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_CWI_PC.Text = "CWI-PC";
-            // 
-            // toolStripMenuItemPROKOM
-            // 
-            this.toolStripMenuItemPROKOM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_PROKOM_PROKOM,
-            this.toolStripMenuItem_PROKOM_COMMON});
-            this.toolStripMenuItemPROKOM.Name = "toolStripMenuItemPROKOM";
-            this.toolStripMenuItemPROKOM.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItemPROKOM.Text = "PROKOM";
-            // 
-            // toolStripMenuItem_PROKOM_PROKOM
-            // 
-            this.toolStripMenuItem_PROKOM_PROKOM.Name = "toolStripMenuItem_PROKOM_PROKOM";
-            this.toolStripMenuItem_PROKOM_PROKOM.Size = new System.Drawing.Size(131, 22);
-            this.toolStripMenuItem_PROKOM_PROKOM.Text = "PROKOM";
-            // 
-            // toolStripMenuItem_PROKOM_COMMON
-            // 
-            this.toolStripMenuItem_PROKOM_COMMON.Name = "toolStripMenuItem_PROKOM_COMMON";
-            this.toolStripMenuItem_PROKOM_COMMON.Size = new System.Drawing.Size(131, 22);
-            this.toolStripMenuItem_PROKOM_COMMON.Text = "COMMON";
-            // 
-            // toolStripMenuItem_SKRYPTY
-            // 
-            this.toolStripMenuItem_SKRYPTY.Name = "toolStripMenuItem_SKRYPTY";
-            this.toolStripMenuItem_SKRYPTY.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_SKRYPTY.Text = "SKRYPTY";
-            // 
-            // toolStripMenuItem_USERS
-            // 
-            this.toolStripMenuItem_USERS.Name = "toolStripMenuItem_USERS";
-            this.toolStripMenuItem_USERS.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripMenuItem_USERS.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem_USERS.Text = "UŻYTKOWNICY";
-            // 
-            // tsb_d
-            // 
-            this.tsb_d.AutoToolTip = false;
-            this.tsb_d.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem87,
-            this.toolStripMenuItem88,
-            this.toolStripMenuItem89,
-            this.toolStripMenuItem90});
-            this.tsb_d.Enabled = false;
-            this.tsb_d.Image = global::Hades2Lite.Properties.Resources.dir;
-            this.tsb_d.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_d.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_d.Name = "tsb_d";
-            this.tsb_d.Size = new System.Drawing.Size(68, 38);
-            this.tsb_d.Text = "D:\\";
-            // 
-            // toolStripMenuItem87
-            // 
-            this.toolStripMenuItem87.Name = "toolStripMenuItem87";
-            this.toolStripMenuItem87.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem87.Text = "D:\\";
-            // 
-            // toolStripMenuItem88
-            // 
-            this.toolStripMenuItem88.Name = "toolStripMenuItem88";
-            this.toolStripMenuItem88.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem88.Text = "APPKSI";
-            // 
-            // toolStripMenuItem89
-            // 
-            this.toolStripMenuItem89.Name = "toolStripMenuItem89";
-            this.toolStripMenuItem89.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem89.Text = "CSI";
-            // 
-            // toolStripMenuItem90
-            // 
-            this.toolStripMenuItem90.Name = "toolStripMenuItem90";
-            this.toolStripMenuItem90.Size = new System.Drawing.Size(116, 22);
-            this.toolStripMenuItem90.Text = "CI-OHD";
-            // 
-            // tsb_desktop
-            // 
-            this.tsb_desktop.AutoToolTip = false;
-            this.tsb_desktop.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsb_desktop_User,
-            this.tsb_desktop_Public});
-            this.tsb_desktop.Enabled = false;
-            this.tsb_desktop.Image = global::Hades2Lite.Properties.Resources.desktop;
-            this.tsb_desktop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_desktop.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_desktop.Name = "tsb_desktop";
-            this.tsb_desktop.Size = new System.Drawing.Size(95, 38);
-            this.tsb_desktop.Text = "Desktop";
-            // 
-            // tsb_desktop_User
-            // 
-            this.tsb_desktop_User.Name = "tsb_desktop_User";
-            this.tsb_desktop_User.Size = new System.Drawing.Size(153, 22);
-            this.tsb_desktop_User.Text = "User Desktop";
-            // 
-            // tsb_desktop_Public
-            // 
-            this.tsb_desktop_Public.Name = "tsb_desktop_Public";
-            this.tsb_desktop_Public.Size = new System.Drawing.Size(153, 22);
-            this.tsb_desktop_Public.Text = "Public Desktop";
-            // 
-            // tsb_distribution
-            // 
-            this.tsb_distribution.AutoToolTip = false;
-            this.tsb_distribution.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsb_distribution_AI,
-            this.tsb_distribution_CI_OHD,
-            this.tsb_distribution_CWI_PC});
-            this.tsb_distribution.Image = global::Hades2Lite.Properties.Resources.dir;
-            this.tsb_distribution.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsb_distribution.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_distribution.Name = "tsb_distribution";
-            this.tsb_distribution.Size = new System.Drawing.Size(114, 38);
-            this.tsb_distribution.Text = "Dystrybucja";
-            // 
-            // tsb_distribution_AI
-            // 
-            this.tsb_distribution_AI.Name = "tsb_distribution_AI";
-            this.tsb_distribution_AI.Size = new System.Drawing.Size(116, 22);
-            this.tsb_distribution_AI.Text = "AI";
-            // 
-            // tsb_distribution_CI_OHD
-            // 
-            this.tsb_distribution_CI_OHD.Enabled = false;
-            this.tsb_distribution_CI_OHD.Name = "tsb_distribution_CI_OHD";
-            this.tsb_distribution_CI_OHD.Size = new System.Drawing.Size(116, 22);
-            this.tsb_distribution_CI_OHD.Text = "CI-OHD";
-            // 
-            // tsb_distribution_CWI_PC
-            // 
-            this.tsb_distribution_CWI_PC.Enabled = false;
-            this.tsb_distribution_CWI_PC.Name = "tsb_distribution_CWI_PC";
-            this.tsb_distribution_CWI_PC.Size = new System.Drawing.Size(116, 22);
-            this.tsb_distribution_CWI_PC.Text = "CWI-PC";
-            // 
-            // tsb_listManagement
-            // 
-            this.tsb_listManagement.Image = ((System.Drawing.Image)(resources.GetObject("tsb_listManagement.Image")));
-            this.tsb_listManagement.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsb_listManagement.Name = "tsb_listManagement";
-            this.tsb_listManagement.Size = new System.Drawing.Size(185, 22);
-            this.tsb_listManagement.Text = "Zarządzaj listami komputerów";
-            this.tsb_listManagement.Click += new System.EventHandler(this.tsb_listManagement_Click);
-            // 
             // button10
             // 
             this.button10.FlatAppearance.BorderSize = 0;
@@ -3855,6 +3838,15 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(289, 86);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(99, 13);
+            this.label44.TabIndex = 37;
+            this.label44.Text = "narzędzia Windows";
+            // 
             // button4
             // 
             this.button4.FlatAppearance.BorderSize = 0;
@@ -3884,6 +3876,16 @@
             this.button3.Text = "Powershell";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // pl_MainHADES
+            // 
+            this.pl_MainHADES.Controls.Add(this.pictureBox1);
+            this.pl_MainHADES.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pl_MainHADES.Location = new System.Drawing.Point(895, 0);
+            this.pl_MainHADES.Name = "pl_MainHADES";
+            this.pl_MainHADES.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.pl_MainHADES.Size = new System.Drawing.Size(182, 103);
+            this.pl_MainHADES.TabIndex = 34;
             // 
             // pictureBox1
             // 
@@ -3925,6 +3927,15 @@
             this.btn_LAPS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_LAPS.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(65, 86);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 13);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "narzędzia domenowe";
+            // 
             // pictureBox_Separator
             // 
             this.pictureBox_Separator.Image = global::Hades2Lite.Properties.Resources.separator_main;
@@ -3950,6 +3961,152 @@
             this.btn_ActiveDirectory.UseVisualStyleBackColor = true;
             this.btn_ActiveDirectory.Click += new System.EventHandler(this.btn_ActiveDirectory_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage9);
+            this.tabControl1.Controls.Add(this.tabPage10);
+            this.tabControl1.Location = new System.Drawing.Point(182, 3);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(855, 486);
+            this.tabControl1.TabIndex = 15;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.pl_NarzedziownikButtons);
+            this.tabPage9.Controls.Add(this.tab_computers);
+            this.tabPage9.Controls.Add(this.btn_eraseData);
+            this.tabPage9.Controls.Add(this.tab_users);
+            this.tabPage9.Controls.Add(this.btn_sendMsg);
+            this.tabPage9.Controls.Add(this.panel61);
+            this.tabPage9.Controls.Add(this.panel21);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(847, 460);
+            this.tabPage9.TabIndex = 0;
+            this.tabPage9.Text = "Pojedynczy komputer";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.dataGridView1);
+            this.tabPage10.Controls.Add(this.panel14);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(847, 460);
+            this.tabPage10.TabIndex = 1;
+            this.tabPage10.Text = "Lista komputerów";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Szukaj:";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(48, 8);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(140, 20);
+            this.textBox10.TabIndex = 3;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.label3);
+            this.panel14.Controls.Add(this.textBox10);
+            this.panel14.Controls.Add(this.comboBox1);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel14.Location = new System.Drawing.Point(3, 3);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(841, 43);
+            this.panel14.TabIndex = 4;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.ColumnHeadersHeight = 21;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.COMPUTER,
+            this.USER,
+            this.DETAILS});
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 46);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 13;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(841, 411);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // COMPUTER
+            // 
+            this.COMPUTER.DataPropertyName = "COMPUTER";
+            this.COMPUTER.HeaderText = "Nazwa komputera";
+            this.COMPUTER.Name = "COMPUTER";
+            this.COMPUTER.ReadOnly = true;
+            this.COMPUTER.Width = 200;
+            // 
+            // USER
+            // 
+            this.USER.DataPropertyName = "USER";
+            this.USER.HeaderText = "Dane użytkownika";
+            this.USER.Name = "USER";
+            this.USER.ReadOnly = true;
+            this.USER.Width = 200;
+            // 
+            // DETAILS
+            // 
+            this.DETAILS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DETAILS.DataPropertyName = "DETAILS";
+            this.DETAILS.HeaderText = "Opis";
+            this.DETAILS.Name = "DETAILS";
+            this.DETAILS.ReadOnly = true;
+            // 
             // frm_Hades2Lite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3973,7 +4130,9 @@
             this.pl_NarzedziownikMiddle.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            this.panel_singlePC_top.ResumeLayout(false);
+            this.pl_NarzedziownikButtons.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.tab_computers.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -4043,15 +4202,18 @@
             this.pl_MainFormMiddle.ResumeLayout(false);
             this.pl_MainFormTOP.ResumeLayout(false);
             this.pl_MainFormTOP.PerformLayout();
-            this.pl_MainHADES.ResumeLayout(false);
-            this.pl_NarzedziownikButtons.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pl_MainHADES.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Separator)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4366,6 +4528,16 @@
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn COMPUTER;
+        private System.Windows.Forms.DataGridViewTextBoxColumn USER;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DETAILS;
     }
 }
 

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hades2Lite", "Hades2Lite\Hades2Lite.csproj", "{C24B11D7-A57E-4CE7-B30B-A9FC85C189D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loader", "..\Loader\Loader\Loader.csproj", "{B4298108-6B94-46DF-BD20-AB3F6E7EF5C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hades2common", "..\Hades2common\Hades2common\Hades2common.csproj", "{6B40661D-AE60-47CC-B02B-711B75A1F7A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C24B11D7-A57E-4CE7-B30B-A9FC85C189D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C24B11D7-A57E-4CE7-B30B-A9FC85C189D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C24B11D7-A57E-4CE7-B30B-A9FC85C189D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4298108-6B94-46DF-BD20-AB3F6E7EF5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4298108-6B94-46DF-BD20-AB3F6E7EF5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4298108-6B94-46DF-BD20-AB3F6E7EF5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4298108-6B94-46DF-BD20-AB3F6E7EF5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B40661D-AE60-47CC-B02B-711B75A1F7A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B40661D-AE60-47CC-B02B-711B75A1F7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B40661D-AE60-47CC-B02B-711B75A1F7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B40661D-AE60-47CC-B02B-711B75A1F7A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
